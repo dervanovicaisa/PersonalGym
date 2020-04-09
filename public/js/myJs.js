@@ -1,3 +1,8 @@
+
+const swup = new Swup(); // only this line when included with script tag
+
+
+
 var i = 0;
 var images = [];
 var time = 150;
@@ -33,8 +38,7 @@ function changeImg() {
 
     // Run function every x seconds
     setTimeout("changeImg()", time);
-}/////////////////////////
-
+} /////////////////////////
 
 ///////////////////////////////PLAY SONG
 
@@ -59,7 +63,7 @@ buttons.play.addEventListener(
         document.getElementById("waveform").style.visibility = "visible";
         document.getElementById("textSong").style.display = "none";
 
-      Spectrum.play();
+        Spectrum.play();
         // Enable/Disable respectively buttons
         buttons.stop.disabled = false;
         buttons.pause.disabled = false;

@@ -1,7 +1,7 @@
-body{
-  font-family: 'Raleway', sans-serif;
+body {
+    font-family: "Raleway", sans-serif;
 }
-.bckgImage{
+.bckgImage {
     position: fixed;
     background-color: #1d2733;
     top: 0;
@@ -10,125 +10,114 @@ body{
     height: 100%;
     overflow: hidden;
 }
-.txtInitials{
+.txtInitials {
     color: white;
 }
-.logoImage{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-z-index: 2;
-width: 10%;
+.logoImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 10%;
 }
-.red{
-
+.red {
     color: white;
     z-index: 2;
-
 }
-.playSong{
- 
+.playSong {
 }
-.playSong1{
-  position: absolute;
-  bottom: 2%;
-  left: 2%;
-  display: inline-flex;
-  width: 20%;
+.playSong1 {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    display: inline-flex;
+    width: 20%;
 }
-.playSong2{
-  display: inline-flex;
-
+.playSong2 {
+    display: inline-flex;
 }
-.playSong2 img{
-width: 8%;
-margin-right: 5px;
+.playSong2 img {
+    width: 8%;
+    margin-right: 5px;
 }
-.playSong2 h4{
-  font-weight: lighter;
-
-  }
-.txtInitials{
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-  display: inline-flex;
-
+.playSong2 h4 {
+    font-weight: lighter;
 }
-.txtInitials1{
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-  display: flex;
-  margin-top: 16px;
-
+.txtInitials {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    display: inline-flex;
 }
-.txtInitials1 img{
-  width: 20%;
-  margin-left: auto;
-  margin-right: 6px;
+.txtInitials1 {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    display: flex;
+    margin-top: 16px;
 }
-.txtInitials h3{
-  margin-bottom: 2px;
-letter-spacing: 1px;
+.txtInitials1 img {
+    width: 20%;
+    margin-left: auto;
+    margin-right: 6px;
 }
-.txtInitials h4{
-  margin-top: 2px;
-color: #60BFFF;
-letter-spacing: 3px;
+.txtInitials h3 {
+    margin-bottom: 2px;
+    letter-spacing: 1px;
 }
-.text{
-  margin-right: 0;
+.txtInitials h4 {
+    margin-top: 2px;
+    color: #60bfff;
+    letter-spacing: 3px;
+}
+.text {
+    margin-right: 0;
 }
 .playButton {
     border-radius: 50%;
     background-color: #304061;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     padding: 15px;
     transition: all 0.5s;
     cursor: pointer;
     margin: 5px;
-  }
-  
-    .playButton:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
-
-
-  #waveform , #audio-spectrum{
-        width: 100%;
-        margin: auto;
-  }
-  #waveform {
-   visibility: hidden;
-      transition: 2s;
-  }
-  .background{
-    width: 100%;
-    height: 100%;
-  }
-  #overlay{
-    position: fixed; 
-  display: block;
-  width: 100%; 
-  height: 100%; 
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color:rgba(22,43,87,0.9);
-  z-index: 2; 
-  cursor: pointer;
-  border: 1px solid #001137;
-  -moz-box-shadow: inset 0 0 5px 1px #001137;
-  -webkit-box-shadow: inset 0 0 5px 1px #001137;
-  box-shadow: inset 0 0 120px 65px #001137;
 }
 
+.playButton:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
-  }
-  }
+#waveform,
+#audio-spectrum {
+    width: 100%;
+    margin: auto;
+}
+#waveform {
+    visibility: hidden;
+    transition: 2s;
+}
+.background {
+    width: 100%;
+    height: 100%;
+}
+#overlay {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(22, 43, 87, 0.9);
+    z-index: 2;
+    cursor: pointer;
+    border: 1px solid #001137;
+    -moz-box-shadow: inset 0 0 5px 1px #001137;
+    -webkit-box-shadow: inset 0 0 5px 1px #001137;
+    box-shadow: inset 0 0 120px 65px #001137;
+}
