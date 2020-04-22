@@ -1,14 +1,48 @@
-body {
-    font-family: "Raleway", sans-serif;
-}
-.bckgImage {
-    position: fixed;
-    background-color: #1d2733;
-    top: 0;
-    left: 0;
-    width: 100%;
+body,
+html {
     height: 100%;
-    overflow: hidden;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+}
+
+.hero-image {
+    background-image: url("../images/login/1.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-overlay {
+    background-color: rgba(22, 43, 87, 0.9);
+    z-index: 2;
+    cursor: pointer;
+    border: 1px solid #001137;
+    -moz-box-shadow: inset 0 0 5px 1px #001137;
+    -webkit-box-shadow: inset 0 0 5px 1px #001137;
+    box-shadow: inset 0 0 120px 65px #001137;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.red2 {
+    background-color: #1992e3d9;
+    border: 1px solid #0072bee6;
+    -moz-box-shadow: inset 0 0 5px 1px #0072bee6;
+    -webkit-box-shadow: inset 0 0 5px 1px #0072bee6;
+    box-shadow: inset 0 0 130px 100px #0072bee6;
+    position: relative;
+}
+
+.red3 {
+    background-color: #25f1c0d9;
+    border: 1px solid #09e5cfe6;
+    -moz-box-shadow: inset 0 0 5px 1px #09e5cfe6;
+    -webkit-box-shadow: inset 0 0 5px 1px #09e5cfe6;
+    box-shadow: inset 0 0 120px 115px #09e5cfe6;
 }
 .txtInitials {
     color: white;
@@ -19,7 +53,9 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 10%;
+    width: 15%;
+    padding: 3%;
+    border-radius: 178px;
 }
 .red {
     color: white;
@@ -32,10 +68,13 @@ body {
     bottom: 2%;
     left: 2%;
     display: inline-flex;
-    width: 20%;
+    width: 25%;
 }
 .playSong2 {
     display: inline-flex;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
 }
 .playSong2 img {
     width: 8%;
@@ -43,6 +82,9 @@ body {
 }
 .playSong2 h4 {
     font-weight: lighter;
+    margin: auto;
+    margin-left: 0;
+    transition: 1s ease;
 }
 .txtInitials {
     position: absolute;
@@ -60,8 +102,14 @@ body {
 .txtInitials1 img {
     width: 20%;
     margin-left: auto;
-    margin-right: 6px;
+    margin-right: 25px;
 }
+/* .txtInitials1 img:hover {
+
+    transition: 300ms ease;
+    margin-right: 0px;
+
+} */
 .txtInitials h3 {
     margin-bottom: 2px;
     letter-spacing: 1px;
@@ -97,27 +145,326 @@ body {
     margin: auto;
 }
 #waveform {
-    visibility: hidden;
-    transition: 2s;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: 1s ease;
+    display: flex;
+    left: 25%;
 }
 .background {
     width: 100%;
     height: 100%;
 }
-#overlay {
-    position: fixed;
-    display: block;
+.logo {
     width: 100%;
-    height: 100%;
+}
+.logo img {
+    width: 5%;
+}
+.textAbout {
+    height: 70%;
+    margin-left: 12%;
+    align-self: center;
+}
+
+.dusan {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.dusan img {
+    width: 100%;
+}
+
+h6 {
+    letter-spacing: 0.8px;
+}
+.intro {
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+.scrollDiv {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.scrollDiv a h6 {
+    letter-spacing: 3px;
+}
+.leftText {
+    margin-right: 10%;
+    position: relative;
+}
+.rightText {
+    position: relative;
+}
+.donji {
+    position: absolute;
+    bottom: 0;
+}
+.swap {
+    position: relative;
+    width: 100%;
+}
+#btn-stop {
+    height: 20%;
+    align-self: center;
+}
+
+svg {
+    margin: 0px auto;
+    display: block;
+}
+#pause:hover #line2 {
+    fill: #0072bee6 !important;
+    transition: 1s ease;
+}
+#pause:hover #circle {
+    transition: stroke-dashoffset 1s ease-in;
+    stroke-dashoffset: 0;
+    fill: none;
+}
+/* This animates the circle when it switches to play */
+#circle {
+    transition: stroke-dashoffset 300ms ease-in;
+    stroke-dashoffset: 0;
+    fill: none;
+}
+#circle.play {
+    stroke-dashoffset: 314;
+}
+.mouse {
+    position: absolute;
+    bottom: 40px;
+    z-index: 5;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block;
+}
+.mouse .mouse-icon {
+    display: block;
+    width: 25px;
+    height: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    -webkit-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+.mouse .mouse-wheel {
+    height: 6px;
+    margin: 2px auto 0;
+    display: block;
+    width: 6px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-animation: 1.6s ease infinite wheel-up-down;
+    -moz-animation: 1.6s ease infinite wheel-up-down;
+    animation: 1.6s ease infinite wheel-up-down;
+}
+.mouse:hover .mouse-icon {
+    border-color: #fff;
+}
+
+@-webkit-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 30px;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 30px;
+        opacity: 0;
+    }
+}
+
+@keyframes wheel-up-down {
+    0% {
+        margin-top: 2px;
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        margin-top: 30px;
+        opacity: 0;
+    }
+}
+::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #070404;
+}
+::-webkit-scrollbar-thumb {
+    background: #353e4e;
+    border-radius: 5px;
+}
+
+/* text play song */
+
+  .wrapper  {
+    background: -webkit-gradient(linear, left top, right top, color-stop(10%, #e72a3a), color-stop(50%, #fff), color-stop(60%, #5bdaff));
+    background: linear-gradient(to right, #1992e3d9 10%, #fff 50%, #5bdaff 60%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: textclip 1.5s linear infinite;
+            animation: textclip 1.5s linear infinite;
+  }
+  
+  @-webkit-keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+/*   /text intro */
+.introt {
+    position: relative;
+    font-size: 140px;
+    color: transparent;
+    font-family: 'Cambay', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    transition: 2s ;
+  }
+  
+  .introt > div {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(22, 43, 87, 0.9);
-    z-index: 2;
-    cursor: pointer;
-    border: 1px solid #001137;
-    -moz-box-shadow: inset 0 0 5px 1px #001137;
-    -webkit-box-shadow: inset 0 0 5px 1px #001137;
-    box-shadow: inset 0 0 120px 65px #001137;
-}
+    color: #ffff;
+    pointer-events: none;
+  }
+  
+  .introt:hover > div:nth-child(1) {
+    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+    mask-image: linear-gradient(black 25%, transparent 25%);
+    animation: deconstructed1 5s ease ;
+  }
+  
+  .introt:hover > div:nth-child(2) {
+    -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+    animation: deconstructed2 5s ease  ;
+  }
+  
+  .introt:hover > div:nth-child(3) {
+     -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+    animation: deconstructed3 5s ease  ;
+  }
+  
+  .introt:hover > div:nth-child(4) {
+     -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+    mask-image: linear-gradient(transparent 75%, black 75%);
+    animation: deconstructed4 5s ease  ;
+  }
+  
+  @keyframes deconstructed1 {
+    0% {
+      transform: translateX(0%);
+    }
+    26% {
+      transform: translateX(100%);
+    }
+    83% {
+      transform: translateX(-0.1%);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+  }
+  
+  @keyframes deconstructed2 {
+    0% {
+      transform: translateX(0.5%);
+    }
+    24% {
+      transform: translateX(100%);
+    }
+    82% {
+      transform: translateX(-0.2%);
+    }
+    100% {
+      transform: translateX(-125%);
+    }
+  }
+  
+  @keyframes deconstructed3 {
+    0% {
+      transform: translateX(0%);
+    }
+    22% {
+      transform: translateX(100%);
+    }
+    81% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-130%);
+    }
+  }
+  
+  @keyframes deconstructed4 {
+    0% {
+      transform: translateX(0%);
+    }
+    20% {
+      transform: translateX(100%);
+    }
+    80% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-135%);
+    }
+  }

@@ -9,9 +9,11 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
 
     <link rel="stylesheet" href="/css/myStyle.css">
 
@@ -23,7 +25,9 @@
     @yield('content')
 </body>
 <!-- SCript -->
-<script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+<!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>  
+ -->
+ <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -31,5 +35,6 @@
 
 <script defer src="/js/myJs.js"></script>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </html>

@@ -1,8 +1,6 @@
-
-const swup = new Swup(); // only this line when included with script tag
-
-
-
+/* const swup = new Swup(); // only this line when included with script tag
+ */
+AOS.init();
 var i = 0;
 var images = [];
 var time = 150;
@@ -42,67 +40,41 @@ function changeImg() {
 
 ///////////////////////////////PLAY SONG
 
-// Store the 3 buttons in some object
-var buttons = {
-    play: document.getElementById("btn-play"),
-    pause: document.getElementById("btn-pause"),
-    stop: document.getElementById("btn-stop")
-};
 
 // Create an instance of wave surfer with its configuration
 var Spectrum = WaveSurfer.create({
-    container: "#audio-spectrum",
-    progressColor: "#03a9f4",
-    fillParent: true
+  container: "#audio-spectrum",
+  progressColor: 'hsla(200, 100%, 30%, 0.5)',
+  cursorColor: '#fff',
+  fillParent: true,
+  barWidth: 3
 });
+$(document).ready(function() {
+    var state = "paused";
+    $('#pause').on('click', function() {
+        if(state == 'paused') {
+            state = "playing";
+            console.log("pustilo se");
+            Spectrum.play();
+            document.getElementById("waveform").style.opacity = "1";
+            document.getElementById("play").style.opacity = "0";
+            $("#circle").attr("class", "");
+            $("#from_play_to_pause")[0].beginElement();
+        } else {
+  
+            state = "paused";
+            console.log("zaustavilo se");
+            Spectrum.stop();
+            document.getElementById("play").style.opacity = "1";
+            document.getElementById("waveform").style.opacity = "0";
 
-// Handle Play button
-buttons.play.addEventListener(
-    "click",
-    function() {
-        document.getElementById("waveform").style.visibility = "visible";
-        document.getElementById("textSong").style.display = "none";
-
-        Spectrum.play();
-        // Enable/Disable respectively buttons
-        buttons.stop.disabled = false;
-        buttons.pause.disabled = false;
-        buttons.play.disabled = true;
-    },
-    false
-);
-
-// Handle Stop button
-buttons.stop.addEventListener(
-    "click",
-    function() {
-        document.getElementById("textSong").style.display = "inline-block";
-        document.getElementById("waveform").style.visibility = "hidden";
-
-        Spectrum.stop();
-
-        // Enable/Disable respectively buttons
-        buttons.pause.disabled = true;
-        buttons.play.disabled = false;
-        buttons.stop.disabled = true;
-    },
-    false
-);
-// Add a listener to enable the play button once it's ready
-Spectrum.on("ready", function() {
-    buttons.play.disabled = false;
+            $("#circle").attr("class", "play");
+            $("#from_pause_to_play")[0].beginElement();
+        }
+    });
 });
-// Handle Pause button
-buttons.pause.addEventListener(
-    "click",
-    function() {
-        Spectrum.pause();
-        // Enable/Disable respectively buttons
-        buttons.pause.disabled = true;
-        buttons.play.disabled = false;
-    },
-    false
-);
+// Load the audio file from your domain !
+Spectrum.load("/images/video/elderbrook-numb.mp3");
 
 // If you want a responsive mode (so when the user resizes the window)
 // the spectrum will be still playable
@@ -124,5 +96,32 @@ buttons.pause.addEventListener(
     false
 ); */
 
-// Load the audio file from your domain !
-Spectrum.load("/images/video/elderbrook-numb.mp3");
+
+//smooth scroll
+$(document).ready(function() {
+    // Add smooth scrolling to all links
+    $("a").on("click", function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top
+                },
+                800,
+                function() {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
+    });
+});
+
