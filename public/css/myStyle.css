@@ -29,21 +29,18 @@ html {
 }
 
 .red2 {
-    background-color: #1992e3d9;
-    border: 1px solid #0072bee6;
-    -moz-box-shadow: inset 0 0 5px 1px #0072bee6;
-    -webkit-box-shadow: inset 0 0 5px 1px #0072bee6;
-    box-shadow: inset 0 0 130px 100px #0072bee6;
+    background-image: url("../images/login/4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  /*   -moz-box-shadow: inset 0 0 105px -20px #0072bee6;
+    -webkit-box-shadow:inset 0 0 105px -20px #0072bee6;
+    box-shadow: inset 0 0 105px -20px #0072bee6; */
     position: relative;
 }
 
-.red3 {
-    background-color: #25f1c0d9;
-    border: 1px solid #09e5cfe6;
-    -moz-box-shadow: inset 0 0 5px 1px #09e5cfe6;
-    -webkit-box-shadow: inset 0 0 5px 1px #09e5cfe6;
-    box-shadow: inset 0 0 120px 115px #09e5cfe6;
-}
+
 .txtInitials {
     color: white;
 }
@@ -68,6 +65,11 @@ html {
     left: 2%;
     display: inline-flex;
     width: 25%;
+    z-index: 5;
+}
+.swap {
+    position: relative;
+    width: 100%;
 }
 .playSong2 {
     display: inline-flex;
@@ -79,7 +81,6 @@ html {
     margin-right: 5px;
 }
 .playSong2 h5 {
-    font-weight: lighter;
     margin: auto;
     margin-left: 0;
     transition: 1s ease;
@@ -152,14 +153,15 @@ html {
 }
 .logo {
     width: 100%;
+    height: 20%;
 }
 .logo img {
     width: 5%;
 }
 .textAbout {
+    margin: auto;
+    margin-right: 5%;
     height: 70%;
-    margin-left: 12%;
-    align-self: center;
 }
 
 .dusan {
@@ -174,10 +176,37 @@ html {
 h6 {
     letter-spacing: 0.8px;
 }
+/*   /text intro */
+
 .intro {
     position: absolute;
-    bottom: 0%;
-    left: 5%;
+    top: 15%;
+    left: 11%;
+}
+
+.introt h5 {
+    font-weight: bold;
+
+}
+.introt h1 {
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+.introt {
+    position: relative;
+   
+    transition: 2s;
+}
+
+.introt > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffff;
+    pointer-events: none;
 }
 section {
     height: 100vh;
@@ -196,21 +225,15 @@ section {
 .scrollDiv a h6 {
     letter-spacing: 3px;
 }
-.leftText {
-    margin-right: 10%;
-    position: relative;
+.scrollDiv2 {
+position: absolute;
+bottom: 10%;
+left: 12%;
+height: 100px;
 }
-.rightText {
-    position: relative;
-}
-.donji {
-    position: absolute;
-    bottom: 0;
-}
-.swap {
-    position: relative;
-    width: 100%;
-}
+
+
+
 #btn-stop {
     height: 20%;
     align-self: center;
@@ -369,132 +392,65 @@ svg {
         background-position: 200% center;
     }
 }
-
-/*   /text intro */
-.introt {
+.red3 {
+    background-image: url("../images/all/slikasklek.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-    font-size: 140px;
-    color: transparent;
-    font-family: "Cambay", sans-serif;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    transition: 2s;
+  /*   -moz-box-shadow: inset 0 0 105px -20px #0072bee6;
+    -webkit-box-shadow: inset 0 0 105px -20px #0072bee6;
+    box-shadow: inset 0 0 105px -20px #0072bee6;
+} */
 }
-
-.introt > div {
+.slide3{
+    position: relative;
+    width: 100%;
+    height: 80%;
+}
+.leftText {
+    opacity:1;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #ffff;
-    pointer-events: none;
+    right: 8%;
+    top: 7%;
+    letter-spacing: 0.72px;
+
+  }
+  .rightText {
+      opacity: 0;
+      position: absolute;
+      right: 8%;
+      top: 7%;
+      letter-spacing: 0.72px;
+
+  }
+  .toggleText {
+    display: flex;
+    width: 21%;
+    position: absolute;
+    left: 11%;
+    top: 13%;
+    flex-wrap: wrap;
+  }
+  .training h1{
+      font-size: 80px;
+      font-weight: 900;
+}
+.training {
+    width: 100%;
+    text-align: right;
 }
 
-.introt:hover > div:nth-child(1) {
-    -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
-    mask-image: linear-gradient(black 25%, transparent 25%);
-    animation: deconstructed1 5s ease;
+.rehab{
+      font-size: 60px;
+      color:#B2B2B2;
+      width: 100%;
+      font-weight: 900;
+      line-height: 1;
 }
-
-.introt:hover > div:nth-child(2) {
-    -webkit-mask-image: linear-gradient(
-        transparent 25%,
-        black 25%,
-        black 50%,
-        transparent 50%
-    );
-    mask-image: linear-gradient(
-        transparent 25%,
-        black 25%,
-        black 50%,
-        transparent 50%
-    );
-    animation: deconstructed2 5s ease;
+.toggleText h5 {
+      
 }
-
-.introt:hover > div:nth-child(3) {
-    -webkit-mask-image: linear-gradient(
-        transparent 50%,
-        black 50%,
-        black 75%,
-        transparent 75%
-    );
-    mask-image: linear-gradient(
-        transparent 50%,
-        black 50%,
-        black 75%,
-        transparent 75%
-    );
-    animation: deconstructed3 5s ease;
-}
-
-.introt:hover > div:nth-child(4) {
-    -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
-    mask-image: linear-gradient(transparent 75%, black 75%);
-    animation: deconstructed4 5s ease;
-}
-
-@keyframes deconstructed1 {
-    0% {
-        transform: translateX(0%);
-    }
-    26% {
-        transform: translateX(100%);
-    }
-    83% {
-        transform: translateX(-0.1%);
-    }
-    100% {
-        transform: translateX(-120%);
-    }
-}
-
-@keyframes deconstructed2 {
-    0% {
-        transform: translateX(0.5%);
-    }
-    24% {
-        transform: translateX(100%);
-    }
-    82% {
-        transform: translateX(-0.2%);
-    }
-    100% {
-        transform: translateX(-125%);
-    }
-}
-
-@keyframes deconstructed3 {
-    0% {
-        transform: translateX(0%);
-    }
-    22% {
-        transform: translateX(100%);
-    }
-    81% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-130%);
-    }
-}
-
-@keyframes deconstructed4 {
-    0% {
-        transform: translateX(0%);
-    }
-    20% {
-        transform: translateX(100%);
-    }
-    80% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-135%);
-    }
-}
-
 /*   SWUP TRANZICIJE
  */
 /*  .transition-fade {
@@ -645,8 +601,4 @@ html.is-animating .transition-wipe {
     }
 }
  */
-
-.textAbout h5 {
-    font-weight: bold;
-}
 
