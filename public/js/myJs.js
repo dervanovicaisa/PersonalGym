@@ -1,12 +1,40 @@
-/* const swup = new Swup(); // only this line when included with script tag
- */
-AOS.init();
-var i = 0;
+
+window.onclick = (e) =>
+{
+  e.preventDefault();
+  scrollTo(e.target.href.split('#')[1]);
+};
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainSections = document.querySelectorAll("main section");
+
+let lastId;
+let cur = [];
+window.addEventListener("scroll", event => {
+    let fromTop = window.scrollY;
+  
+    mainNavLinks.forEach(link => {
+      let section = document.querySelector(link.hash);
+  
+      if (
+        section.offsetTop <= fromTop &&
+        section.offsetTop + section.offsetHeight > fromTop
+      ) {
+        link.classList.add("current");
+      } else {
+        link.classList.remove("current");
+      }
+    });
+  });
+
+AOS.init(); 
+
+///////////////////////// ///////////////////////////////PLAY SONG //smooth scroll
+/* var i = 0;
 var images = [];
-var time = 150;
+var time = 150; */
 
 // Image List
-images[0] = "/images/login/1.jpg";
+/* images[0] = "/images/login/1.jpg";
 images[1] = "/images/login/2.jpg";
 images[2] = "/images/login/3.jpg";
 images[3] = "/images/login/4.jpg";
@@ -17,42 +45,88 @@ images[7] = "/images/login/8.jpg";
 images[8] = "/images/login/9.jpg";
 images[9] = "/images/login/10.jpg";
 images[10] = "/images/login/11.jpg";
-images[11] = "/images/login/1.jpg";
+images[11] = "/images/login/1.jpg"; */
 
 // Change Image
-function changeImg() {
+/* function changeImg() {
     console.log(i);
     document.slide.src = images[i];
 
-    // Check If Index Is Under Max
     if (i < images.length - 1) {
-        // Add 1 to Index
         i++;
     } else {
-        // Reset Back To O
-        /*         location.href = "https://www.google.co.in";
-         */
+                 location.href = "https://www.google.co.in";
+         
     }
 
-    // Run function every x seconds
     setTimeout("changeImg()", time);
-} /////////////////////////
+} */ $(
+    document
+).ready(function() {
+    // Add smooth scrolling to all links
+    $("a").on("click", function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-///////////////////////////////PLAY SONG
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top
+                },
+                800,
+                function() {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
+    });
+});
+
+/*PRELAZ NA 2 STRANU
+ $(".btn_nav").click(function() {
+    // animate content
+    $("body").addClass("animate_content");
+    $(".swup")
+        .fadeOut(100)
+        .delay(2800)
+        .fadeIn();
+});
 
 
+// on click show page after 1500ms
+$(".home_link").click(function() {
+    setTimeout(function() {
+        $(".home").addClass("fadeIn");
+    }, 1500);
+
+    setTimeout(function() {
+        location.href = "/j";
+    }, 1600);
+});
+
+$(document).ready(function() {
+    console.log("ready!");
+    $("jstrana").addClass("reanimate_content");
+}); */
 // Create an instance of wave surfer with its configuration
 var Spectrum = WaveSurfer.create({
-  container: "#audio-spectrum",
-  progressColor: 'hsla(200, 100%, 30%, 0.5)',
-  cursorColor: '#fff',
-  fillParent: true,
-  barWidth: 3
+    container: "#audio-spectrum",
+    progressColor: "hsla(200, 100%, 30%, 0.5)",
+    cursorColor: "#fff",
+    fillParent: true,
+    barWidth: 3
 });
 $(document).ready(function() {
     var state = "paused";
-    $('#pause').on('click', function() {
-        if(state == 'paused') {
+    $("#pause").on("click", function() {
+        if (state == "paused") {
             state = "playing";
             console.log("pustilo se");
             Spectrum.play();
@@ -61,7 +135,6 @@ $(document).ready(function() {
             $("#circle").attr("class", "");
             $("#from_play_to_pause")[0].beginElement();
         } else {
-  
             state = "paused";
             console.log("zaustavilo se");
             Spectrum.stop();
@@ -95,33 +168,3 @@ Spectrum.load("/images/video/elderbrook-numb.mp3");
     },
     false
 ); */
-
-
-//smooth scroll
-$(document).ready(function() {
-    // Add smooth scrolling to all links
-    $("a").on("click", function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-            // Prevent default anchor click behavior
-            event.preventDefault();
-
-            // Store hash
-            var hash = this.hash;
-
-            // Using jQuery's animate() method to add smooth page scroll
-            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-            $("html, body").animate(
-                {
-                    scrollTop: $(hash).offset().top
-                },
-                800,
-                function() {
-                    // Add hash (#) to URL when done scrolling (default click behavior)
-                    window.location.hash = hash;
-                }
-            );
-        } // End if
-    });
-});
-

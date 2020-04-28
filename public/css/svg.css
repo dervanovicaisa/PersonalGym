@@ -1,0 +1,54 @@
+nav {
+    position: fixed;
+    width: 80px;
+    height: 100vh;
+    left: 0px;
+    bottom: 0px;
+    z-index: 5;
+}
+
+nav ul {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    list-style-type: none;
+    padding-top: 20px;
+}
+nav ul li {
+    height: 50px;
+    z-index: 7;
+}
+nav ul li a.current {
+    background: black;
+}
+nav ul li a svg.current path {
+    d: path("M8,2 L2,8");
+}
+path {
+    transition: fill 0.9s ease;
+}
+.navb path {
+    fill: grey;
+}
+.navb:hover path {
+    d: path(   "M 10.000 15.000   L 17.071 17.071  L 15.000 10.000  L 17.071 2.929  L 10.000 5.000  L 2.929 2.929  L 5.000 10.000  L 2.929 17.071  L 10.000 15.000  z"  ) !important;
+}
+.current path {
+    fill: #a5a5a5;
+    transform: rotate(180deg);
+    transform-origin: center;
+    transform-box: fill-box;
+    d: path( " M 10.000 15.000   L 18.660 15.000   L 14.330 7.500   L 10.000 0.000   L 5.670 7.500   L 1.340 15.000   L 10.000 15.000"   ) !important;
+}
+nav ul::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 58%;
+    top: 0;
+    bottom: 0;
+    border: 1px solid;
+    border-color: grey;
+}

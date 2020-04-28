@@ -1,9 +1,48 @@
 @extends('layouts.main')
 
 @section('content')
+<main id="swup">
+<nav>
+
+<ul>
+
+    <li><a href="#section1"> <svg height="40" width="40" class="navb">
+
+        <path 
+              d="
+                 M 10, 10
+                 m -8, 0
+                 a 8,8 0 1,0 16,0
+                 a 8,8 0 1,0 -16,0
+                 "
+              />
+    </svg></a></li>
+    <li><a href="#section2">  <svg height="40" width="40" class="navb">
+    <path 
+              d="
+                 M 10, 10
+                 m -8, 0
+                 a 8,8 0 1,0 16,0
+                 a 8,8 0 1,0 -16,0
+                 "
+              />
+    </svg></a></li>
+    <li><a href="#section3">   <svg height="40" width="40" class="navb">
+
+    <path 
+              d="
+                 M 10, 10
+                 m -8, 0
+                 a 8,8 0 1,0 16,0
+                 a 8,8 0 1,0 -16,0
+                 "
+              />
+</svg></a></li>
+  </ul>
+</nav>
 
 <section class="hero-image" id="section1">
-  <div class="hero-overlay" onclick="changeImg()"></div>
+  <div class="hero-overlay" ></div>
   <img class="logoImage" src="/images/logos/Logo-DR.svg" />
   <div class="playSong1 red">
     <div class="swap">
@@ -17,8 +56,8 @@
       <div class="playSong2" id="textSong">
       <svg width="104" height="104" id='pause'>
     <circle id="circle" cx="51" cy="51" r="50" stroke-dasharray="314" stroke-dashoffset="0" style="stroke-width:2px;stroke:white;" class="play"/>
-    <line id='line1' x1="38" y1="30" x2="38" y2="70" style="stroke-width:4px;stroke:white;stroke-linecap: round;" />
-    <path id='line2' d="M 38 30 L 70 50 L 38 70" rx="10" ry="10" style="stroke-width:4px;stroke:white;fill:white;stroke-linejoin: round;stroke-linecap: round;">
+    <line id='line1' x1="38" y1="30" x2="38" y2="70" style="stroke-width:4px;stroke:#60BFFF;stroke-linecap: round;" />
+    <path id='line2' d="M 38 30 L 70 50 L 38 70" rx="10" ry="10" style="stroke-width:4px;stroke:#60BFFF;fill:#60BFFF;stroke-linejoin: round;stroke-linecap: round;">
         <animate
             attributeName="d"
             dur="300ms"
@@ -50,7 +89,7 @@
       </svg>
     
 
-        <h4 class="wrapper" id="play">Play my spiritual song</h4>
+        <h5 class="wrapper" id="play">Play my spiritual song</h5>
        
       </div>
     </div>
@@ -59,7 +98,7 @@
     <img class="runningLogo" src="/images/logos/Profile-icon-sport.svg" />
     <div class="text">
       <h3>Dusan Radulovic</h3>
-      <h4>PERSONAL TRAINER</h4>
+      <h5>PERSONAL TRAINER</h5>
     </div>
   </div>
   <div class="scrollDiv">
@@ -67,15 +106,17 @@
 <span class="mouse-icon">
 <span class="mouse-wheel"></span>
 </span>
+<h5>Scroll down</h5>
+
 </a>
    
   </div>
 </section>
-<section class="row  red2" id="section2">
+<section class="row  red2 hero-image" id="section2">
 
   <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
-  <div class="col-7 textAbout" data-aos="fade-right">
-    <h6>About/ The Trainer/ The Coach</h6><br>
+  <div class="col-7 textAbout">
+    <h5>About/ The Trainer/ The Coach</h5><br>
     <h6>
       As a kid i started playing Football .
       Over the years I wanted to get stronger, faster, better. So i
@@ -126,12 +167,13 @@ INTRO
   <div>INTRO</div>
 </div>
   </div>
-  <div class="col-4 dusan" data-aos="zoom-in"> <img src="/images/all/Intro-Dusan-slika.png" alt="" /></div>
+  <div class="col-4 dusan" data-aos="zoom-in" > <img src="/images/all/Intro-Dusan-slika.png" alt="" /></div>
   <div class="scrollDiv">
   <a href="#section3" class="mouse smoothscroll">
 <span class="mouse-icon">
 <span class="mouse-wheel"></span>
 </span>
+<h5>Scroll down</h5>
     </a>
   </div>
 
@@ -142,7 +184,7 @@ INTRO
 <section class="row red3 justify-content-center" id="section3">
   <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
   <div class="row justify-content-center">
-    <div class="col-4 leftText" data-aos="fade-right">
+    <div class="col-4 leftText" >
       <h6>
         Let's go /Let's get you <br>CLOSER TO THE EDGE <br> With your <br>Lifestyle /
         Lifestyle giuide/ DR Training<br> Intro DR Training i na kraju ulazak u
@@ -177,7 +219,7 @@ INTRO
         </h1>
       </div>
     </div>
-    <div class="col-4 rightText" data-aos="fade-left">
+    <div class="col-4 rightText" >
       <h6>
         About/ The Trainer/ The Coach<br><br> As a kid i started playing Football .
         Over the years I wanted to get stronger, faster, better. So i
@@ -219,8 +261,22 @@ INTRO
     </div>
   </div>
   <div class="row justify-content-center">
+<!--   <a href="/j"> <span> Pogledaj detaljnije</span>    </a>
+ -->
+ <!-- <div id="home">
 
 
+      <h1>Page2</h1>
+
+      <button class="btn_nav home_link">Page2</button>
+
+  </div> -->
   </div>
 </section>
+</main>
+   
+
+<!--
+ <div class="transition-wipe overlay"></div>
+ -->
 @endsection
