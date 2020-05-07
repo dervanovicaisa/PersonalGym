@@ -3,8 +3,19 @@ html {
     height: 100%;
     font-family: "Raleway", sans-serif;
     margin: 0;
+    scroll-behavior: smooth;
+}
+a {
+    color: #7ee0ff;
+}
+svg {
+    margin: 0px auto;
+    display: block;
+    margin-right: 5px;
 }
 
+/* Section 1
+ */
 .hero-image {
     background-image: url("../images/login/1.jpg");
 
@@ -14,46 +25,18 @@ html {
     position: relative;
 }
 .hero-overlay {
-    background-color: rgba(22, 43, 87, 0.9);
-    z-index: 2;
+/*     background-color: rgba(22, 43, 87, 0.9);
+ */    z-index: 2;
     cursor: pointer;
-    border: 1px solid #001137;
-    -moz-box-shadow: inset 0 0 5px 1px #001137;
-    -webkit-box-shadow: inset 0 0 5px 1px #001137;
-    box-shadow: inset 0 0 120px 65px #001137;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: transparent radial-gradient(closest-side at 50% 50%, #1D3E85D9 0%, #0D2A6BE6 100%) 0% 0% no-repeat padding-box; 
+       height: 100%;
     position: relative;
+    opacity: 0.5;
 }
-
-.red2 {
-    background-image: url("../images/login/4.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  /*   -moz-box-shadow: inset 0 0 105px -20px #0072bee6;
-    -webkit-box-shadow:inset 0 0 105px -20px #0072bee6;
-    box-shadow: inset 0 0 105px -20px #0072bee6; */
-    position: relative;
-}
-
-
 .txtInitials {
     color: white;
 }
-.logoImage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 15%;
-    padding: 3%;
-    border-radius: 178px;
-}
+
 .red {
     color: white;
     z-index: 2;
@@ -98,8 +81,8 @@ html {
     display: flex;
 }
 .txtInitials1 img {
-    width: 20%;
-    margin-left: auto;
+    width: 12%;
+        margin-left: auto;
     margin-right: 25px;
 }
 
@@ -109,14 +92,18 @@ html {
 }
 .txtInitials h4 {
     margin-top: 2px;
-    color: #60bfff;
+    color: #7ee0ff;
     letter-spacing: 3px;
 }
 .text {
     margin-right: 0;
 }
-.text h5 {
-    color: #60bfff;
+.text h3 {
+    letter-spacing: 0.84px;
+}
+.text h6 {
+    color: #7ee0ff;
+    letter-spacing: 5.28px;
 }
 .playButton {
     border-radius: 50%;
@@ -175,89 +162,6 @@ html {
 
 h6 {
     letter-spacing: 0.8px;
-}
-/*   /text intro */
-
-.intro {
-    position: absolute;
-    top: 15%;
-    left: 11%;
-}
-
-.introt h5 {
-    font-weight: bold;
-
-}
-.introt h1 {
-    font-size: 90px;
-    font-weight: 900;
-    letter-spacing: -0.02em;
-}
-.introt {
-    position: relative;
-   
-    transition: 2s;
-}
-
-.introt > div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: #ffff;
-    pointer-events: none;
-}
-section {
-    height: 100vh;
-    width: 100%;
-    box-sizing: border-box;
-    color: white;
-}
-.scrollDiv {
-    position: absolute;
-    bottom: 2%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    width: 20%;
-}
-.scrollDiv a h6 {
-    letter-spacing: 3px;
-}
-.scrollDiv2 {
-position: absolute;
-bottom: 10%;
-left: 12%;
-height: 100px;
-}
-
-
-
-#btn-stop {
-    height: 20%;
-    align-self: center;
-}
-/* Animacija play button */
-svg {
-    margin: 0px auto;
-    display: block;
-    margin-right: 5px;
-}
-
-#pause:hover #circle {
-    transition: stroke-dashoffset 1s ease-in;
-    stroke-dashoffset: 0;
-    fill: none;
-}
-
-#circle {
-    transition: stroke-dashoffset 300ms ease-in;
-    stroke-dashoffset: 0;
-    fill: none;
-}
-#circle.play {
-    stroke-dashoffset: 314;
 }
 
 /* srednji skrol */
@@ -342,22 +246,6 @@ svg {
         opacity: 0;
     }
 }
-
-/* scrollbar */
-::-webkit-scrollbar {
-    width: 7px;
-    background: transparent;
-}
-::-webkit-scrollbar-track {
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    background: #070404;
-}
-::-webkit-scrollbar-thumb {
-    background: #353e4e;
-    border-radius: 5px;
-}
-
 /* text play song */
 
 .wrapper {
@@ -392,64 +280,171 @@ svg {
         background-position: 200% center;
     }
 }
-.red3 {
-    background-image: url("../images/all/slikasklek.png");
+/* Section 2
+ */
+.red2 {
+
+    background-image: url("../images/login/4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  /*   -moz-box-shadow: inset 0 0 105px -20px #0072bee6;
+    /*   -moz-box-shadow: inset 0 0 105px -20px #0072bee6;
+    -webkit-box-shadow:inset 0 0 105px -20px #0072bee6;
+    box-shadow: inset 0 0 105px -20px #0072bee6; */
+}
+.red2-overlay {
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #1C80C58C 100%) 0% 0% no-repeat padding-box;
+            height: 100%;
+        position: relative;
+        z-index: 2;
+        width: 100vw; 
+        opacity: 0.5;
+    }
+ 
+/*   /text intro */
+
+.intro {
+    position: absolute;
+    top: 15%;
+    left: 11%;
+}
+
+.introt h5 {
+    font-weight: bold;
+}
+.introt h1 {
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+.introt {
+    position: relative;
+
+    transition: 2s;
+}
+
+.introt > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffff;
+    pointer-events: none;
+}
+section {
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
+}
+.scrollDiv {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 20%;
+}
+.scrollDiv a h6 {
+    letter-spacing: 3px;
+}
+.scrollDiv2 {
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+    height: 100px;
+}
+
+#btn-stop {
+    height: 20%;
+    align-self: center;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #070404;
+}
+::-webkit-scrollbar-thumb {
+    background: #353e4e;
+    border-radius: 5px;
+}
+
+/* Section 3
+ */
+.red3 {
+    background-image: url("../images/all/3slide.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /*   -moz-box-shadow: inset 0 0 105px -20px #0072bee6;
     -webkit-box-shadow: inset 0 0 105px -20px #0072bee6;
     box-shadow: inset 0 0 105px -20px #0072bee6;
 } */
 }
-.slide3{
+.slide3 {
     position: relative;
     width: 100%;
     height: 80%;
 }
 .leftText {
-    opacity:1;
+    opacity: 1;
     position: absolute;
     right: 8%;
     top: 7%;
     letter-spacing: 0.72px;
-
-  }
-  .rightText {
-      opacity: 0;
-      position: absolute;
-      right: 8%;
-      top: 7%;
-      letter-spacing: 0.72px;
-
-  }
-  .toggleText {
+    transition: 0.3s ease;
+}
+.rightText {
+    opacity: 0;
+    position: absolute;
+    right: 8%;
+    top: 7%;
+    letter-spacing: 0.72px;
+    transition: 0.3s ease;
+}
+.toggleText {
     display: flex;
     width: 21%;
     position: absolute;
     left: 11%;
     top: 13%;
     flex-wrap: wrap;
-  }
-  .training h1{
-      font-size: 80px;
-      font-weight: 900;
+    z-index: 10;
+}
+.training h1 {
+    font-size: 80px;
+    font-weight: 900;
 }
 .training {
     width: 100%;
     text-align: right;
+    transition: 0.3s ease;
 }
 
-.rehab{
-      font-size: 60px;
-      color:#B2B2B2;
-      width: 100%;
-      font-weight: 900;
-      line-height: 1;
+.rehab {
+    font-size: 60px;
+    color: #b2b2b2;
+    width: 100%;
+    font-weight: 900;
+    line-height: 1;
+    transition: 0.3s ease;
+    margin-bottom: 0px;
 }
+
 .toggleText h5 {
-      
+}
+.rightText :last-child {
+    font-weight: bold;
+    font-size: 24px;
 }
 /*   SWUP TRANZICIJE
  */
@@ -601,4 +596,3 @@ html.is-animating .transition-wipe {
     }
 }
  */
-

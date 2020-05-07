@@ -1,5 +1,4 @@
-
-AOS.init(); 
+AOS.init();
 
 ///////////////////////// ///////////////////////////////PLAY SONG //smooth scroll
 /* var i = 0;
@@ -33,12 +32,44 @@ images[11] = "/images/login/1.jpg"; */
     }
 
     setTimeout("changeImg()", time);
-} */ $(
-    document
-).ready(function() {
+} */
+let mainNavLinks = document.querySelectorAll("nav ul li a");
+let mainSections = document.querySelectorAll("main section");
+
+let lastId;
+let cur = [];
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach(link => {
+    let section = document.querySelector(link.hash);
+
+    if (
+      section.offsetTop - 20 <= fromTop  && 
+      section.offsetTop + section.offsetHeight -20 > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+$(document).ready(function() {
     // Add smooth scrolling to all links
     $("a").on("click", function(event) {
         // Make sure this.hash has a value before overriding default behavior
+
         if (this.hash !== "") {
             // Prevent default anchor click behavior
             event.preventDefault();
@@ -56,6 +87,8 @@ images[11] = "/images/login/1.jpg"; */
                 function() {
                     // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
+                    /*                     $("a").addClass("current");
+                     */
                 }
             );
         } // End if
@@ -122,6 +155,18 @@ $(document).ready(function() {
 // Load the audio file from your domain !
 Spectrum.load("/images/video/elderbrook-numb.mp3");
 
+$("#train").click(function() {
+    $(".leftText").css({ opacity: "1" });
+    $(".rightText").css({ opacity: "0" });
+    $("#train").css({ "font-size": "80px", color: "white" });
+    $("#reha").css({ "font-size": "60px", color: "#B2B2B2" });
+});
+$("#reha").click(function() {
+    $(".leftText").css({ opacity: "0" });
+    $(".rightText").css({ opacity: "1" });
+    $("#train").css({ "font-size": "60px", color: "#B2B2B2" });
+    $("#reha").css({ "font-size": "80px", color: "white" });
+});
 // If you want a responsive mode (so when the user resizes the window)
 // the spectrum will be still playable
 /* window.addEventListener(
@@ -141,30 +186,3 @@ Spectrum.load("/images/video/elderbrook-numb.mp3");
     },
     false
 ); */
-
-/* window.onclick = (e) =>
-{
-  e.preventDefault();
-  scrollTo(e.target.href.split('#')[1]);
-}; */
-let mainNavLinks = document.querySelectorAll("nav ul li a");
-let mainSections = document.querySelectorAll("main section");
-
-let lastId;
-let cur = [];
-window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
-  
-    mainNavLinks.forEach(link => {
-      let section = document.querySelector(link.hash);
-  
-      if (
-        section.offsetTop <= fromTop &&
-        section.offsetTop + section.offsetHeight > fromTop
-      ) {
-        link.classList.add("current");
-      } else {
-        link.classList.remove("current");
-      }
-    });
-  });
