@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="description" content="Personal fitness">
+    <meta name="keywords" content="fitness,gym">
+    <meta name="author" content="QQRIQ PeacefulNoob">
     <title>Personal Gym</title>
 
     <!-- Fonts -->

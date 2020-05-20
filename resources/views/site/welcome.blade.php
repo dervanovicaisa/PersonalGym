@@ -33,6 +33,14 @@
      a 4.5,4.5 0 1,0 -9,0
      " />
           </svg></a></li>
+      <li><a href="#section-4"> <svg height="40" width="40" class="navb">
+            <path d="
+      M 4.5, 4.5
+     m -8, 0
+     a 4.5,4.5 0 1,0 9,0
+     a 4.5,4.5 0 1,0 -9,0
+     " />
+          </svg></a></li>
 
     </ul>
   </nav>
@@ -60,7 +68,7 @@
         </div>
       </div>
     </div>
-    <div class="txtInitials1 red">    
+    <div class="txtInitials1 red">
 
       <img class="runningLogo" src="/images/logos/Logo-DR.svg" />
       <div class="text">
@@ -80,8 +88,8 @@
     </div>
   </section>
   <section class="row  red2 hero-image" id="section-2">
-  <div class="red2-overlay"></div>
-
+    <!--     <div class="red2-overlay"></div>
+ -->
     <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
     <div class="row w-50 float-left intro">
       <div class="introt">
@@ -134,7 +142,7 @@
     </div>
 
     <div class="scrollDiv2">
-    
+
       <a href="#section-3" class="">
 
         <svg class="seeNext" xmlns="http://www.w3.org/2000/svg" width="82" height="59.5" viewBox="0 0 82 59.5">
@@ -206,7 +214,7 @@
       </div>
     </div>
     <div class="scrollDiv2">
-      <a href="#section-1" class="">
+      <a href="#section-4" class="">
 
         <svg class="seeNext" xmlns="http://www.w3.org/2000/svg" width="82" height="59.5" viewBox="0 0 82 59.5">
 
@@ -234,6 +242,60 @@
   </div> -->
     </div>
   </section>
+
+
+  <section class="row  red4 hero-image" id="section-4">
+    <!--     <div class="red2-overlay"></div>
+ -->
+    <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
+    <div class="row w-50 float-left intro">
+      <div class="introt4">
+        <h1>NUTR</h1>
+        <h1 class="h14"> ITION</h1>
+        <h5>Neki podnaslov vezano za hranu.</h5>
+
+      </div>
+    </div>
+    <div class="col-7 textAbout">
+      <h6>
+        Your nutrition is the most important aspect of your health. Remember, you are what you eat. Your results are going to depend on your nutrition.
+        You want to lose weight? You want to burn that extra body fat and get lean? You want to gain lean muscle? You never took eating and foods seriously?
+
+      </h6><br>
+      <h6>
+        I have good news for you! You don't need a diet (keto, paleo, intermittent fasting...) to achieve your goals because that just won't do it if you are looking for long-term results.
+        This is reality. There is no easy and fast way for you to achieve your goals and stay healthy at the same time. Being healthy should be your number one priority - nothing is more important than your health.
+        Once you understand what a healthy nutrition lifestyle is, combined with the right training and recovery, we are going to create an individual meal plan for you with the foods
+        you actually like so you can achieve your long-term goals and be healthy!</h6><br>
+      <h6>
+        There is only one diet and meal plan that is right for you and that's the one you can stick to for a lifetime!
+        Now that we got your training and nutrition in check let's skip to the last, but not the least part of your healthy lifestyle. It's time for Recovery! (vizuelni click i idemo na zadnji dio Recovery)
+      </h6>
+
+    </div>
+
+    <div class="scrollDiv2">
+
+      <a href="#section-1" class="">
+
+        <svg class="seeNext" xmlns="http://www.w3.org/2000/svg" width="82" height="59.5" viewBox="0 0 82 59.5">
+
+          <g transform="translate(0 1)">
+            <line class="a prava" y2="28.786" transform="translate(40.5)" />
+            <line class="a" x1="4.493" y1="10.199" transform="translate(36.007 18.587)" />
+            <line class="a" y1="10.199" x2="4.493" transform="translate(40.5 18.587)" /><text class="b" transform="translate(41 54.5)">
+              <tspan x="-40.95" y="0">See next</tspan>
+            </text></g>
+        </svg>
+      </a>
+
+    </div>
+
+
+
+
+  </section>
+
 </main>
 
 

@@ -1,4 +1,38 @@
 AOS.init();
+
+///////////////////////// ///////////////////////////////PLAY SONG //smooth scroll
+/* var i = 0;
+var images = [];
+var time = 150; */
+
+// Image List
+/* images[0] = "/images/login/1.jpg";
+images[1] = "/images/login/2.jpg";
+images[2] = "/images/login/3.jpg";
+images[3] = "/images/login/4.jpg";
+images[4] = "/images/login/5.jpg";
+images[5] = "/images/login/6.jpg";
+images[6] = "/images/login/7.jpg";
+images[7] = "/images/login/8.jpg";
+images[8] = "/images/login/9.jpg";
+images[9] = "/images/login/10.jpg";
+images[10] = "/images/login/11.jpg";
+images[11] = "/images/login/1.jpg"; */
+
+// Change Image
+/* function changeImg() {
+    console.log(i);
+    document.slide.src = images[i];
+
+    if (i < images.length - 1) {
+        i++;
+    } else {
+                 location.href = "https://www.google.co.in";
+         
+    }
+
+    setTimeout("changeImg()", time);
+} */
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
@@ -53,13 +87,40 @@ $(document).ready(function() {
                 function() {
                     // Add hash (#) to URL when done scrolling (default click behavior)
                     window.location.hash = hash;
-                   
+                    /*                     $("a").addClass("current");
+                     */
                 }
             );
         } // End if
     });
 });
 
+/*PRELAZ NA 2 STRANU
+ $(".btn_nav").click(function() {
+    // animate content
+    $("body").addClass("animate_content");
+    $(".swup")
+        .fadeOut(100)
+        .delay(2800)
+        .fadeIn();
+});
+
+
+// on click show page after 1500ms
+$(".home_link").click(function() {
+    setTimeout(function() {
+        $(".home").addClass("fadeIn");
+    }, 1500);
+
+    setTimeout(function() {
+        location.href = "/j";
+    }, 1600);
+});
+
+$(document).ready(function() {
+    console.log("ready!");
+    $("jstrana").addClass("reanimate_content");
+}); */
 // Create an instance of wave surfer with its configuration
 var Spectrum = WaveSurfer.create({
     container: "#audio-spectrum",
@@ -110,13 +171,13 @@ $("#reha").click(function() {
 //Set each section's height equals to the window height
 $("section").height($(window).height());
 /*set the class 'active' to the first element 
-     this will serve as our indicator*/
+   this will serve as our indicator*/
 $("section")
     .first()
     .addClass("active");
 
 /* handle the mousewheel event together with 
-     DOMMouseScroll to work on cross browser */
+   DOMMouseScroll to work on cross browser */
 $(document).on("mousewheel DOMMouseScroll", function(e) {
     e.preventDefault(); //prevent the default mousewheel scrolling
     var active = $("section.active");
@@ -131,11 +192,11 @@ $(document).on("mousewheel DOMMouseScroll", function(e) {
         //check if the next section exist and animate the anchoring
         if (next.length) {
             /*setTimeout is here to prevent the scrolling animation
-                to jump to the topmost or bottom when 
-                the user scrolled very fast.*/
+              to jump to the topmost or bottom when 
+              the user scrolled very fast.*/
             var timer = setTimeout(function() {
                 /* animate the scrollTop by passing 
-                    the elements offset top value */
+                  the elements offset top value */
                 $("body, html").animate(
                     {
                         scrollTop: next.offset().top
@@ -154,8 +215,8 @@ $(document).on("mousewheel DOMMouseScroll", function(e) {
     } else {
         //mousewheel up handler
         /*similar logic to the mousewheel down handler 
-            except that we are animate the anchoring 
-            to the previous sibling element*/
+          except that we are animate the anchoring 
+          to the previous sibling element*/
         prev = active.prev();
 
         if (prev.length) {
