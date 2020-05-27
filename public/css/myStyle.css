@@ -51,7 +51,7 @@ svg {
     left: 2%;
     display: inline-flex;
     width: 25%;
-    z-index: 5;
+    z-index: 101;
 }
 .swap {
     position: relative;
@@ -150,7 +150,7 @@ svg {
 }
 .textAbout {
     margin: auto;
-    margin-right: 5%;
+    margin-right: 10%;
     height: 70%;
 }
 
@@ -191,7 +191,9 @@ h6 {
     -webkit-transition: 0.3s all ease-in-out;
     -o-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
-    margin-bottom: 44%;
+    margin-bottom: 40%;
+    margin-right: auto;
+    margin-left: auto;
 }
 .mouse .mouse-wheel {
     height: 6px;
@@ -303,9 +305,53 @@ h6 {
     position: relative;
     z-index: 2;
     width: 100vw;
-    opacity: 0.5;
+    opacity: 0.2;
+    background-color: black;
 }
-
+.red3-overlay {
+    background: transparent
+        linear-gradient(180deg, #40bad500 0%, #40bad540 100%) 0% 0% no-repeat
+        padding-box;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    opacity: 0.2;
+    background-color: black;
+}
+.red4-overlay {
+    background: transparent
+        linear-gradient(180deg, #ffffff00 0%, #a0ce5a38 100%) 0% 0% no-repeat
+        padding-box;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    opacity: 0.2;
+    background-color: black;
+}
+.red5-overlay {
+    background: transparent
+        linear-gradient(180deg, #ffffff00 0%, #7ee0ff45 100%) 0% 0% no-repeat
+        padding-box;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    opacity: 0.4;
+    background-color: black;
+}
+.red6-overlay {
+    background: transparent
+        linear-gradient(180deg, #ffffff00 0%, #7ee0ff45 100%) 0% 0% no-repeat
+        padding-box;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    opacity: 0.4;
+    background-color: black;
+}
 /*   /text intro */
 
 .intro {
@@ -450,6 +496,7 @@ section {
     font-weight: bold;
     font-size: 24px;
 }
+
 /*   SWUP TRANZICIJE
  */
 /*  .transition-fade {
@@ -639,4 +686,76 @@ html.is-animating .transition-wipe {
     bottom: 0;
     color: #ffff;
     pointer-events: none;
+}
+
+.red5 {
+    background-image: url("../images/all/Recovery-Photo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /*   -moz-box-shadow: inset 0 0 105px -20px #0072bee6;
+    -webkit-box-shadow:inset 0 0 105px -20px #0072bee6;
+    box-shadow: inset 0 0 105px -20px #0072bee6; */
+}
+.content {
+    position: absolute;
+    height: 100%;
+    z-index: 6;
+    width: 100%;
+}
+.red6 {
+    background-image: url("../images/all/red6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /*   -moz-box-shadow: inset 0 0 105px -20px #0072bee6;
+    -webkit-box-shadow:inset 0 0 105px -20px #0072bee6;
+    box-shadow: inset 0 0 105px -20px #0072bee6; */
+}
+
+.introt6 h5 {
+    font-weight: bold;
+}
+.introt6 h1 {
+    font-size: 90px;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+}
+.introt6 :nth-last-child(2) {
+    margin-top: -6% !important;
+}
+.introt6 {
+    position: relative;
+
+    transition: 2s;
+}
+
+.introt6 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #ffff;
+    pointer-events: none;
+}
+.w-35 {
+    width: 31% !important;
+}
+.intro_button button {
+    background-color: transparent;
+    color: white;
+    display: inline;
+    padding: 3% 15%;
+    border: 2px solid white;
+    font-size: 21px;
+    letter-spacing: 2.7px;
+    border-radius: 0px !important;
+}
+
+.intro_button {
+    margin: 8% 0px;
+    width: 70%;
 }

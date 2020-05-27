@@ -4,7 +4,7 @@ nav {
     height: 100vh;
     left: 3%;
     bottom: 0px;
-    z-index: 4;
+    z-index: 100;
 }
 
 nav ul {
@@ -32,37 +32,23 @@ path {
     position: absolute;
 }
 .navb path {
-    fill: white;
-    transform: translate(8px, 0px);
+    fill: #b2b2b2;
+    transform: translate(9px, 0px);
 }
-/* .navb:hover path {
-    d: path(
-        "M 10.000 15.000   L 17.071 17.071  L 15.000 10.000  L 17.071 2.929  L 10.000 5.000  L 2.929 2.929  L 5.000 10.000  L 2.929 17.071  L 10.000 15.000  z"
-    ) !important;
-    transform: translate(-1px, 0px);
-} */
+
 .current path {
     fill: #7ee0ff;
-    transform: rotate(180deg) translate(2.5px, 0px);
+    transform: rotate(180deg) translate(1.5px, 0px);
     transform-origin: center;
     transform-box: fill-box;
-    d: path(" M11.5,0,23,19H0Z") !important;
+    /*     d: path("M11.5,0,23,19H0Z") !important;
+ */
 }
-/* nav ul::before {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: 1;
-    left: 58%;
-    top: 0;
-    bottom: 0;
-    border: 1px solid;
-    border-color: white;
-} */
+
 .prava1 {
     position: fixed;
     height: 100%;
-    transform: translate(0px, -23px);
+    transform: translate(1px, -23px);
 }
 .prava1 .a {
     transform: translate(9px, 0.5px);
@@ -80,11 +66,11 @@ path {
     }
 }
 .seeNext:hover {
-    animation: moveText 0.8s linear ;
+    animation: moveText 0.8s linear;
     animation-fill-mode: forwards;
 }
-.seeNext:hover .prava {
-    transform: translate(41px, -10px);
+.seeNext:hover g .prava {
+    transform: translate3d(41px, -10px, 0px) scale(1);
 }
 .a {
     fill: none;
@@ -102,6 +88,7 @@ path {
 }
 .prava {
     transition: 0.5s ease;
+    transform: translate3d(41px, 0px, 1px) scale(1);
 }
 
 #line1 {
