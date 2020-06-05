@@ -20,6 +20,7 @@
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
+        "fullpage.js": "^3.0.8",
         "swup": "^2.0.9"
     }
 }

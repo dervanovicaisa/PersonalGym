@@ -22,3 +22,7 @@ Route::get('/home', function () {
 Route::get('/j', function () {
     return view('site.j');
 });
+
+Route::get('/test', function () {
+    return view('site.test');
+});

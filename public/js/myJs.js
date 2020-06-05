@@ -1,4 +1,8 @@
 AOS.init();
+$(document).ready(function() {
+    new fullpage("#fullpage", {});
+});
+
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 let mainSections = document.querySelectorAll("main section");
 
@@ -65,6 +69,28 @@ $(document).ready(function() {
     });
 });
 
+$("#train").click(function() {
+    $(".leftText").css({ opacity: "1" });
+    $(".rightText").css({ opacity: "0" });
+    $("#train").css({ "font-size": "80px", color: "white" });
+    $("#reha").css({ "font-size": "60px", color: "#B2B2B2" });
+});
+$("#reha").click(function() {
+    $(".leftText").css({ opacity: "0" });
+    $(".rightText").css({ opacity: "1" });
+    $("#train").css({ "font-size": "60px", color: "#B2B2B2" });
+    $("#reha").css({ "font-size": "80px", color: "white" });
+});
+
+//Set each section's height equals to the window height
+$("section").height($(window).height());
+/*set the class 'active' to the first element 
+     this will serve as our indicator*/
+$("section")
+    .first()
+    .addClass("active");
+
+///////////////////
 // Create an instance of wave surfer with its configuration
 var Spectrum = WaveSurfer.create({
     container: "#audio-spectrum",
@@ -98,24 +124,3 @@ $(document).ready(function() {
 });
 // Load the audio file from your domain !
 Spectrum.load("/images/video/elderbrook-numb.mp3");
-
-$("#train").click(function() {
-    $(".leftText").css({ opacity: "1" });
-    $(".rightText").css({ opacity: "0" });
-    $("#train").css({ "font-size": "80px", color: "white" });
-    $("#reha").css({ "font-size": "60px", color: "#B2B2B2" });
-});
-$("#reha").click(function() {
-    $(".leftText").css({ opacity: "0" });
-    $(".rightText").css({ opacity: "1" });
-    $("#train").css({ "font-size": "60px", color: "#B2B2B2" });
-    $("#reha").css({ "font-size": "80px", color: "white" });
-});
-
-//Set each section's height equals to the window height
-$("section").height($(window).height());
-/*set the class 'active' to the first element 
-     this will serve as our indicator*/
-$("section")
-    .first()
-    .addClass("active");
