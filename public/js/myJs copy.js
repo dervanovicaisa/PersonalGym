@@ -204,3 +204,108 @@ $(document).on("mousewheel DOMMouseScroll", function(e) {
         }
     }
 });
+
+$("#train").click(function() {
+    $(".leftText").css({ opacity: "1" });
+    $(".rightText").css({ opacity: "0" });
+    $("#train").css({ "font-size": "80px", color: "white" });
+    $("#reha").css({ "font-size": "60px", color: "#B2B2B2" });
+});
+$("#reha").click(function() {
+    $(".leftText").css({ opacity: "0" });
+    $(".rightText").css({ opacity: "1" });
+    $("#train").css({ "font-size": "60px", color: "#B2B2B2" });
+    $("#reha").css({ "font-size": "80px", color: "white" });
+});
+
+//Set each section's height equals to the window height
+$("section").height($(window).height());
+/*set the class 'active' to the first element 
+     this will serve as our indicator*/
+$("section")
+    .first()
+    .addClass("active");
+///FORMA////////////////////////////////////////////////////////////////
+
+$("input[type=radio][name=yes_no]").change(function() {
+    $("#validationCustom10").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom10").css({ "pointer-events": "all" });
+    }
+});
+$("input[type=radio][name=yes_no1]").change(function() {
+    $("#validationCustom11").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no1']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom11").css({ "pointer-events": "all" });
+    }
+});
+$("input[type=radio][name=yes_no2]").change(function() {
+    $("#validationCustom12").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no2']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom12").css({ "pointer-events": "all" });
+    }
+});
+$("input[type=radio][name=yes_no3]").change(function() {
+    $("#validationCustom13").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no3']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom13").css({ "pointer-events": "all" });
+    }
+});
+$("input[type=radio][name=yes_no4]").change(function() {
+    $("#validationCustom14").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no4']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom14").css({ "pointer-events": "all" });
+    }
+});
+$("input[type=radio][name=yes_no5]").change(function() {
+    $("#validationCustom15").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no5']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom15").css({ "pointer-events": "all" });
+    }
+});
+$("input[type=radio][name=yes_no6]").change(function() {
+    $("#validationCustom16").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no6']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom16").css({ "pointer-events": "all" });
+    }
+});
+$("input[type=radio][name=yes_no7]").change(function() {
+    $("#validationCustom17").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no7']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom17").css({ "pointer-events": "all" });
+    }
+});
+$("input[type=radio][name=yes_no8]").change(function() {
+    $("#validationCustom18").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no8']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom18").css({ "pointer-events": "all" });
+    }
+});
+
+$(".language-list > div").on("click", function() {
+    $(".language-list > div").removeClass("current");
+    $(this).addClass("current");
+    $("input").attr("placeholder", $(this).attr("data-title"));
+    currlang = $(this).attr("data-lang");
+    var title = $(".naslov");
+    var yourdata = $(".yourdata");
+    var starter = $(".starter");
+    var opis = $(".opis");
+
+    if (currlang == "en") {
+        title.html("hello");
+    } else if (currlang == "de") {
+        title.html("Gutten tag");
+    } else if (currlang == "rus") {
+        title.html("Cyka blyat");
+    }
+});

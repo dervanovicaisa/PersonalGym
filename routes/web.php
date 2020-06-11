@@ -14,15 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('site.welcome');
+    $invoice_message = '';
+    return view('site.welcome', compact('invoice_message'));
 });
-Route::get('/home', function () {
-    return view('site.helo');
+Route::get('/deu', function () {
+    return view('site.welcome_deu');
 });
-Route::get('/j', function () {
-    return view('site.j');
+Route::get('/form1', function () {
+    return view('site.form1');
 });
-
+Route::get('/form1/deu', function () {
+    return view('site.form1Deu');
+});
 Route::get('/test', function () {
     return view('site.test');
 });
+Route::post('Invoice', [
+    'uses' => 'SendMailController@sendmail',
+    'as' => 'contact.store'
+]);

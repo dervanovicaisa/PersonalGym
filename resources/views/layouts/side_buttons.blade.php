@@ -1,7 +1,7 @@
 <nav>
 
 
-    <ul>
+    <ul >
         <svg height="40" width="40" class="prava1">
             <path class="a" d="M0,0V352" />
         </svg>

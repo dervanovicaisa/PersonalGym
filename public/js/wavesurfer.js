@@ -1,11 +1,10 @@
-alert("asas");
-
 // Create an instance of wave surfer with its configuration
 var Spectrum = WaveSurfer.create({
     container: "#audio-spectrum",
     progressColor: "hsla(200, 100%, 30%, 0.5)",
-    cursorColor: "#fff",
+    cursorColor: "#9aacc1",
     fillParent: true,
+    waveColor: "#ffff",
     barWidth: 3
 });
 $(document).ready(function() {
@@ -13,7 +12,6 @@ $(document).ready(function() {
     $("#pause").on("click", function() {
         if (state == "paused") {
             state = "playing";
-            console.log("pustilo se");
             Spectrum.play();
             document.getElementById("waveform").style.opacity = "1";
             document.getElementById("play").style.opacity = "0";
@@ -21,7 +19,6 @@ $(document).ready(function() {
             $("#from_play_to_pause")[0].beginElement();
         } else {
             state = "paused";
-            console.log("zaustavilo se");
             Spectrum.stop();
             document.getElementById("play").style.opacity = "1";
             document.getElementById("waveform").style.opacity = "0";

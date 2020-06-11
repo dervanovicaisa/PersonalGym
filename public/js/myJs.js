@@ -1,7 +1,4 @@
 AOS.init();
-$(document).ready(function() {
-    new fullpage("#fullpage", {});
-});
 
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 let mainSections = document.querySelectorAll("main section");
@@ -9,14 +6,6 @@ let mainSections = document.querySelectorAll("main section");
 let lastId;
 let cur = [];
 
-// This should probably be throttled.
-// Especially because it triggers during smooth scrolling.
-// https://lodash.com/docs/4.17.10#throttle
-// You could do like...
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
-// Only not doing it here to keep this Pen dependency-free.
 var pathD = "M11.5,0,23,19H0Z";
 var loptica = "    M 4.5, 4.5 m -8, 0 a 4.5,4.5 0 1,0 9,0 a 4.5,4.5 0 1,0 -9,0";
 
@@ -89,38 +78,154 @@ $("section").height($(window).height());
 $("section")
     .first()
     .addClass("active");
+///FORMA////////////////////////////////////////////////////////////////
 
-///////////////////
-// Create an instance of wave surfer with its configuration
-var Spectrum = WaveSurfer.create({
-    container: "#audio-spectrum",
-    progressColor: "hsla(200, 100%, 30%, 0.5)",
-    cursorColor: "#fff",
-    fillParent: true,
-    barWidth: 3
+$("input[type=radio][name=yes_no]").change(function() {
+    $("#validationCustom10").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom10").css({ "pointer-events": "visible" });
+    }
 });
-$(document).ready(function() {
-    var state = "paused";
-    $("#pause").on("click", function() {
-        if (state == "paused") {
-            state = "playing";
-            console.log("pustilo se");
-            Spectrum.play();
-            document.getElementById("waveform").style.opacity = "1";
-            document.getElementById("play").style.opacity = "0";
-            $("#circle").attr("class", "");
-            $("#from_play_to_pause")[0].beginElement();
-        } else {
-            state = "paused";
-            console.log("zaustavilo se");
-            Spectrum.stop();
-            document.getElementById("play").style.opacity = "1";
-            document.getElementById("waveform").style.opacity = "0";
+$("input[type=radio][name=yes_no1]").change(function() {
+    $("#validationCustom11").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no1']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom11").css({ "pointer-events": "visible" });
+    }
+});
+$("input[type=radio][name=yes_no2]").change(function() {
+    $("#validationCustom12").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no2']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom12").css({ "pointer-events": "visible" });
+    }
+});
+$("input[type=radio][name=yes_no3]").change(function() {
+    $("#validationCustom13").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no3']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom13").css({ "pointer-events": "visible" });
+    }
+});
+$("input[type=radio][name=yes_no4]").change(function() {
+    $("#validationCustom14").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no4']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom14").css({ "pointer-events": "visible" });
+    }
+});
+$("input[type=radio][name=yes_no5]").change(function() {
+    $("#validationCustom15").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no5']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom15").css({ "pointer-events": "visible" });
+    }
+});
+$("input[type=radio][name=yes_no6]").change(function() {
+    $("#validationCustom16").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no6']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom16").css({ "pointer-events": "visible" });
+    }
+});
+$("input[type=radio][name=yes_no7]").change(function() {
+    $("#validationCustom17").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no7']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom17").css({ "pointer-events": "visible" });
+    }
+});
+$("input[type=radio][name=yes_no8]").change(function() {
+    $("#validationCustom18").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no8']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom18").css({ "pointer-events": "visible" });
+    }
+});
+$("input[type=radio][name=yes_no9]").change(function() {
+    $("#validationCustom40").css({ "pointer-events": "none" });
+    var radioValue = $("input[name='yes_no9']:checked").val();
+    if (radioValue == "yes") {
+        $("#validationCustom40").css({ "pointer-events": "visible" });
+    }
+});
+//////////////////////////////////////////////////////////////////////////////////////////
+$(".language-list > div").on("click", function() {
+    $(".language-list > div").removeClass("current");
+    $(this).addClass("current");
+});
 
-            $("#circle").attr("class", "play");
-            $("#from_pause_to_play")[0].beginElement();
-        }
+/* $(document).ready(function() {
+    $("#next").click(function() {
+        $("#section_form").toggle(
+            function() {
+                $("#section_form").css({ width: "0" });
+                $("#section_form").css({ opacity: "0" });
+                $("#section_form").css({ height: "0" });
+            },
+            function() {
+                $("#section_2_form").css({ width: "100%" });
+                $("#section_2_form").css({ opacity: "1" });
+                $("#section_2_form").css({ height: "auto" });
+            }
+        );
+    });
+    $("#prev").click(function() {
+        $("#section_form").toggle(
+            function() {
+                $("#section_form").css({ width: "100%" });
+                $("#section_form").css({ opacity: "1" });
+                $("#section_form").css({ height: "auto" });
+            },
+            function() {
+                $("#section_2_form").css({ width: "0" });
+                $("#section_2_form").css({ opacity: "0" });
+                $("#section_2_form").css({ height: "0" });
+            }
+        );
+    });
+}); */
+$(document).ready(function() {
+    $("#next").click(function() {
+        $("#section_form").toggle(
+            function() {
+                $("#section_form").css({ display: "none" });
+            },
+            function() {
+                $("#section_2_form").css({ display: "block" });
+            }
+        );
+    });
+    $("#prev").click(function() {
+        $("#section_2_form").toggle(
+            function() {
+                $("#section_2_form").css({ display: "none" });
+            },
+            function() {
+                $("#section_form").css({ display: "block" });
+            }
+        );
+    });
+
+    $("#next1").click(function() {
+        $("#section_2_form").toggle(
+            function() {
+                $("#section_2_form").css({ display: "none" });
+            },
+            function() {
+                $("#section_3_form").css({ display: "block" });
+            }
+        );
+    });
+    $("#prev1").click(function() {
+        $("#section_3_form").toggle(
+            function() {
+                $("#section_3_form").css({ display: "none" });
+            },
+            function() {
+                $("#section_2_form").css({ display: "block" });
+            }
+        );
     });
 });
-// Load the audio file from your domain !
-Spectrum.load("/images/video/elderbrook-numb.mp3");

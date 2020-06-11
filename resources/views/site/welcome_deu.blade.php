@@ -1,14 +1,12 @@
 @extends('layouts.main')
 @section('content')
 
+<main id="swup">
   @include('layouts.side_buttons')
   @include('components.languages')
 
-  @if($invoice_message)
-    @include('components.messages')
-  @endif
-  <div  id="fullpage" >
-    <div class="section">
+    <div id="fullpage" class="fp">
+        <div class="section">
             <section class="hero-image" id="section-1">
               <div class="hero-overlay"></div>
               <div class="playSong1 red">
@@ -52,7 +50,7 @@
               </div>
             </section>
           </div>
-          <div class="section">
+        <div class="section">
             <section class="row  red2 hero-image" id="section-2">
 
               <div class="red2-overlay"></div>
@@ -122,8 +120,8 @@
 
               </div>
             </section>
-          </div>
-          <div class="section">
+         </div>
+        <div class="section">
             <section class="row red3 justify-content-center" id="section-3">
               <div class="red3-overlay"></div>
               <div class="content">
@@ -188,8 +186,8 @@
 
               </div>
             </section>
-          </div>
-          <div class="section">
+         </div>
+        <div class="section">
             <section class="row  red4 hero-image" id="section-4">
               <div class="red4-overlay"></div>
               <div class="content">
@@ -237,8 +235,8 @@
 
 
             </section>
-          </div>
-          <div class="section">
+         </div>
+        <div class="section">
             <section class="row  red5 hero-image" id="section-5">
               <div class="red5-overlay"></div>
               <div class="content">
@@ -286,8 +284,8 @@
 
               </div>
             </section>
-          </div>
-          <div class="section">
+         </div>
+        <div class="section">
             <section class="row  red6 hero-image" id="section-6">
               <div class="red6-overlay"></div>
               <div class="content">
@@ -301,7 +299,7 @@
 
                   </div>
                   <div class="intro_button">
-                    <form action="/form1">
+                    <form action="/form1/deu">
                       <button type="submit" type="submit">Fill out questionnaire </button>
                   </form>
                   
@@ -309,17 +307,18 @@
                   </div>
                 </div>
 
+
+
+
               </div>
             </section>
-          </div>
-
-</div>
-
+      </div>
+    
+  </div>
+  </div>
+</main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-{{-- <script type="text/javascript" src="/js/jquery.onepage-scroll.js"></script>
- --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.7/wavesurfer.min.js"></script>
-
 <script src="/js/wavesurfer.js"></script>
 
 

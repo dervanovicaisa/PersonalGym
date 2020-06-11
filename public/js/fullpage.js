@@ -1053,55 +1053,7 @@
             }
         }
 
-        /**
-        * Creates a vertical navigation bar.
-        */
-        function addVerticalNavigation(){
-            var navigation = document.createElement('div');
-            navigation.setAttribute('id', SECTION_NAV);
-
-            var divUl = document.createElement('ul');
-            navigation.appendChild(divUl);
-
-            appendTo(navigation, $body);
-            var nav = $(SECTION_NAV_SEL)[0];
-
-            addClass(nav, 'fp-' + options.navigationPosition);
-
-            if(options.showActiveTooltip){
-                addClass(nav, SHOW_ACTIVE_TOOLTIP);
-            }
-
-            var li = '';
-
-            for (var i = 0; i < $(SECTION_SEL).length; i++) {
-                var link = '';
-                if (options.anchors.length) {
-                    link = options.anchors[i];
-                }
-
-                li += '<li><a href="#' + link + '"><span class="fp-sr-only">' + getBulletLinkName(i, 'Section') + '</span><span></span></a>';
-
-                // Only add tooltip if needed (defined by user)
-                var tooltip = options.navigationTooltips[i];
-
-                if (typeof tooltip !== 'undefined' && tooltip !== '') {
-                    li += '<div class="' + SECTION_NAV_TOOLTIP + ' fp-' + options.navigationPosition + '">' + tooltip + '</div>';
-                }
-
-                li += '</li>';
-            }
-            $('ul', nav)[0].innerHTML = li;
-
-            //centering it vertically
-            css($(SECTION_NAV_SEL), {'margin-top': '-' + ($(SECTION_NAV_SEL)[0].offsetHeight/2) + 'px'});
-
-            //activating the current active section
-
-            var bullet = $('li', $(SECTION_NAV_SEL)[0])[index($(SECTION_ACTIVE_SEL)[0], SECTION_SEL)];
-            addClass($('a', bullet), ACTIVE);
-        }
-
+      
         /**
         * Gets the name for screen readers for a section/slide navigation bullet.
         */
