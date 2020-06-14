@@ -22,6 +22,10 @@
     
 
 <body id="body">
+    
+  <div id="loader-wrapper">
+    <img id="loader" src="/images/logos/Logo-DR.svg " /> 
+  </div>
     @yield('content')
 </body>
 

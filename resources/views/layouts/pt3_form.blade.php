@@ -1,4 +1,4 @@
-<div id="section_3_form">
+<div id="section_3_form" class="my-5">
     <h1 class="blue m-3 yourdata">DESSERT😘  </h1>
     <h1 class="blue m-3 yourdata"> YOUR EXPERIENCE IN FITNESS AND SPORTS  </h1>
 
@@ -83,7 +83,7 @@
           </div> 
 
     <div class="intro_button submit">
-        <button type="submit" type="submit">Subscribe Now</button>
+        <button type="submit" type="submit">Send My Answers</button>
     </div>
 </div>
   </div>

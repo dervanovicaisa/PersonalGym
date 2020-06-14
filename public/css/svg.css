@@ -106,7 +106,7 @@ path {
 /* Animacija play button */
 
 #pause:hover #circle {
-    transition: stroke-dashoffset 1s ease-in;
+    transition: stroke-dashoffset 0.5s ease-in;
     stroke-dashoffset: 0;
     fill: none;
 }

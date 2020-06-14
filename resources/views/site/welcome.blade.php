@@ -36,7 +36,7 @@
 
                 <img class="runningLogo" src="/images/logos/Logo-DR.svg" />
                 <div class="text">
-                  <h3>Dusan Radulovic</h3>
+                  <h3>Dušan Radulović</h3>
                   <h6>PERSONAL TRAINER</h6>
                 </div>
               </div>
@@ -130,11 +130,13 @@
 
                 <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
                 <div class="toggleText">
+                  <div>
                   <div class="training">
                     <h1 id="train"> TRAINING</h1>
                   </div>
 
                   <h1 id="reha" class="rehab"> REHAB</h1>
+                </div>
                   <h5> Closer to the edge</h5>
                 </div>
                 <div class="row slide3">

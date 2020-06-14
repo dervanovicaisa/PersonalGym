@@ -1,6 +1,6 @@
 <form action="{{route('contact.store')}}" method="post" class="needs-validation" novalidate>
     {{ csrf_field() }}
-   <div id="section_form">
+   <div id="section_form" class="my-5">
     <h1 class="blue m-3 yourdata">Your Data</h1>
 
     <div class="form-row">
@@ -13,13 +13,13 @@
             Please provide a valid name.
           </div>
       </div>
-      <div class="col-md-5 ml-auto m-3">
+      <div class="col-md-5 ml-auto mt-5 m-3">
         <input type="text" class="form-control" id="validationCustom02" placeholder="E-Mail" name = "email" required>
         <div class="valid-feedback">
           Looks good!
         </div>
         <div class="invalid-feedback">
-            Please provide a valid E-Mail.
+            Please provide a valid email.
           </div>
       </div>
     </div>

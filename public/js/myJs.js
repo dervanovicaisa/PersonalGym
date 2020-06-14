@@ -1,4 +1,12 @@
 AOS.init();
+/* //////////////////////lodaer///////////
+ */
+$(document).ready(function() {
+    setTimeout(function() {
+        $("body").addClass("loaded");
+    }, 200);
+});
+
 
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 let mainSections = document.querySelectorAll("main section");

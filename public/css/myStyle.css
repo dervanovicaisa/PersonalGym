@@ -69,7 +69,7 @@ svg {
 .playSong2 h5 {
     margin: auto;
     margin-left: 0;
-    transition: 1s ease;
+    transition: 0.5s ease;
 }
 .txtInitials {
     position: absolute;
@@ -104,6 +104,8 @@ svg {
 }
 .text h3 {
     letter-spacing: 0.84px;
+    font-weight: 700;
+    margin-bottom: -5px;
 }
 .text h6 {
     color: #7ee0ff;
@@ -252,6 +254,9 @@ h6 {
         opacity: 0;
     }
 }
+.smoothscroll:hover {
+    color: white;
+}
 /* text play song */
 
 .wrapper {
@@ -306,7 +311,7 @@ h6 {
     position: relative;
     z-index: 2;
     width: 100vw;
-    opacity: 0.2;
+    opacity: 0.5;
     background-color: black;
 }
 .red3-overlay {
@@ -472,9 +477,13 @@ section {
     z-index: 10;
     cursor: pointer;
 }
+.toggleText > div {
+    height: 170px;
+}
 .training h1 {
     font-size: 80px;
     font-weight: 900;
+    transition: 0.3s ease;
 }
 .training {
     width: 100%;
@@ -721,7 +730,7 @@ html.is-animating .transition-wipe {
     font-weight: bold;
 }
 .introt6 h1 {
-    font-size: 90px;
+    font-size: 75px;
     font-weight: 900;
     letter-spacing: -0.02em;
 }
@@ -730,8 +739,8 @@ html.is-animating .transition-wipe {
 }
 .introt6 {
     position: relative;
-
-    transition: 2s;
+    margin-left: 15px;
+    transition: 1s;
 }
 
 .introt6 > div {
@@ -756,7 +765,10 @@ html.is-animating .transition-wipe {
     letter-spacing: 2.7px;
     border-radius: 0px !important;
 }
-
+.intro_button button:hover {
+    background-color: white !important;
+    color: #797f87 !important;
+}
 .intro_button {
     margin: 8% 0px;
     width: 70%;
@@ -770,7 +782,7 @@ html.is-animating .transition-wipe {
     cursor: pointer;
 }
 .logoKraj img {
-    width: 120px;
+    width: 100px;
 }
 .red7 .contentE {
     z-index: 112;
@@ -864,7 +876,7 @@ input[type="radio"] {
 }
 .switch label {
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgb(110, 109, 118);
     width: 60px;
     line-height: 43px;
     transition: all 0.2s ease;
@@ -879,7 +891,7 @@ label[for="yes5"],
 label[for="yes6"],
 label[for="yes7"],
 label[for="yes8"],
-label[for="yes9"]  {
+label[for="yes9"] {
     position: absolute;
     left: 0px;
     height: 20px;
@@ -893,7 +905,7 @@ label[for="no5"],
 label[for="no6"],
 label[for="no7"],
 label[for="no8"],
-label[for="no9"]  {
+label[for="no9"] {
     position: absolute;
     right: 0px;
 }
@@ -1025,16 +1037,20 @@ label[for="no9"]  {
     z-index: 113;
 }
 .language-list > div {
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
     border: 3px solid white;
-    background: white;
+    color: white;
+    background: transparent;
     display: inline-block;
     margin: 10px 5px;
     overflow: hidden;
     transition: 0.4s all;
     cursor: pointer;
+}
+.language-list > div > p {
+    margin: 3px 4px;
 }
 .language-list > div.current {
     border: 3px solid #ee2b5c;
@@ -1060,36 +1076,76 @@ label[for="no9"]  {
     transition: 0.5s ease;
 }
 .next_button {
-    width: 10%;
-    margin-left: auto;
-    margin-bottom: 5%;
+    position: fixed;
+    bottom: 15%;
+    right: 6%;
 }
 .next_button button {
     background-color: transparent;
     color: white;
     display: inline;
-    padding: 3% 15%;
+    padding: 5% 20%;
     border: 2px solid white;
     font-size: 21px;
     letter-spacing: 2.7px;
     border-radius: 0px !important;
 }
 .prev_button {
-    width: 10%;
-    margin-right: auto;
-    margin-bottom: 5%;
+    position: fixed;
+    bottom: 15%;
+    left: 6%;
 }
 .prev_button button {
     background-color: transparent;
     color: white;
     display: inline;
-    padding: 3% 15%;
+    padding: 5% 20%;
     border: 2px solid white;
     font-size: 21px;
     letter-spacing: 2.7px;
     border-radius: 0px !important;
 }
+.prev_button button:hover {
+    background-color: white;
+    color: #253355;
+}
+.next_button button:hover {
+    background-color: white;
+    color: #253355;
+}
 .submit {
     width: 30% !important;
     margin: auto !important;
+}
+/* .submit button:hover {
+    background-color: white;
+    color: #253355;
+} */
+/* /////////////////////////loader/////////////////////
+ */
+#loader-wrapper {
+    position: fixed;
+    background-color: #253355;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    overflow: hidden;
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.loaded #loader {
+    opacity: 0;
+    transition: all 0.9s ease-out;
+}
+.loaded #loader-wrapper {
+    visibility: hidden; /* Chrome, Opera 15+, Safari 3.1+ */ /* IE 9 */
+    transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
+    transition: all 0.6s 1s ease-out;
 }

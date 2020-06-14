@@ -17,7 +17,7 @@
                       
                           </div>
                        </div>
-                       <div class="row m-3">
+                       <div class="row m-3 my-5">
                       <p class="opis">Dear friends! As you have came to this point, I suppose that we have a problem we need to solve. As we have a together's goal that needs to be achieved,
                         
                         I have prepared important questions so we could be able to get started as soon as possible. Earlier we start, sooner we past the goal.</p>
