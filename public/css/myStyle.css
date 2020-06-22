@@ -1,6 +1,5 @@
 body,
 html {
-    height: 100%;
     font-family: "Raleway", sans-serif;
     margin: 0;
     scroll-behavior: smooth;
@@ -138,7 +137,6 @@ svg {
     opacity: 0;
     transition: 1s ease;
     display: flex;
-    left: 25%;
 }
 .background {
     width: 100%;
@@ -152,8 +150,7 @@ svg {
     width: 5%;
 }
 .textAbout {
-    margin: auto;
-    margin-right: 10%;
+    margin-left: auto;
     height: 70%;
 }
 
@@ -454,7 +451,6 @@ section {
 .leftText {
     opacity: 1;
     position: absolute;
-    right: 8%;
     top: 7%;
     letter-spacing: 0.72px;
     transition: 0.3s ease;
@@ -462,7 +458,6 @@ section {
 .rightText {
     opacity: 0;
     position: absolute;
-    right: 8%;
     top: 7%;
     letter-spacing: 0.72px;
     transition: 0.3s ease;
@@ -481,7 +476,6 @@ section {
     height: 170px;
 }
 .training h1 {
-    font-size: 80px;
     font-weight: 900;
     transition: 0.3s ease;
 }
@@ -492,7 +486,6 @@ section {
 }
 
 .rehab {
-    font-size: 60px;
     color: #b2b2b2;
     width: 100%;
     font-weight: 900;
@@ -506,6 +499,9 @@ section {
 .rightText :last-child {
     font-weight: bold;
     font-size: 24px;
+}
+.leftText :last-child {
+    font-weight: bold;
 }
 
 /*   SWUP TRANZICIJE
@@ -676,7 +672,6 @@ html.is-animating .transition-wipe {
     font-weight: bold;
 }
 .introt4 h1 {
-    font-size: 80px;
     font-weight: 900;
     letter-spacing: -0.02em;
     padding: 0;
@@ -730,7 +725,6 @@ html.is-animating .transition-wipe {
     font-weight: bold;
 }
 .introt6 h1 {
-    font-size: 75px;
     font-weight: 900;
     letter-spacing: -0.02em;
 }
@@ -763,7 +757,9 @@ html.is-animating .transition-wipe {
     border: 2px solid white;
     font-size: 21px;
     letter-spacing: 2.7px;
+    transition: 0.3s ease;
     border-radius: 0px !important;
+    cursor: pointer;
 }
 .intro_button button:hover {
     background-color: white !important;
@@ -771,11 +767,13 @@ html.is-animating .transition-wipe {
 }
 .intro_button {
     margin: 8% 0px;
-    width: 70%;
 }
 .red7 {
     z-index: 112;
     background: #253355 0% 0% no-repeat padding-box;
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
 }
 .logoKraj {
     width: auto;
@@ -1015,6 +1013,10 @@ label[for="no9"] {
     background-color: transparent;
     color: white;
 }
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: #253355;
+}
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .noselect {
@@ -1089,6 +1091,8 @@ label[for="no9"] {
     font-size: 21px;
     letter-spacing: 2.7px;
     border-radius: 0px !important;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 .prev_button {
     position: fixed;
@@ -1104,6 +1108,8 @@ label[for="no9"] {
     font-size: 21px;
     letter-spacing: 2.7px;
     border-radius: 0px !important;
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 .prev_button button:hover {
     background-color: white;
@@ -1115,7 +1121,8 @@ label[for="no9"] {
 }
 .submit {
     width: 30% !important;
-    margin: auto !important;
+    /*     margin: auto !important;
+ */
 }
 /* .submit button:hover {
     background-color: white;
@@ -1149,3 +1156,21 @@ label[for="no9"] {
     transform: translateX(-100%); /* Firefox 16+, IE 10+, Opera */
     transition: all 0.6s 1s ease-out;
 }
+.progress-message {
+    text-align: center;
+}
+.progress-wrap {
+    width: 100%;
+}
+#progress {
+    width: 100%;
+}
+/* #section_2_form{
+    transform: 0.4s ease;
+}
+#section_form{
+    transform: 0.4s ease;
+}
+#section_3_form{
+    transform: 0.4s ease;
+} */

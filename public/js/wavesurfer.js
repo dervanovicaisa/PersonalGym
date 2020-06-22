@@ -5,7 +5,8 @@ var Spectrum = WaveSurfer.create({
     cursorColor: "#9aacc1",
     fillParent: true,
     waveColor: "#ffff",
-    barWidth: 3
+    barWidth: 3,
+    barHeight: 1
 });
 $(document).ready(function() {
     var state = "paused";

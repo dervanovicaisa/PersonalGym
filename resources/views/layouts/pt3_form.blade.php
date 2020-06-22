@@ -1,5 +1,5 @@
 <div id="section_3_form" class="my-5">
-    <h1 class="blue m-3 yourdata">DESSERT😘  </h1>
+    <h1 class="blue m-3 yourdata">DESSERT </h1>
     <h1 class="blue m-3 yourdata"> YOUR EXPERIENCE IN FITNESS AND SPORTS  </h1>
 
 
@@ -67,9 +67,8 @@
                 Please provide a valid answer.
               </div>
           </div>
-      
             <div class="col-md-5 ml-auto m-3">
-              <input type="text" class="form-control" id="validationCustom47" placeholder="Date" name = "date" required>
+              <input type="date" class="form-control" id="date"  name = "date" disabled >
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -82,7 +81,7 @@
             <button id="prev1" >Prev</button>
           </div> 
 
-    <div class="intro_button submit">
+    <div class="intro_button submit mx-auto my-5">
         <button type="submit" type="submit">Send My Answers</button>
     </div>
 </div>
@@ -90,6 +89,18 @@
   </form>
   
   <script>
+    let d = new Date();
+let datestring =
+    d.getFullYear().toString() +
+    "-" +
+    (d.getMonth() + 1).toString().padStart(2, "0") +
+    "-" +
+    d
+        .getDate()
+        .toString()
+        .padStart(2, "0");
+document.getElementById("date").value = datestring;
+
   // Example starter JavaScript for disabling form submissions if there are invalid fields
   (function() {
     'use strict';

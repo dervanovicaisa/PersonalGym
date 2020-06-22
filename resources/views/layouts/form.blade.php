@@ -1,6 +1,6 @@
-<form action="{{route('contact.store')}}" method="post" class="needs-validation" novalidate>
+<form action="{{route('contact.store')}}" method="post" class="needs-validation" id="invoice_form" novalidate>
     {{ csrf_field() }}
-   <div id="section_form" class="my-5">
+   <div id="section_form" class="mb-5">
     <h1 class="blue m-3 yourdata">Your Data</h1>
 
     <div class="form-row">
@@ -14,7 +14,7 @@
           </div>
       </div>
       <div class="col-md-5 ml-auto mt-5 m-3">
-        <input type="text" class="form-control" id="validationCustom02" placeholder="E-Mail" name = "email" required>
+        <input type="email" class="form-control" id="validationCustom02" placeholder="E-Mail" name = "email" required>
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="col-md-5 ml-auto m-3">
-        <input type="text" class="form-control" id="validationCustom04" placeholder="Date of birth" name = "dob" required>
+        <input type="date" class="form-control" id="validationCustom04" placeholder="Date of birth" name = "dob" required>
         <div class="valid-feedback">
           Looks good!
         </div>
@@ -45,7 +45,7 @@
     </div>
     <div class="form-row">
         <div class="col-md-5 m-3">
-          <input type="text" class="form-control" id="validationCustom05" placeholder="Telephone"  name = "tel" required>
+          <input type="number" class="form-control" id="validationCustom05" placeholder="Telephone"  name = "tel" required>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -54,7 +54,7 @@
             </div>
         </div>
         <div class="col-md-5  ml-auto m-3">
-          <input type="text" class="form-control" id="validationCustom06" placeholder="Height" name = "height" required>
+          <input type="number" class="form-control" id="validationCustom06" placeholder="Height" name = "height" required>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -74,7 +74,7 @@
           </div>
         </div>
         <div class="col-md-5 ml-auto m-3">
-          <input type="text" class="form-control" id="validationCustom08" placeholder="Weight" name = "weight" required>
+          <input type="number" class="form-control" id="validationCustom08" placeholder="Weight" name = "weight" required>
           <div class="valid-feedback">
             Looks good!
           </div>
@@ -102,7 +102,7 @@
                 <label for="yes_no_radio">Are you currently under medical treatment?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no" id="yes" value="yes" ></input>
-                    <input type="radio" name="yes_no" id="no" value="no" checked></input>
+                    <input type="radio" name="yes_no" id="no" value="no"  checked></input>
                     <div class="switch">
                         <label for="yes">YES</label>
                         <label for="no">NO</label>

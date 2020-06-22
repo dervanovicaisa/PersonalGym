@@ -7,7 +7,7 @@
     <meta name="description" content="Personal fitness">
     <meta name="keywords" content="fitness,gym">
     <meta name="author" content="QQRIQ PeacefulNoob">
-    <title>Personal Gym</title>
+    <title>Dušan Radulović</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -16,7 +16,10 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/svg.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
     <link rel="stylesheet" href="/css/myStyle.css"> 
+
 {{--     <link rel="stylesheet" type="text/css" href="/css/fullpage.css" />
  --}}
     
@@ -32,6 +35,8 @@
 <!-- SCript -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+{{-- <script type="text/javascript" src="/js/jquery.onepage-scroll.js"></script>
+ --}}
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/js/myJs.js"></script>
 

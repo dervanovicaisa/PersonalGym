@@ -14,15 +14,16 @@ nav ul {
     transform: translateY(-50%);
     list-style-type: none;
     padding-top: 20px;
+    width: 90px;
 }
 nav ul li {
     height: 50px;
     z-index: 7;
 }
-nav ul li a.current {
+nav ul li a.active {
     background: black;
 }
-nav ul li a svg.current path {
+nav ul li a svg .active path {
     d: path("M8,2 L2,8");
 }
 path {
@@ -36,12 +37,12 @@ path {
     transform: translate(9px, 0px);
 }
 
-.current path {
+.onepage-pagination li .active path {
     fill: #7ee0ff;
     transform: rotate(180deg) translate(1.5px, 0px);
     transform-origin: center;
     transform-box: fill-box;
-    /*     d: path("M11.5,0,23,19H0Z") !important;
+    /*         d: path("M11.5,0,23,19H0Z") !important;
  */
 }
 
@@ -120,4 +121,10 @@ path {
 }
 #circle.play {
     stroke-dashoffset: 314;
+}
+.buttonUl {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
 }

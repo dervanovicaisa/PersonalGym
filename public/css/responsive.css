@@ -1,0 +1,95 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    h6,
+    .h6 {
+        font-size: 0.85rem;
+    }
+    .training h1 {
+        font-size: 60px;
+    }
+    .rehab {
+        font-size: 45px;
+    }
+    .introt4 h1 {
+        font-size: 60px;
+    }
+    h5,
+    .h5 {
+        font-size: 1rem;
+    }
+    .introt6 h1 {
+        font-size: 55px;
+    }
+    .intro_button {
+        width: 100%;
+    }
+    #waveform {
+        left: 45%;
+    }
+    .leftText :last-child {
+        font-size: 18px;
+    }
+    .rightText {
+        right: 2%;
+    }
+    .leftText {
+        right: 2%;
+    }
+    .textAbout {
+        margin-right: 5%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+    h6,
+    .h6 {
+        font-size: 1rem;
+    }
+    .training h1 {
+        font-size: 80px;
+    }
+    .rehab {
+        font-size: 65px;
+    }
+    .introt4 h1 {
+        font-size: 80px;
+    }
+    h5,
+    .h5 {
+        font-size: 1.25rem;
+    }
+    .introt6 h1 {
+        font-size: 75px;
+    }
+    .intro_button {
+        width: 70%;
+    }
+    #waveform {
+        left: 25%;
+    }
+    .leftText :last-child {
+        font-size: 24px;
+    }
+    .rightText {
+        right: 8%;
+    }
+    .leftText {
+        right: 8%;
+    }
+    .textAbout {
+        margin-right: 10%;
+    }
+}

@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('content')
+<link href='/css/onepage-scroll.css' rel='stylesheet' type='text/css'>
 
   @include('layouts.side_buttons')
   @include('components.languages')
@@ -7,8 +8,7 @@
   @if($invoice_message)
     @include('components.messages')
   @endif
-  <div  id="fullpage" >
-    <div class="section">
+  <div class="main" id="fullpage" >
             <section class="hero-image" id="section-1">
               <div class="hero-overlay"></div>
               <div class="playSong1 red">
@@ -18,7 +18,7 @@
                   </div>
                   <div class="playSong2" id="textSong">
                     <svg width="104" height="104" id='pause'>
-                      <circle id="circle" cx="51" cy="51" r="50" stroke-dasharray="314" stroke-dashoffset="0" class="play" />
+                      <circle id="circle" cx="51" cy="51" r="43" stroke-dasharray="314" stroke-dashoffset="0" class="play" />
                       <line id='line1' x1="38" y1="30" x2="38" y2="70" />
                       <path id='line2' d="M 38 30 L 70 50 L 38 70" rx="10" ry="10">
                         <animate attributeName="d" dur="300ms" from="M 66 30 L 66 50 L 66 70" to="M 38 30 L 70 50 L 38 70" begin="indefinite" fill="freeze" id="from_pause_to_play" />
@@ -41,18 +41,17 @@
                 </div>
               </div>
               <div class="scrollDiv">
-                <a href="#section-2" class="mouse smoothscroll">
+                <ul class="onepage-pagination buttonUl"><li>  <a  data-index="2" href="#2" class="mouse smoothscroll">
                   <span class="mouse-icon">
                     <span class="mouse-wheel"></span>
                   </span>
                   <h5>Scroll down</h5>
 
-                </a>
+                </a></li></ul>
+              
 
               </div>
             </section>
-          </div>
-          <div class="section">
             <section class="row  red2 hero-image" id="section-2">
 
               <div class="red2-overlay"></div>
@@ -77,9 +76,6 @@
                     player there was a constant need to become faster, so athletic training became a
                     necessity- I trained like an Olympic sprinter. Little did I know how things were about
                     to change.
-
-
-
                   </h6><br>
                   <h6>
                     Full of motivation and will I adopted a morning routine of training on a
@@ -111,19 +107,17 @@
                 </div>
 
                 <div class="scrollDiv2">
-
-                  <a href="#section-3" class="">
+                  <ul class="onepage-pagination buttonUl"><li>
+                  <a data-index="3" href="#3" class="">
                     @include('layouts.see_next')
 
 
                   </a>
-
+                </li></ul>
                 </div>
 
               </div>
             </section>
-          </div>
-          <div class="section">
             <section class="row red3 justify-content-center" id="section-3">
               <div class="red3-overlay"></div>
               <div class="content">
@@ -141,7 +135,7 @@
                 </div>
                 <div class="row slide3">
                   <div class="col-7 leftText">
-                    <h7>
+                    <h6>
                       As a personal trainer (Athletic, Strength & Conditioning Coach) I'm giving your body,
                       mind and soul a unique individual experience that will help you find your purpose,
                       set your goals and achieve them. What doesn't kill you makes you Stronger. I will
@@ -149,8 +143,8 @@
                       you do, every day. Pain is weakness leaving your body. Weakness leaving your body makes
                       you a healthier and stronger individual. Putting your health in the first place in everything
                       we do is going to allow you to build a strong foundation.
-                    </h7> </br> </br>
-                    <h7><b>Remember - nothing beats a strong body </b>,
+                    </h6> </br> </br>
+                    <h6><b>Remember - nothing beats a strong body </b>,
                       mind and soul. We all seek to be happy and satisfied with ourselves. Your guarantee will be your
                       commitment, your biggest motivation will be the results you see in the mirror. You will fail, but
                       you will learn from your mistakes. Not you, not me or anybody is gonna hit as hard as life. But it
@@ -158,40 +152,37 @@
                       much you can take and keep moving forward. That's how winning is done. You and me are gonna get you
                       those extra few reps, that extra mile, that extra pound/kg to get You <b>CLOSER TO THE EDGE</b> and achieve
                       everything you want.
-                    </h7></br></br>
-                    <h7>With your power of will and heart everything is possible. My name is Dušan Radulović.
-                      Let's get started with your training. heart everything is possible. My name is Dušan Radulović. Let's get
-                      started with your training (Neka oznaka click here ili tamo neš vizuelno na klik idemo na sledeći dio trening
-                      pa sve na istu foru na klik iz treninga u ishranu i na kraju u recovery jer
-                      sve to ide zajedno i nmže da funkcioniše jedno bez drugog optimalno)
-                    </h7>
+                    </h6></br></br>
+                    <h6>With your power of will and heart everything is possible. My name is Dušan Radulović.
+                      Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
+                    </h6><br><br>
+                   <h6> Let's get started with your training ! </h6>
 
                   </div>
                   <div class="col-7 rightText">
-                    <h7>
+                    <h6>
                       No matter what kind of injury you are suffering from, with the right balance of physical therapy, nutrition and recovery you are going to
                       overcome it - even gonna be stronger than ever! Injury Rehabilitation is very important to me. An injury changed my life. From my own experience,
                       I know what you are going through.
-                    </h7><br><br>
-                    <h7> I realised I want to help others in their difficult times, guide and support them to come out as WINNER.
-                      I find great joy in helping you overcome an injury and achieve your goals, coming out indestructible!</h7><br><br>
-                    <h7>This is Victory – This is Sparta!</h7>
-                    </h7>
+                    </h6><br><br>
+                    <h6> I realised I want to help others in their difficult times, guide and support them to come out as WINNER.
+                      I find great joy in helping you overcome an injury and achieve your goals, coming out indestructible!</h6><br><br>
+                    <h6>This is Victory – This is Sparta!</h6>
+                    </h6>
 
                   </div>
                 </div>
                       <div class="scrollDiv2">
-                              <a href="#section-4" class="">
+                        <ul class="onepage-pagination buttonUl"><li>
+                              <a data-index="4" href="#4" class="">
                                 @include('layouts.see_next')
                               </a>
-
+                            </li></ul>
                       </div>
 
 
               </div>
             </section>
-          </div>
-          <div class="section">
             <section class="row  red4 hero-image" id="section-4">
               <div class="red4-overlay"></div>
               <div class="content">
@@ -220,18 +211,20 @@
                     you actually like so you can achieve your long-term goals and be healthy!</h6><br>
                   <h6>
                     There is only one diet and meal plan that is right for you and that's the one you can stick to for a lifetime!
-                    Now that we got your training and nutrition in check let's skip to the last, but not the least part of your healthy lifestyle. It's time for Recovery! (vizuelni click i idemo na zadnji dio Recovery)
+                    Now that we got your training and nutrition in check let's skip to the last, but not the least part of your healthy lifestyle. It's time for Recovery!
                   </h6>
 
                 </div>
 
                 <div class="scrollDiv2">
-
-                  <a href="#section-5" class="">
+                  <ul class="onepage-pagination buttonUl"><li>
+                  <a data-index="5" href="#5" class="">
 
                     @include('layouts.see_next')
 
                   </a>
+                </li>
+              </ul>
 
                 </div>
               </div>
@@ -239,8 +232,6 @@
 
 
             </section>
-          </div>
-          <div class="section">
             <section class="row  red5 hero-image" id="section-5">
               <div class="red5-overlay"></div>
               <div class="content">
@@ -275,21 +266,19 @@
                 </div>
 
                 <div class="scrollDiv2">
-
-                  <a href="#section-6" class="">
+                  <ul class="onepage-pagination buttonUl"><li>
+                  <a  data-index="6" href="#6" class="">
 
                     @include('layouts.see_next')
 
                   </a>
-
+                  </li></ul>
                 </div>
 
 
 
               </div>
             </section>
-          </div>
-          <div class="section">
             <section class="row  red6 hero-image" id="section-6">
               <div class="red6-overlay"></div>
               <div class="content">
@@ -313,16 +302,22 @@
 
               </div>
             </section>
-          </div>
 
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-{{-- <script type="text/javascript" src="/js/jquery.onepage-scroll.js"></script>
- --}}
+<script type="text/javascript" src="/js/jquery.onepage-scroll.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.7/wavesurfer.min.js"></script>
 
 <script src="/js/wavesurfer.js"></script>
 
-
+<script>
+    $(".main").onepage_scroll({
+      sectionContainer: "section",
+      responsiveFallback: 600,
+      loop: false
+    });
+  
+</script>
 @endsection
