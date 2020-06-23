@@ -8,9 +8,9 @@ var Spectrum = WaveSurfer.create({
     barWidth: 3,
     barHeight: 1
 });
-$(document).ready(function() {
+$(document).ready(function () {
     var state = "paused";
-    $("#pause").on("click", function() {
+    $("#pause").on("click", function () {
         if (state == "paused") {
             state = "playing";
             Spectrum.play();
@@ -30,4 +30,4 @@ $(document).ready(function() {
     });
 });
 // Load the audio file from your domain !
-Spectrum.load("/images/video/elderbrook-numb.mp3");
+Spectrum.load("/images/video/pjesma.mp3");

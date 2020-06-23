@@ -1,4 +1,4 @@
-<div id="section_2_form" class="my-5">
+<div id="section_2_form" class="my-5"  >
     <h1 class="blue m-3 yourdata">MAIN COURSE </h1>
 
     <div class="form-row">

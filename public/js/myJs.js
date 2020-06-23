@@ -167,63 +167,63 @@ $(document).ready(function() {
 
         if (numValid == 0) {
             progress.attr("value", "6");
-            progressMessage.text("The form, it wants you.");
+            progressMessage.text("6%");
         }
         if (numValid == 1) {
             progress.attr("value", "12");
-            progressMessage.text("There you go, great start!");
+            progressMessage.text("12%");
         }
         if (numValid == 2) {
             progress.attr("value", "18");
-            progressMessage.text("Nothing can stop you now.");
+            progressMessage.text("18%");
         }
         if (numValid == 3) {
             progress.attr("value", "24");
-            progressMessage.text("You're basically a hero, right?");
+            progressMessage.text("24%");
         }
         if (numValid == 4) {
             progress.attr("value", "30");
-            progressMessage.text("They are going to write songs about you.");
+            progressMessage.text("30%");
         }
         if (numValid == 5) {
             progress.attr("value", "36");
-            progressMessage.text("SO CLOSE. PRESS THE THING.");
+            progressMessage.text("36%");
         }
         if (numValid == 6) {
             progress.attr("value", "42");
-            progressMessage.text("The form, it wants you.");
+            progressMessage.text("42%");
         }
         if (numValid == 7) {
             progress.attr("value", "48");
-            progressMessage.text("There you go, great start!");
+            progressMessage.text("48%");
         }
         if (numValid == 8) {
             progress.attr("value", "54");
-            progressMessage.text("Nothing can stop you now.");
+            progressMessage.text("54%");
         }
         if (numValid == 9) {
             progress.attr("value", "60");
-            progressMessage.text("You're basically a hero, right?");
+            progressMessage.text("60%");
         }
         if (numValid == 10) {
             progress.attr("value", "66");
-            progressMessage.text("They are going to write songs about you.");
+            progressMessage.text("66%");
         }
         if (numValid == 11) {
             progress.attr("value", "72");
-            progressMessage.text("SO CLOSE. PRESS THE THING.");
+            progressMessage.text("72%");
         }
         if (numValid == 12) {
             progress.attr("value", "78");
-            progressMessage.text("SO CLOSE. PRESS THE THING.");
+            progressMessage.text("78%");
         }
         if (numValid == 13) {
             progress.attr("value", "84");
-            progressMessage.text("SO CLOSE. PRESS THE THING.");
+            progressMessage.text("84%");
         }
         if (numValid == 14) {
             progress.attr("value", "90");
-            progressMessage.text("SO CLOSE. PRESS THE THING.");
+            progressMessage.text("Success ! Send invoice !");
         }
     });
     ///////////////////////////////////////////////////////////////

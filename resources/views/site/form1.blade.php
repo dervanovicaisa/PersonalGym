@@ -27,7 +27,7 @@
 
                       <div class="progress-wrap">
                         <progress max="100" value="0" id="progress"></progress>
-                            <div class="progress-message" id="progress-message">The form, it wants you.</div>
+                            <div class="progress-message" id="progress-message">Please fill out everything !</div>
                         </div>
                       @include('layouts.form')
                       @include('layouts.pt2_form')

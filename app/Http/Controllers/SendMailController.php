@@ -56,9 +56,9 @@ class SendMailController extends Controller
 
         try {
             Mail::send('components.mail', $data, function ($message) use ($data, $pdf) {
-                $message->to('filuro.apt@gmail.com', 'Filuro Apt ')
+                $message->to('dusan.training13@gmail.com', 'Dusan Radulovic WEBSITE INVOICE')
                     ->subject("Personal Trainig INVOICE")
-                    ->attachData($pdf->output(), "invoice.pdf");
+                    ->attachData($pdf->output(), $data["last_name"]." ".  $data["first_name"]."-"."invoice.pdf");
             });
         } catch (JWTException $exception) {
             $this->serverstatuscode = "0";

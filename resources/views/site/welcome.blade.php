@@ -156,7 +156,7 @@
                     <h6>With your power of will and heart everything is possible. My name is Dušan Radulović.
                       Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
                     </h6><br><br>
-                   <h6> Let's get started with your training ! </h6>
+                   <h6 class="veliko"> Let's get started with your training ! </h6>
 
                   </div>
                   <div class="col-7 rightText">
@@ -167,7 +167,7 @@
                     </h6><br><br>
                     <h6> I realised I want to help others in their difficult times, guide and support them to come out as WINNER.
                       I find great joy in helping you overcome an injury and achieve your goals, coming out indestructible!</h6><br><br>
-                    <h6>This is Victory – This is Sparta!</h6>
+                    <h6 class="veliko">>This is Victory – This is Sparta!</h6>
                     </h6>
 
                   </div>

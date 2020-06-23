@@ -1,6 +1,6 @@
 <form action="{{route('contact.store')}}" method="post" class="needs-validation" id="invoice_form" novalidate>
     {{ csrf_field() }}
-   <div id="section_form" class="mb-5">
+   <div id="section_form" class="mb-5"  >
     <h1 class="blue m-3 yourdata">Your Data</h1>
 
     <div class="form-row">

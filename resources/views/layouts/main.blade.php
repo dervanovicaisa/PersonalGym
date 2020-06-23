@@ -7,7 +7,23 @@
     <meta name="description" content="Personal fitness">
     <meta name="keywords" content="fitness,gym">
     <meta name="author" content="QQRIQ PeacefulNoob">
-    <title>Dušan Radulović</title>
+    <title>Dušan Radulović Personal Trainer</title>
+
+
+   
+    <meta property="og:image" content="https://dusanradulovic.com/images/logos/logo_za_tab.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dusanradulovic.com/" />
+    <meta property="og:title" content="Dusan Radulovic | Personal fitness trainer  " />
+    <meta property="og:description" content="Best" />
+
+    <link rel="icon" type="image/png" href="/images/logos/logo_za_tab.png" />
+    <link rel="apple-touch-icon-precomposed" href="/images/logos/logo_za_tab.png" type="image/png" sizes="152x152" />
+    <link rel="apple-touch-icon-precomposed" href="/images/logos/logo_za_tab.png" type="image/png" sizes="120x120" />
+    <link rel="apple-touch-icon" href="/images/logos/logo_za_tab.png" sizes="180x180" />
+
+
+
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
@@ -22,7 +38,18 @@
 
 {{--     <link rel="stylesheet" type="text/css" href="/css/fullpage.css" />
  --}}
-    
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170482596-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170482596-1');
+</script>
+
+</head>
 
 <body id="body">
     
