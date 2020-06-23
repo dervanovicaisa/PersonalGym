@@ -2,48 +2,57 @@ AOS.init();
 /* //////////////////////lodaer///////////
  */
 
-$(document).ready(function() {
-    setTimeout(function() {
+$(document).ready(function () {
+    setTimeout(function () {
         $("body").addClass("loaded");
     }, 200);
 
     var tro = "M11.5,0,23,19H0Z";
-    var loptica =
-        "    M 4.5, 4.5 m -8, 0 a 4.5,4.5 0 1,0 9,0 a 4.5,4.5 0 1,0 -9,0";
+    var loptica = "  M 4.5, 4.5 m -8, 0 a 4.5,4.5 0 1,0 9,0 a 4.5,4.5 0 1,0 -9,0";
 
-    $("a").on("click", function() {
-        $(".navA .navb path").attr("d", loptica);
-        var myClass = $("body").attr("class");
-        var number = myClass.substring(myClass.length - 1);
 
-        if ($(".navA").hasClass("active")) {
-            $(".active .navb path").attr("d", tro);
-        } else {
-            $(".navA .navb path").attr("d", loptica);
-        }
-    });
-    /*    $("#body").mousemove(function() {
+
+    if ($(".navA").hasClass("active")) {
+        $(".active .navb path").attr("d", tro);
+    } else {
         $(".navA .navb path").attr("d", loptica);
-        if ($(".navA").hasClass("active")) {
-            $(".active .navb path").attr("d", tro);
-        } else {
-            $(".navA .navb path").attr("d", loptica);
-        }
-    }); */
+    }
+
+
 
     ////////////////////////////////////////////////////////////
 
-    $("#train").click(function() {
-        $(".leftText").css({ opacity: "1" });
-        $(".rightText").css({ opacity: "0" });
-        $("#train").css({ "font-size": "80px", color: "white" });
-        $("#reha").css({ "font-size": "60px", color: "#B2B2B2" });
+    $("#train").click(function () {
+        $(".leftText").css({
+            opacity: "1"
+        });
+        $(".rightText").css({
+            opacity: "0"
+        });
+        $("#train").css({
+            "font-size": "80px",
+            color: "white"
+        });
+        $("#reha").css({
+            "font-size": "60px",
+            color: "#B2B2B2"
+        });
     });
-    $("#reha").click(function() {
-        $(".leftText").css({ opacity: "0" });
-        $(".rightText").css({ opacity: "1" });
-        $("#train").css({ "font-size": "60px", color: "#B2B2B2" });
-        $("#reha").css({ "font-size": "80px", color: "white" });
+    $("#reha").click(function () {
+        $(".leftText").css({
+            opacity: "0"
+        });
+        $(".rightText").css({
+            opacity: "1"
+        });
+        $("#train").css({
+            "font-size": "60px",
+            color: "#B2B2B2"
+        });
+        $("#reha").css({
+            "font-size": "80px",
+            color: "white"
+        });
     });
 
     //Set each section's height equals to the window height
@@ -55,108 +64,156 @@ $(document).ready(function() {
         .addClass("active");
     ///FORMA////////////////////////////////////////////////////////////////
 
-    $("input[type=radio][name=yes_no]").change(function() {
-        $("#validationCustom10").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no]").change(function () {
+        $("#validationCustom10").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom10").css({ "pointer-events": "visible" });
+            $("#validationCustom10").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no1]").change(function() {
-        $("#validationCustom11").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no1]").change(function () {
+        $("#validationCustom11").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no1']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom11").css({ "pointer-events": "visible" });
+            $("#validationCustom11").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no2]").change(function() {
-        $("#validationCustom12").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no2]").change(function () {
+        $("#validationCustom12").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no2']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom12").css({ "pointer-events": "visible" });
+            $("#validationCustom12").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no3]").change(function() {
-        $("#validationCustom13").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no3]").change(function () {
+        $("#validationCustom13").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no3']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom13").css({ "pointer-events": "visible" });
+            $("#validationCustom13").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no4]").change(function() {
-        $("#validationCustom14").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no4]").change(function () {
+        $("#validationCustom14").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no4']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom14").css({ "pointer-events": "visible" });
+            $("#validationCustom14").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no5]").change(function() {
-        $("#validationCustom15").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no5]").change(function () {
+        $("#validationCustom15").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no5']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom15").css({ "pointer-events": "visible" });
+            $("#validationCustom15").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no6]").change(function() {
-        $("#validationCustom16").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no6]").change(function () {
+        $("#validationCustom16").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no6']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom16").css({ "pointer-events": "visible" });
+            $("#validationCustom16").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no7]").change(function() {
-        $("#validationCustom17").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no7]").change(function () {
+        $("#validationCustom17").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no7']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom17").css({ "pointer-events": "visible" });
+            $("#validationCustom17").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no8]").change(function() {
-        $("#validationCustom18").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no8]").change(function () {
+        $("#validationCustom18").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no8']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom18").css({ "pointer-events": "visible" });
+            $("#validationCustom18").css({
+                "pointer-events": "visible"
+            });
         }
     });
-    $("input[type=radio][name=yes_no9]").change(function() {
-        $("#validationCustom40").css({ "pointer-events": "none" });
+    $("input[type=radio][name=yes_no9]").change(function () {
+        $("#validationCustom40").css({
+            "pointer-events": "none"
+        });
         var radioValue = $("input[name='yes_no9']:checked").val();
         if (radioValue == "yes") {
-            $("#validationCustom40").css({ "pointer-events": "visible" });
+            $("#validationCustom40").css({
+                "pointer-events": "visible"
+            });
         }
     });
     //////////////////////////////////////////////////////////////////////////////////////////
-    $(".language-list > div").on("click", function() {
+    $(".language-list > div").on("click", function () {
         $(".language-list > div").removeClass("current");
         $(this).addClass("current");
     });
     ////////////////////////////////////////////////////////////
-    $("#next").click(function() {
-        $("#section_form").toggle(function() {
-            $("#section_2_form").css({ display: "block" });
+    $("#next").click(function () {
+        $("#section_form").toggle(function () {
+            $("#section_2_form").css({
+                display: "block"
+            });
         });
     });
-    $("#prev").click(function() {
-        $("#section_2_form").toggle(function() {
-            $("#section_form").css({ display: "block" });
+    $("#prev").click(function () {
+        $("#section_2_form").toggle(function () {
+            $("#section_form").css({
+                display: "block"
+            });
         });
     });
 
-    $("#next1").click(function() {
-        $("#section_2_form").toggle(function() {
-            $("#section_3_form").css({ display: "block" });
+    $("#next1").click(function () {
+        $("#section_2_form").toggle(function () {
+            $("#section_3_form").css({
+                display: "block"
+            });
         });
     });
-    $("#prev1").click(function() {
-        $("#section_3_form").toggle(function() {
-            $("#section_2_form").css({ display: "block" });
+    $("#prev1").click(function () {
+        $("#section_3_form").toggle(function () {
+            $("#section_2_form").css({
+                display: "block"
+            });
         });
     });
 
     ///////////////////////////////////////////////////////
-    $("#invoice_form input").keyup(function() {
+    $("#application_form input").keyup(function () {
         var numValid = 0;
-        $("#invoice_form input[required]").each(function() {
+        $("#application_form input[required]").each(function () {
             if (this.validity.valid) {
                 numValid++;
             }
@@ -223,7 +280,7 @@ $(document).ready(function() {
         }
         if (numValid == 14) {
             progress.attr("value", "90");
-            progressMessage.text("Success ! Send invoice !");
+            progressMessage.text("Success ! Send application !");
         }
     });
     ///////////////////////////////////////////////////////////////

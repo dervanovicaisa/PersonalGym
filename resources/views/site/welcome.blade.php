@@ -5,11 +5,11 @@
   @include('layouts.side_buttons')
   @include('components.languages')
 
-  @if($invoice_message)
+  @if($application_message)
     @include('components.messages')
   @endif
   <div class="main" id="fullpage" >
-            <section class="hero-image" id="section-1">
+            <section class="hero-image section" id="section-1" >
               <div class="hero-overlay"></div>
               <div class="playSong1 red">
                 <div class="swap">
@@ -52,7 +52,7 @@
 
               </div>
             </section>
-            <section class="row  red2 hero-image" id="section-2">
+            <section class="row  red2 hero-image section" id="section-2">
 
               <div class="red2-overlay"></div>
 
@@ -66,7 +66,7 @@
 
                   </div>
                 </div>
-                <div class="col-6 textAbout">
+                <div class="col-7 textAbout">
                   <h6>
                     My love towards sports began at a very early age, in a form of the most popular
                     one- football. As time went by, my ambition was rising. I strived to get stronger,
@@ -118,7 +118,7 @@
 
               </div>
             </section>
-            <section class="row red3 justify-content-center" id="section-3">
+            <section class="row red3 justify-content-center section" id="section-3">
               <div class="red3-overlay"></div>
               <div class="content">
 
@@ -156,7 +156,7 @@
                     <h6>With your power of will and heart everything is possible. My name is Dušan Radulović.
                       Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
                     </h6><br><br>
-                   <h6 class="veliko"> Let's get started with your training ! </h6>
+                   <h6> Let's get started with your training ! </h6>
 
                   </div>
                   <div class="col-7 rightText">
@@ -167,7 +167,7 @@
                     </h6><br><br>
                     <h6> I realised I want to help others in their difficult times, guide and support them to come out as WINNER.
                       I find great joy in helping you overcome an injury and achieve your goals, coming out indestructible!</h6><br><br>
-                    <h6 class="veliko">>This is Victory – This is Sparta!</h6>
+                    <h6>This is Victory – This is Sparta!</h6>
                     </h6>
 
                   </div>
@@ -183,7 +183,7 @@
 
               </div>
             </section>
-            <section class="row  red4 hero-image" id="section-4">
+            <section class="row  red4 hero-image section" id="section-4">
               <div class="red4-overlay"></div>
               <div class="content">
 
@@ -194,7 +194,7 @@
                   <div class="introt4">
                     <h1>NUTR</h1>
                     <h1 class="h14"> ITION</h1>
-                    <h5>Neki podnaslov vezano za hranu.</h5>
+                    <h5>YOU ARE WHAT YOU EAT.</h5>
 
                   </div>
                 </div>
@@ -232,7 +232,7 @@
 
 
             </section>
-            <section class="row  red5 hero-image" id="section-5">
+            <section class="row  red5 hero-image section" id="section-5">
               <div class="red5-overlay"></div>
               <div class="content">
                 <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
@@ -240,11 +240,11 @@
                   <div class="introt4">
                     <h1>RECO</h1>
                     <h1 class="h14"> VERY</h1>
-                    <h5>Neki podnaslov vezano za hranu.</h5>
+                    <h5>RECOVERY IS GOOD INVESTMENT.</h5>
 
                   </div>
                 </div>
-                <div class="col-6 textAbout">
+                <div class="col-7 textAbout">
                   <h6>
                     You will learn to take and invest time in recovery, since it is a very important aspect of your lifestyle.
                     Acknowledging the importance of the stress resistance, we put special effort into practicing it. It is my natural
@@ -279,7 +279,7 @@
 
               </div>
             </section>
-            <section class="row  red6 hero-image" id="section-6">
+            <section class="row  red6 hero-image section" id="section-6">
               <div class="red6-overlay"></div>
               <div class="content">
                 <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>

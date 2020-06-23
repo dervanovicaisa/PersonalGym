@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $invoice_message = '';
-    return view('site.welcome', compact('invoice_message'));
+    $application_message = '';
+    return view('site.welcome', compact('application_message'));
 });
 Route::get('/deu', function () {
     return view('site.welcome_deu');
@@ -29,7 +29,7 @@ Route::get('/form1/deu', function () {
 Route::get('/test', function () {
     return view('site.test');
 });
-Route::post('Invoice', [
+Route::post('application', [
     'uses' => 'SendMailController@sendmail',
     'as' => 'contact.store'
 ]);

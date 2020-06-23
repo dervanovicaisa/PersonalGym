@@ -536,7 +536,9 @@ section {
     margin-bottom: 0px;
 }
 
-.toggleText h5 {}
+.toggleText h5 {
+    font-weight: bold;
+}
 
 .rightText :last-child {
     font-weight: bold;
@@ -1185,9 +1187,10 @@ label[for="no9"] {
     position: fixed;
     bottom: 15%;
     right: 6%;
+    cursor: pointer;
 }
 
-.next_button button {
+/* .next_button button {
     background-color: transparent;
     color: white;
     display: inline;
@@ -1199,13 +1202,16 @@ label[for="no9"] {
     transition: 0.3s ease;
     cursor: pointer;
 }
-
+ */
 .prev_button {
     position: fixed;
     bottom: 15%;
     left: 6%;
+    cursor: pointer;
+
 }
 
+/* 
 .prev_button button {
     background-color: transparent;
     color: white;
@@ -1217,8 +1223,8 @@ label[for="no9"] {
     border-radius: 0px !important;
     transition: 0.3s ease;
     cursor: pointer;
-}
-
+} */
+/* 
 .prev_button button:hover {
     background-color: white;
     color: #253355;
@@ -1227,7 +1233,7 @@ label[for="no9"] {
 .next_button button:hover {
     background-color: white;
     color: #253355;
-}
+} */
 
 .submit {
     width: 30% !important;

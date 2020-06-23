@@ -6,9 +6,7 @@
             <path class="a" d="M0,0V352" />
         </svg>
         <li><a class="navA"  data-index="1" href="#1" > <svg height="40" width="40" class="navb">
-                    <path d="
-                    M11.5,0,23,19H0Z
-     " />
+                    <path d="  M11.5,0,23,19H0Z  " />
                 </svg></a></li>
         <li><a class="navA" data-index="2" href="#2" > <svg height="40" width="40" class="navb">
                     <path d="

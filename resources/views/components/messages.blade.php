@@ -1,5 +1,5 @@
-@if($invoice_message)
+@if($application_message)
 <div class='alert alert-success' style="margin:20px;text-align: center;">
-    {{$invoice_message}}
+    {{$application_message}}
 </div>
 @endif

@@ -36,8 +36,7 @@
 
     <link rel="stylesheet" href="/css/myStyle.css"> 
 
-{{--     <link rel="stylesheet" type="text/css" href="/css/fullpage.css" />
- --}}
+
 
  <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170482596-1"></script>
@@ -67,8 +66,7 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="/js/myJs.js"></script>
 
-{{-- <script type="text/javascript" src="/js/fullpage.js"></script>
- --}}
+
 
 
 
