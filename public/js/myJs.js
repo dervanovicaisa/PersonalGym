@@ -30,11 +30,11 @@ $(document).ready(function () {
             opacity: "0"
         });
         $("#train").css({
-            "font-size": "80px",
+            "font-size": "60px",
             color: "white"
         });
         $("#reha").css({
-            "font-size": "60px",
+            "font-size": "40px",
             color: "#B2B2B2"
         });
     });
@@ -46,11 +46,11 @@ $(document).ready(function () {
             opacity: "1"
         });
         $("#train").css({
-            "font-size": "60px",
+            "font-size": "40px",
             color: "#B2B2B2"
         });
         $("#reha").css({
-            "font-size": "80px",
+            "font-size": "60px",
             color: "white"
         });
     });

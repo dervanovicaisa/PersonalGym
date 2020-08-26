@@ -1,94 +1,456 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    p {
+        font-weight: 200 !important;
+        font-size: 14px !important;
+    }
+
+    .readMore {
+        font-weight: 600 !important;
+    }
+
+    .txtInitials1 {
+        top: 20% !important;
+        left: 50% !important;
+        transform: translate(-50%, 50%);
+        flex-wrap: wrap !important;
+        text-align: center !important;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .txtInitials1 img {
+        width: 20% !important;
+        margin: auto !important;
+        margin-bottom: 20px !important;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .text h3 {
+        font-size: 20px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .text h6 {
+        letter-spacing: 1.8px !important;
+    }
+
+    .buttonUl {
+        display: block !important;
+    }
+
+    .scrollDiv {
+        bottom: 0% !important;
+        transform: translate(-50%, 0%) !important;
+        width: 100% !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+    .desktop {
+        display: none !important;
+    }
+
+    .mouse {
+
+        bottom: 15px !important;
+
+    }
+
+    .mouse .mouse-icon {
+
+        margin-bottom: 20% !important;
+
+    }
+
+    .language-list {
+
+        display: none !important;
+
+    }
+
+    .playSong1 {
+
+        width: 96% !important;
+
+    }
+
+    .wrapper {
+        font-size: 16px !important;
+    }
+
+    #circle {
+
+        display: none;
+    }
+
+    #waveform {
+        top: 0;
+        left: 25%;
+        width: 70% !important;
+        transform: scale(0.9);
+    }
+
+
+    #pause {
+        transform: scale(0.65);
+    }
+
+
+
+    .imgL {
+        width: 10% !important;
+
+    }
+
+    .logo img {
+        margin-right: auto !important;
+        margin-left: 10% !important;
+    }
+
+    .logo {
+
+        height: 12% !important;
+    }
+
+    .intro {
+        margin-left: 10% !important;
+        width: 90% !important;
+        margin-bottom: 5% !important;
+        padding-right: 10%;
+
+    }
+
+    .textAbout {
+        margin-right: auto !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .leftText {
+        margin-right: auto !important;
+        width: 85% !important;
+        padding: 0 !important;
+    }
+
+    .scrollDiv2 {
+        bottom: 2% !important;
+        left: 50% !important;
+        transform: translate(-50%, 0);
+    }
+
+    .kraj {
+        margin-top: 14% !important;
+        width: 22% !important;
+    }
+
+
+
+    .introt h1 {
+        font-size: 60px !important;
+
+    }
+
+    .introt h5 {
+        font-weight: lighter !important;
+    }
+
+    .toggleText {
+        width: 60% !important;
+        position: initial !important;
+        margin-left: 10% !important;
+        margin-top: 20% !important;
+        margin-bottom: 9% !important;
+    }
+
+    .toggleText>div {
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .training h1 {
+
+        font-size: 60px;
+    }
+
+    #reha {
+        font-size: 40px;
+
+    }
+
+    .slide3 {
+        position: absolute !important;
+        width: 100%;
+        bottom: 0%;
+        height: 50% !important;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+
+
+    }
+
+    label {
+
+        font-size: 12px !important;
+    }
+
+    .needs-validation {
+
+        margin-bottom: 80px;
+    }
+
+    .yourdata {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .questi {
+        width: 92% !important;
+    }
+
+    .questi .row {
+        width: auto !important;
+    }
+
+    .next_button {
+
+        bottom: 5% !important;
+
+    }
+
+    .prev_button {
+        bottom: 5% !important;
+    }
+
+    .m-4 {
+        margin: 4px !important;
+    }
+
+    .m-3 {
+        margin: 2px !important;
+    }
+
+    .slide4 {
+        position: absolute;
+        width: 100%;
+        bottom: 0%;
+        height: 50%;
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+
+    }
+
+    .slide2 {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+
+    }
+
+    .leftText {
+        padding: 0 !important;
+    }
+
+    .introt4 h1 {
+        font-size: 60px;
+        line-height: 1.4 !important;
+    }
+
+    .end {
+        bottom: 10% !important;
+        left: 0% !important;
+        top: 30% !important;
+    }
+
+    .start {
+        position: initial !important;
+    }
+
+    .mt {
+        margin-top: 12% !important;
+    }
+
+    .intro_button {
+        width: 100%;
+    }
+
+    .introt6 h1 {
+        font-size: 60px;
+    }
+
+    h5 {
+        font-size: 16px !important;
+    }
+
+    h6 {
+        font-size: 14px !important;
+    }
+
+    .introt6 h6 {
+        margin-top: 8%;
+    }
+
+    .intro_button button {
+
+        padding: 2% 15% !important;
+        font-size: 16px !important;
+
+    }
+
+    .introt6 {
+
+        margin-left: 0px !important;
+
+    }
+
+    .hero-image {
+        background-image: url("../images/all/1s.png") !important;
+    }
+
+    .red2 {
+        background-image: url("../images/all/2s.png") !important;
+    }
+
+    .red3 {
+        background-image: url("../images/all/3s.png") !important;
+    }
+
+    .red4 {
+        background-image: url("../images/all/4s.png") !important;
+
+    }
+
+    .red5 {
+        background-image: url("../images/all/5s.png") !important;
+    }
+
+    .red6 {
+        background-image: url("../images/all/6s.png") !important;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+    .mobile {
+        display: none !important;
+    }
+
+    .desktop {
+        display: block !important;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+
     h6,
     .h6 {
         font-size: 0.85rem;
     }
+
     .training h1 {
         font-size: 60px;
     }
+
     .rehab {
         font-size: 45px;
     }
+
     .introt4 h1 {
         font-size: 60px;
     }
+
     h5,
     .h5 {
         font-size: 1rem;
     }
+
     .introt6 h1 {
         font-size: 55px;
     }
+
     .intro_button {
         width: 100%;
     }
+
     #waveform {
         left: 45%;
     }
+
     .veliko {
         font-size: 18px;
     }
+
     .rightText {
         right: 2%;
     }
+
     .leftText {
         right: 2%;
     }
+
     .textAbout {
         margin-right: 5%;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500px) {
+
     h6,
     .h6 {
         font-size: 1rem;
     }
+
     .training h1 {
         font-size: 80px;
     }
+
     .rehab {
         font-size: 65px;
     }
+
     .introt4 h1 {
         font-size: 80px;
     }
+
     h5,
     .h5 {
         font-size: 1.25rem;
     }
+
     .introt6 h1 {
         font-size: 75px;
     }
+
     .intro_button {
         width: 70%;
     }
+
     #waveform {
         left: 25%;
     }
+
     .veliko {
         font-size: 24px;
     }
+
     .rightText {
         right: 8%;
     }
+
     .leftText {
         right: 8%;
     }
+
     .textAbout {
         margin-right: 10%;
     }

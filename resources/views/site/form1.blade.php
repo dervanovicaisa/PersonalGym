@@ -5,8 +5,8 @@
       @include('components.languages')
             <div class="row  red7 " id="section-7">
               <div class="contentE ">
-                <div class="w-75 mx-auto mt-5">
-                    <div class="row w-100 m-3 ">
+                <div class="questi mx-auto mt-5">
+                    <div class="row  m-3 ">
                           <div class=" logoKraj mr-4"><a href="/"><img src="/images/logos/Logo-DR.svg" alt="" /></a></div>
                           <div class="introt6 mt-auto"> 
                              

@@ -21,15 +21,10 @@
     <link rel="apple-touch-icon-precomposed" href="/images/logos/logo_za_tab.png" type="image/png" sizes="152x152" />
     <link rel="apple-touch-icon-precomposed" href="/images/logos/logo_za_tab.png" type="image/png" sizes="120x120" />
     <link rel="apple-touch-icon" href="/images/logos/logo_za_tab.png" sizes="180x180" />
-
-
-
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
-
     <!-- Styles -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/svg.css">
     <link rel="stylesheet" href="/css/responsive.css">
@@ -63,7 +58,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 {{-- <script type="text/javascript" src="/js/jquery.onepage-scroll.js"></script>
  --}}
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="/js/myJs.js"></script>
 
 
