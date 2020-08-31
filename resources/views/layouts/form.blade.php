@@ -1,6 +1,6 @@
 <form action="{{route('contact.store')}}" method="post" class="needs-validation" id="application_form" novalidate>
     {{ csrf_field() }}
-   <div id="section_form" class="mb-5"  >
+   <div id="section_form" class=""  >
     <h1 class="blue m-3 yourdata">Your Data</h1>
 
     <div class="form-row">
@@ -101,8 +101,8 @@
             <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Are you currently under medical treatment?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no" id="yes" value="yes" ></input>
-                    <input type="radio" name="yes_no" id="no" value="no"  checked></input>
+                    <input type="radio" name="yes_no" id="yes" value="yes" />
+                    <input type="radio" name="yes_no" id="no" value="no"  checked/>
                     <div class="switch">
                         <label for="yes">YES</label>
                         <label for="no">NO</label>
@@ -114,8 +114,8 @@
             <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Do you smoke or have asthma/bronchitis?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no1" id="yes1" value="yes"  ></input>
-                    <input type="radio" name="yes_no1" id="no1" value="no" checked></input>
+                    <input type="radio" name="yes_no1" id="yes1" value="yes"  />
+                    <input type="radio" name="yes_no1" id="no1" value="no" checked/>
                     <div class="switch">
                         <label for="yes1">YES</label>
                         <label for="no1">NO</label>
@@ -127,9 +127,9 @@
             <div class="col-md-12 m-4 radio">
                 <label for="yes_no_radio">Your blood pressure?*</label>
               
-                <input type="radio" name="high" id="high" value="high" checked></input>              
-                <input type="radio" name="high" id="normal" value="normal"></input>
-                <input type="radio" name="high" id="low" value="no"></input>
+                <input type="radio" name="high" id="high" value="high" checked/>              
+                <input type="radio" name="high" id="normal" value="normal"/>
+                <input type="radio" name="high" id="low" value="no"/>
                 <div class="switch highw">
                     <label for="high">HIGH</label>
                     <label for="normal">NORMAL</label>
@@ -141,8 +141,8 @@
             <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Do you have diabetes?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no2" id="yes2" value="yes"  ></input>
-                    <input type="radio" name="yes_no2" id="no2" value="no" checked></input>
+                    <input type="radio" name="yes_no2" id="yes2" value="yes"  />
+                    <input type="radio" name="yes_no2" id="no2" value="no" checked/>
                     <div class="switch">
                         <label for="yes2">YES</label>
                         <label for="no2">NO</label>
@@ -153,8 +153,8 @@
                 <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Heart disease?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no3" id="yes3" value="yes"  ></input>
-                    <input type="radio" name="yes_no3" id="no3" value="no" checked></input>
+                    <input type="radio" name="yes_no3" id="yes3" value="yes"  />
+                    <input type="radio" name="yes_no3" id="no3" value="no" checked/>
                     <div class="switch">
                         <label for="yes3">YES</label>
                         <label for="no3">NO</label>
@@ -165,8 +165,8 @@
             <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Do you take medicine?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no4" id="yes4" value="yes"  ></input>
-                    <input type="radio" name="yes_no4" id="no4" value="no" checked></input>
+                    <input type="radio" name="yes_no4" id="yes4" value="yes"  />
+                    <input type="radio" name="yes_no4" id="no4" value="no" checked/>
                     <div class="switch">
                         <label for="yes4">YES</label>
                         <label for="no4">NO</label>
@@ -177,8 +177,8 @@
             <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Are you taking any kind of supplements?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no5" id="yes5" value="yes"  ></input>
-                    <input type="radio" name="yes_no5" id="no5" value="no" checked></input>
+                    <input type="radio" name="yes_no5" id="yes5" value="yes"  />
+                    <input type="radio" name="yes_no5" id="no5" value="no" checked/>
                     <div class="switch">
                         <label for="yes5">YES</label>
                         <label for="no5">NO</label>
@@ -189,8 +189,8 @@
             <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Did you have any kind of surgeries?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no6" id="yes6" value="yes"  ></input>
-                    <input type="radio" name="yes_no6" id="no6" value="no" checked></input>
+                    <input type="radio" name="yes_no6" id="yes6" value="yes"  />
+                    <input type="radio" name="yes_no6" id="no6" value="no" checked/>
                     <div class="switch">
                         <label for="yes6">YES</label>
                         <label for="no6">NO</label>
@@ -201,8 +201,8 @@
             <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Do you have back problems?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no7" id="yes7" value="yes"  ></input>
-                    <input type="radio" name="yes_no7" id="no7" value="no" checked></input>
+                    <input type="radio" name="yes_no7" id="yes7" value="yes"  />
+                    <input type="radio" name="yes_no7" id="no7" value="no" checked/>
                     <div class="switch">
                         <label for="yes7">YES</label>
                         <label for="no7">NO</label>
@@ -213,8 +213,8 @@
             <div class="col-md-11 m-4 radio">
                 <label for="yes_no_radio">Joint problems?*</label>
                 <div class="buttRadio">
-                    <input type="radio" name="yes_no8" id="yes8" value="yes"  ></input>
-                    <input type="radio" name="yes_no8" id="no8" value="no" checked ></input>
+                    <input type="radio" name="yes_no8" id="yes8" value="yes"  />
+                    <input type="radio" name="yes_no8" id="no8" value="no" checked />
                     <div class="switch">
                         <label for="yes8">YES</label>
                         <label for="no8">NO</label>

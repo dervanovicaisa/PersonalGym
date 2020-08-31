@@ -1077,7 +1077,7 @@ label[for="no9"] {
 } */
 .highw {
     width: 340px !important;
-    right: -50% !important;
+    right: -50%;
     font-size: 21px;
 }
 
@@ -1165,15 +1165,21 @@ label[for="no9"] {
 } */
 #section_2_form {
     display: none;
+    position: relative;
+    padding-bottom: 3rem;
 }
 
 #section_3_form {
     display: none;
+    position: relative;
+    padding-bottom: 3rem;
 }
 
 #section_form {
     overflow: hidden;
     transition: 0.5s ease;
+    position: relative;
+    padding-bottom: 3rem;
 }
 
 .next_button {

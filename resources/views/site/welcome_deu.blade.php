@@ -39,7 +39,7 @@
                 </div>
               </div>
               <div class="scrollDiv">
-                <a href="#section-2" class="mouse smoothscroll">
+                <a href="#about" class="mouse smoothscroll">
                   <span class="mouse-icon">
                     <span class="mouse-wheel"></span>
                   </span>
@@ -51,7 +51,7 @@
             </section>
           </div>
         <div class="section">
-            <section class="row  red2 hero-image" id="section-2">
+            <section class="row  red2 hero-image" id="about">
 
               <div class="red2-overlay"></div>
 
@@ -110,7 +110,7 @@
 
                 <div class="scrollDiv2">
 
-                  <a href="#section-3" class="">
+                  <a href="#personal-trainer" class="">
                     @include('layouts.see_next')
 
 
@@ -122,7 +122,7 @@
             </section>
          </div>
         <div class="section">
-            <section class="row red3 justify-content-center" id="section-3">
+            <section class="row red3 justify-content-center" id="personal-trainer">
               <div class="red3-overlay"></div>
               <div class="content">
 
@@ -177,7 +177,7 @@
                   </div>
                 </div>
                       <div class="scrollDiv2">
-                              <a href="#section-4" class="">
+                              <a href="#nutritio-dr" class="">
                                 @include('layouts.see_next')
                               </a>
 
@@ -188,7 +188,7 @@
             </section>
          </div>
         <div class="section">
-            <section class="row  red4 hero-image" id="section-4">
+            <section class="row  red4 hero-image" id="nutritio-dr">
               <div class="red4-overlay"></div>
               <div class="content">
 
@@ -223,7 +223,7 @@
 
                 <div class="scrollDiv2">
 
-                  <a href="#section-5" class="">
+                  <a href="#recovery-dr" class="">
 
                     @include('layouts.see_next')
 
@@ -237,7 +237,7 @@
             </section>
          </div>
         <div class="section">
-            <section class="row  red5 hero-image" id="section-5">
+            <section class="row  red5 hero-image" id="recovery-dr">
               <div class="red5-overlay"></div>
               <div class="content">
                 <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
@@ -272,7 +272,7 @@
 
                 <div class="scrollDiv2">
 
-                  <a href="#section-6" class="">
+                  <a href="#connect" class="">
 
                     @include('layouts.see_next')
 
@@ -286,7 +286,7 @@
             </section>
          </div>
         <div class="section">
-            <section class="row  red6 hero-image" id="section-6">
+            <section class="row  red6 hero-image" id="connect">
               <div class="red6-overlay"></div>
               <div class="content">
                 <div class="row justify-content-center logo"><img src="/images/logos/Logo-DR.svg" alt="" /></div>

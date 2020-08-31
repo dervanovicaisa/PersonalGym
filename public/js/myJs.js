@@ -187,7 +187,7 @@ $(document).ready(function () {
             });
         });
     });
-    $("#prev").click(function () {
+    $(".prev").click(function () {
         $("#section_2_form").toggle(function () {
             $("#section_form").css({
                 display: "block"
@@ -202,7 +202,7 @@ $(document).ready(function () {
             });
         });
     });
-    $("#prev1").click(function () {
+    $(".prev1").click(function () {
         $("#section_3_form").toggle(function () {
             $("#section_2_form").css({
                 display: "block"
@@ -284,4 +284,17 @@ $(document).ready(function () {
         }
     });
     ///////////////////////////////////////////////////////////////
+});
+$(document).ready(function () {
+    $(".mobileSmooth").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).position().top
+            }, 400, function () {
+                window.location.hash = hash;
+            });
+        }
+    });
 });

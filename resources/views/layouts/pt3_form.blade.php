@@ -6,8 +6,8 @@
     <div class="col-md-6 my-5 radio">
         <label for="yes_no_radio">Do you or did you do Fitness or Sports?</label>
         <div class="buttRadio">
-            <input type="radio" name="yes_no9" id="yes9" value="yes" ></input>
-            <input type="radio" name="yes_no9" id="no9" value="no" checked></input>
+            <input type="radio" name="yes_no9" id="yes9" value="yes" />
+            <input type="radio" name="yes_no9" id="no9" value="no" checked/>
             <div class="switch">
                 <label for="yes9">YES</label>
                 <label for="no9">NO</label>
@@ -77,8 +77,8 @@
                 </div>
             </div>
      
-          <div class="prev_button">
-            <svg id = "prev " xmlns="http://www.w3.org/2000/svg" width="160" height="38.918" viewBox="0 0 160 38.918">
+          <div class="prev_button prev1">
+            <svg id = "prev1" xmlns="http://www.w3.org/2000/svg" width="160" height="38.918" viewBox="0 0 160 38.918">
               <defs>
                 <style>
                   .a{

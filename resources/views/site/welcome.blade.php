@@ -1,5 +1,6 @@
 @extends('layouts.main')
 @section('content')
+
 <link href='/css/onepage-scroll.css' rel='stylesheet' type='text/css'>
 
 @include('layouts.side_buttons')
@@ -60,7 +61,7 @@
 
         </div>
         <div class="scrollDiv mobile">
-          <a href="#section-2" class="mouse smoothscroll">
+          <a href="#about" class="mouse smoothscroll mobileSmooth">
               <span class="mouse-icon">
                   <span class="mouse-wheel"></span>
               </span>
@@ -69,8 +70,13 @@
       </div>
     </section>
 
-    <section class="row  red2 hero-image section" id="section-2">
-
+    <section class="row  red2 hero-image section" id="about">
+    {{--
+        <div class="w-100 absolute">
+            <img src="/images/all/4s.png" alt="">
+            <img src="/images/all/sablon.png" alt="">
+        </div>
+         --}}
         <div class="red2-overlay"></div>
 
         <div class="content">
@@ -86,22 +92,27 @@
             <div class="row slide2">
 
             <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 textAbout">
+                <p class="mobile">  
+                    My love towards sports began at a very early age, in a form of the most popular
+                    one- football. As time went by, my ambition was rising. I strived to get stronger,
+                    faster, better.</p>
+                    <div class="desktop">
                 <p>
                     My love towards sports began at a very early age, in a form of the most popular
                     one- football. As time went by, my ambition was rising. I strived to get stronger,
-                    faster, better.{{--  So I trained hard, pushing my limits day after day. In order to achieve
+                    faster, better. So I trained hard, pushing my limits day after day. In order to achieve
                     better results, I started learning and studying about fitness, sports science, nutrition
                     physical therapy. After a while, I decided to put my knowledge into use. As a football
                     player there was a constant need to become faster, so athletic training became a
                     necessity- I trained like an Olympic sprinter. Little did I know how things were about
-                    to change. --}}
-                 </p><br>
-          {{--              <p>
+                    to change. 
+                 </p>
+                     <p>
                     Full of motivation and will I adopted a morning routine of training on a
                     snowy Olympic track. However, lacking experience, my warm ups weren’t done properly,
                     which led to a disaster. As I was doing my rounds of sprints on the track, in one
                     split second I slipped and turned my knee on the inside. That’s all it took- a second,
-                    and my life was about to be changed forever.</p><br>
+                    and my life was about to be changed forever.</p>
                 <p>
                     At first I was told I won’t be able to
                     play football for three months, which prolonged to six. Desperate and in need of
@@ -116,16 +127,19 @@
                     victory opened my eyes- that’s it! That’s what I want to do and devote myself
                     to!
                 </p>
-                <p><br>
+                <p>
                     I graduated at SAFS and fulfilled my ambition at becoming fitness and
                     personal trainer. Every day spent working at the gym is a blessing, because
                     it gives me the ability to vivify in you the same victorious feeling I have
                     felt, while simultaneously improving the most important thing in life- your
                     health.
-                </p> --}}
-
+                </p> 
+            </div>
                 <h6 class="readMore mobile">
-                  READ MORE
+                    <button type="button" class="btn " data-toggle="modal" data-target="#modal_intro">
+                        READ MORE
+                      </button>
+             
                 </h6>
             </div>
           </div>
@@ -141,7 +155,7 @@
                 </ul>
             </div>
             <div class="scrollDiv2 mobile">
-                      <a  href="#section-3" class="">
+                      <a  href="#personal-trainer" class="mobileSmooth">
                           @include('layouts.see_next')
                       </a>
           
@@ -149,11 +163,11 @@
 
         </div>
     </section>
-    <section class="row red3 justify-content-center section" id="section-3">
+    <section class="row red3 justify-content-center section" id="personal-trainer">
         <div class="red3-overlay"></div>
         <div class="content">
 
-            <div class="row justify-content-center logo desktop"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
+            <div class="row justify-content-center logo desktopf"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
             <div class="toggleText">
                 <div>
                     <div class="training">
@@ -166,16 +180,21 @@
             </div>
             <div class="row slide3">
                 <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 leftText">
-                    <p>
+                
+                    <p class="mobile"> As a personal trainer (Athletic, Strength & Conditioning Coach) I'm giving your body,
+                        mind and soul a unique individual experience that will help you find your purpose,
+                        set your goals and achieve them. </p>
+                        <div class="desktop">
+                            <p >
                         As a personal trainer (Athletic, Strength & Conditioning Coach) I'm giving your body,
                         mind and soul a unique individual experience that will help you find your purpose,
-                        set your goals and achieve them. {{-- What doesn't kill you makes you Stronger. I will
+                        set your goals and achieve them.  What doesn't kill you makes you Stronger. I will
                         push you to the limits and beyond and challenge you to give your very best in everything
                         you do, every day. Pain is weakness leaving your body. Weakness leaving your body makes
                         you a healthier and stronger individual. Putting your health in the first place in everything
-                        we do is going to allow you to build a strong foundation. --}}
+                        we do is going to allow you to build a strong foundation.
                     </p><br>
-                   {{--  <p><b>Remember - nothing beats a strong body </b>,
+                 <p><b>Remember - nothing beats a strong body </b>,
                         mind and soul. We all seek to be happy and satisfied with ourselves. Your guarantee will be your
                         commitment, your biggest motivation will be the results you see in the mirror. You will fail,
                         but
@@ -188,14 +207,23 @@
                         those extra few reps, that extra mile, that extra pound/kg to get You <b>CLOSER TO THE EDGE</b>
                         and achieve
                         everything you want.
-                    </p></br></br>
+                    </p>
                     <p>With your power of will and heart everything is possible. My name is Dušan Radulović.
                         Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
                     </p><br><br>
-                    <p> Let's get started with your training ! </p>
-
+                    <p > Let's get started with your training ! </p>
                 </div>
-                <div class="col-7 rightText">
+                    <h6 class="readMore mobile">
+                        <button type="button" class="btn " data-toggle="modal" data-target="#modal_training">
+                            READ MORE
+                          </button>                      </h6>
+                </div>
+                <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 rightText">
+
+                    <p class="mobile">   No matter what kind of injury you are suffering from, with the right balance of physical
+                        therapy, nutrition and recovery you are going to
+                        overcome it - even gonna be stronger than ever!  </p>
+                        <div class="desktop">
                     <p>
                         No matter what kind of injury you are suffering from, with the right balance of physical
                         therapy, nutrition and recovery you are going to
@@ -208,10 +236,12 @@
                         I find great joy in helping you overcome an injury and achieve your goals, coming out
                         indestructible!</p><br><br>
                     <p>This is Victory – This is Sparta!</p>
-                    </p> --}}
+                    </p> 
+                </div>
                     <h6 class="readMore mobile">
-                      READ MORE
-                    </h6>
+                        <button type="button" class="btn " data-toggle="modal" data-target="#modal_rehab">
+                            READ MORE
+                          </button>                    </h6>
                 </div>
             </div>
             <div class="scrollDiv2 desktop">
@@ -224,7 +254,7 @@
                 </ul>
             </div>
             <div class="scrollDiv2 mobile">
-              <a  href="#section-4" class="">
+              <a  href="#nutritio-dr" class="mobileSmooth">
                   @include('layouts.see_next')
               </a>
   
@@ -232,13 +262,13 @@
 
         </div>
     </section>
-    <section class="row  red4 hero-image section" id="section-4">
+    <section class="row  red4 hero-image section" id="nutritio-dr">
         <div class="red4-overlay"></div>
         <div class="content">
 
 
 
-            <div class="row justify-content-center logo desktop"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
+            <div class="row justify-content-center logo desktopf"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
             <div class="row w-50 float-left intro mt start">
                 <div class="introt4">
                     <h1>NUTR</h1>
@@ -249,14 +279,19 @@
             </div>
             <div class="row slide4">
             <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 textAbout">
-                <p>
+                <p class="mobile">  Your nutrition is the most important aspect of your health. Remember, you are what you eat. Your
+                    results are going to depend on your nutrition.
+                    You want to lose weight? You want to burn that extra body fat and get lean? You want to gain lean
+                    muscle? You never took eating and foods seriously?</p>
+              <div class="desktop">
+                  <p>
                     Your nutrition is the most important aspect of your health. Remember, you are what you eat. Your
                     results are going to depend on your nutrition.
                     You want to lose weight? You want to burn that extra body fat and get lean? You want to gain lean
                     muscle? You never took eating and foods seriously?
 
                 </p><br>
-         {{--        <p>
+                 <p>
                     I have good news for you! You don't need a diet (keto, paleo, intermittent fasting...) to achieve
                     your goals because that just won't do it if you are looking for long-term results.
                     This is reality. There is no easy and fast way for you to achieve your goals and stay healthy at the
@@ -270,10 +305,12 @@
                     lifetime!
                     Now that we got your training and nutrition in check let's skip to the last, but not the least part
                     of your healthy lifestyle. It's time for Recovery!
-                </p> --}}
+                </p> 
+            </div>
                 <h6 class="readMore mobile">
-                  READ MORE
-                </h6>
+                    <button type="button" class="btn " data-toggle="modal" data-target="#modal_nutrition">
+                        READ MORE
+                      </button>                </h6>
             </div>
           </div>
             <div class="scrollDiv2 desktop">
@@ -289,7 +326,7 @@
 
             </div>
             <div class="scrollDiv2 mobile">
-              <a  href="#section-5" class="">
+              <a  href="#recovery-dr" class="mobileSmooth">
                   @include('layouts.see_next')
               </a>
   
@@ -299,10 +336,10 @@
 
 
     </section>
-    <section class="row  red5 hero-image section" id="section-5">
+    <section class="row  red5 hero-image section" id="recovery-dr">
         <div class="red5-overlay"></div>
         <div class="content">
-            <div class="row justify-content-center logo desktop"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
+            <div class="row justify-content-center logo desktopf"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
             <div class="row w-50 float-left intro mt start">
                 <div class="introt4">
                     <h1>RECO</h1>
@@ -313,16 +350,20 @@
             </div>
             <div class="row slide4">
             <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 textAbout">
-                <p>
+                <p class="mobile">   You will learn to take and invest time in recovery, since it is a very important aspect of your
+                    lifestyle.
+                    Acknowledging the importance of the stress resistance, we put special effort into practicing it.</p>
+                    <div class="desktop">
+                          <p>
                     You will learn to take and invest time in recovery, since it is a very important aspect of your
                     lifestyle.
-                    Acknowledging the importance of the stress resistance, we put special effort into practicing it. {{-- It
+                    Acknowledging the importance of the stress resistance, we put special effort into practicing it.  It
                     is my natural
                     expertise to show you and teach you how to relax your body, mind and soul, make you confident about
                     your actions and
-                    calm you down- all in order to improve your recovery. --}}
+                    calm you down- all in order to improve your recovery. 
                 </p><br>
-          {{--       <p>
+              <p>
                     Those three components-TRAINING, NUTRITION and RECOVERY, can't
                     go without one another if you want to achieve your personal goals in best way possible. I know that
                     REALITY is a bit
@@ -336,10 +377,11 @@
                     Together we are going to create a unique and individual lifestyle so you can be consistent with your
                     training, nutrition and recovery, plus stay healthy on the way up and achieve your personal goals.
                 </p>
- --}} 
-  <h6 class="readMore mobile">
-  READ MORE
-</h6>
+            </div>
+                <h6 class="readMore mobile">
+                    <button  type="button" class="btn " data-toggle="modal" data-target="#modal_recovery">
+                        READ MORE
+                      </button>                </h6>
             </div>
           </div>
             <div class="scrollDiv2 desktop">
@@ -354,16 +396,13 @@
                 </ul>
             </div>
             <div class="scrollDiv2 mobile">
-              <a  href="#section-6" class="">
+              <a  href="#connect" class="mobileSmooth">
                   @include('layouts.see_next')
               </a>
-  
-  </div>
-
-
+        </div>
         </div>
     </section>
-    <section class="row  red6 hero-image section" id="section-6">
+    <section class="row  red6 hero-image section" id="connect">
         <div class="red6-overlay"></div>
         <div class="content">
             <div class="row justify-content-center logo "><img class="kraj" src="/images/logos/Logo-DR.svg" alt="" /></div>
@@ -384,7 +423,6 @@
 
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -392,17 +430,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="/js/jquery.onepage-scroll.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.7/wavesurfer.min.js"></script>
-
 <script src="/js/wavesurfer.js"></script>
-
 <script>
     $(".main").onepage_scroll({
         sectionContainer: "section",
         responsiveFallback: 600,
         loop: false
     });
-
 </script>
 @endsection

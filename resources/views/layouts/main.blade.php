@@ -43,10 +43,17 @@
   gtag('config', 'UA-170482596-1');
 </script>
 
+
 </head>
 
 <body id="body">
-    
+ 
+    @include('components.modal')
+    @include('components.modal1')
+    @include('components.modal2')
+    @include('components.modal3')
+    @include('components.modal4') 
+
   <div id="loader-wrapper">
     <img id="loader" src="/images/logos/Logo-DR.svg " /> 
   </div>
@@ -64,5 +71,6 @@
 
 
 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>

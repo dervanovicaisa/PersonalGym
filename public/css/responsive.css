@@ -1,23 +1,42 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     p {
-        font-weight: 200 !important;
         font-size: 14px !important;
+    }
+
+    .modal-title {
+        font-weight: 600 !important;
+    }
+
+    .modal-body p {
+        font-weight: 400 !important;
     }
 
     .readMore {
         font-weight: 600 !important;
+        z-index: 100;
+    }
+
+    .readMore button {
+        border: none;
+        border-bottom: 4px solid #7ee0ff;
+        background: transparent;
+        color: white;
+        font-size: 14px !important;
     }
 
     .txtInitials1 {
-        top: 20% !important;
+        top: 10% !important;
         left: 50% !important;
         transform: translate(-50%, 50%);
         flex-wrap: wrap !important;
         text-align: center !important;
         justify-content: center;
         width: 100%;
+    }
 
+    nav {
+        display: none;
     }
 
     .txtInitials1 img {
@@ -57,28 +76,24 @@
         display: none !important;
     }
 
+    .desktopf {
+        display: none !important;
+    }
+
     .mouse {
-
         bottom: 15px !important;
-
     }
 
     .mouse .mouse-icon {
-
         margin-bottom: 20% !important;
-
     }
 
     .language-list {
-
         display: none !important;
-
     }
 
     .playSong1 {
-
         width: 96% !important;
-
     }
 
     .wrapper {
@@ -86,7 +101,6 @@
     }
 
     #circle {
-
         display: none;
     }
 
@@ -97,16 +111,12 @@
         transform: scale(0.9);
     }
 
-
     #pause {
         transform: scale(0.65);
     }
 
-
-
     .imgL {
         width: 10% !important;
-
     }
 
     .logo img {
@@ -115,7 +125,6 @@
     }
 
     .logo {
-
         height: 12% !important;
     }
 
@@ -124,7 +133,6 @@
         width: 90% !important;
         margin-bottom: 5% !important;
         padding-right: 10%;
-
     }
 
     .textAbout {
@@ -137,6 +145,22 @@
         margin-right: auto !important;
         width: 85% !important;
         padding: 0 !important;
+        top: 13% !important;
+    }
+
+    .naslov {
+        font-size: 40px !important;
+    }
+
+    .logoKraj img {
+        width: 50px !important;
+    }
+
+    .rightText {
+        margin-right: auto !important;
+        width: 85% !important;
+        padding: 0 !important;
+        top: 13% !important;
     }
 
     .scrollDiv2 {
@@ -150,11 +174,8 @@
         width: 22% !important;
     }
 
-
-
     .introt h1 {
         font-size: 60px !important;
-
     }
 
     .introt h5 {
@@ -169,19 +190,17 @@
         margin-bottom: 9% !important;
     }
 
-    .toggleText>div {
+    .toggleText > div {
         height: auto !important;
         width: 100% !important;
     }
 
     .training h1 {
-
         font-size: 60px;
     }
 
     #reha {
         font-size: 40px;
-
     }
 
     .slide3 {
@@ -191,23 +210,31 @@
         height: 50% !important;
         padding-left: 10% !important;
         padding-right: 10% !important;
-
-
     }
 
     label {
-
         font-size: 12px !important;
     }
 
     .needs-validation {
-
         margin-bottom: 80px;
     }
 
     .yourdata {
         padding-top: 10px !important;
+        font-size: 30px;
         padding-bottom: 10px !important;
+    }
+
+    .highw {
+        width: 340px !important;
+        right: -15% !important;
+        font-size: 21px !important;
+        margin: -7px 0 0 -75px !important;
+    }
+
+    .starter {
+        font-size: 30px !important;
     }
 
     .questi {
@@ -219,13 +246,13 @@
     }
 
     .next_button {
-
-        bottom: 5% !important;
-
+        position: absolute !important;
+        bottom: 0% !important;
     }
 
     .prev_button {
-        bottom: 5% !important;
+        position: absolute !important;
+        bottom: 0% !important;
     }
 
     .m-4 {
@@ -243,13 +270,11 @@
         height: 50%;
         padding-left: 10% !important;
         padding-right: 10% !important;
-
     }
 
     .slide2 {
         padding-left: 10% !important;
         padding-right: 10% !important;
-
     }
 
     .leftText {
@@ -296,16 +321,12 @@
     }
 
     .intro_button button {
-
         padding: 2% 15% !important;
         font-size: 16px !important;
-
     }
 
     .introt6 {
-
         margin-left: 0px !important;
-
     }
 
     .hero-image {
@@ -322,7 +343,6 @@
 
     .red4 {
         background-image: url("../images/all/4s.png") !important;
-
     }
 
     .red5 {
@@ -332,12 +352,20 @@
     .red6 {
         background-image: url("../images/all/6s.png") !important;
     }
+
+    .intro_button button {
+        width: 100%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .mobile {
         display: none !important;
+    }
+
+    .desktopf {
+        display: flex !important;
     }
 
     .desktop {
@@ -347,7 +375,6 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
     h6,
     .h6 {
         font-size: 0.85rem;
@@ -400,11 +427,11 @@
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500px) {
-
     h6,
     .h6 {
         font-size: 1rem;
