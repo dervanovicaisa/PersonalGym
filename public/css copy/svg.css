@@ -1,0 +1,225 @@
+nav {
+    position: fixed;
+    width: 80px;
+    height: 50vh;
+    left: 3%;
+    bottom: 25%;
+    z-index: 100;
+}
+
+nav ul {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    list-style-type: none;
+    padding-top: 20px;
+    width: 90px;
+}
+
+nav ul li {
+    height: 50px;
+    z-index: 7;
+}
+
+nav ul li a.active {
+    background: black;
+}
+
+nav ul li a svg .active path {
+    d: path("M8,2 L2,8");
+}
+
+path {
+    transition: fill 0.9s ease;
+}
+
+.navb {
+    position: absolute;
+}
+
+.navb path {
+    fill: #b2b2b2;
+    transform: translate(9px, 0px);
+}
+
+.onepage-pagination li .active path {
+    fill: #7ee0ff;
+    transform: rotate(180deg) translate(1.5px, 0px);
+    transform-origin: center;
+    transform-box: fill-box;
+    /*         d: path("M11.5,0,23,19H0Z") !important;
+ */
+}
+
+.prava1 {
+    position: fixed;
+    height: 100%;
+    transform: translate(1px, -23px);
+}
+
+.prava1 .a {
+    transform: translate(9px, 0.5px);
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(0px);
+    }
+
+    30% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(10px);
+    }
+}
+
+.seeNext:hover {
+    animation: moveText 0.8s linear;
+    animation-fill-mode: forwards;
+}
+
+.seeNext:hover g .prava {
+    transform: translate3d(41px, -10px, 0px) scale(1);
+}
+
+.a {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-width: 2px;
+}
+
+.b {
+    fill: #fff;
+    font-size: 16px;
+    font-family: Raleway-Medium, Raleway;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+}
+
+.prava {
+    transition: 0.5s ease;
+    transform: translate3d(41px, 0px, 1px) scale(1);
+}
+
+#line1 {
+    stroke-width: 4px;
+    stroke: #7ee0ff;
+    stroke-linecap: round;
+}
+
+#line2 {
+    stroke-width: 4px;
+    stroke: #7ee0ff;
+    fill: #7ee0ff;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+/* Animacija play button */
+
+#pause:hover #circle {
+    transition: stroke-dashoffset 0.5s ease-in;
+    stroke-dashoffset: 0;
+    fill: none;
+}
+
+#circle {
+    transition: stroke-dashoffset 300ms ease-in;
+    stroke-dashoffset: 0;
+    fill: none;
+    stroke-width: 2px;
+    stroke: white;
+}
+
+#circle.play {
+    stroke-dashoffset: 314;
+}
+
+.buttonUl {
+    text-decoration: none;
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pravaNext {
+    transition: 0.5s ease;
+    transform: translate3d(45.107px, 4.493px, 0px) scale(1) rotate(-90deg);
+}
+
+.next_button:hover g .pravaNext {
+    transform: translate3d(49.107px, 4.493px, 0px) scale(1) rotate(-90deg);
+}
+
+@keyframes moveTextNext {
+    0% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(4px);
+    }
+
+    100% {
+        transform: translateX(8px);
+    }
+}
+
+.next_button:hover {
+    animation: moveTextNext 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.vrhNext {
+    transform: translate3d(-259px, -2332.4px, 0px)scale(1);
+    transition: 0.5s ease;
+
+}
+
+.next_button:hover .vrhNext {
+    transform: translate3d(-255px, -2332.4px, 0px)scale(1);
+}
+
+
+
+.pravaPrev {
+    transition: 0.5s ease;
+    transform: translate3d(64.107px, 4.492px, 0px) scale(1) rotate(-90deg);
+}
+
+.prev_button:hover g .pravaPrev {
+    transform: translate3d(60.107px, 4.492px, 0px) scale(1) rotate(-90deg);
+}
+
+@keyframes moveTextPrev {
+    0% {
+        transform: translateX(0px);
+    }
+
+    30% {
+        transform: translateX(-4px);
+    }
+
+    100% {
+        transform: translateX(-8px);
+    }
+}
+
+.prev_button:hover {
+    animation: moveTextPrev 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.vrhPrev {
+    transform: translate3d(393.586px, 2341.385px, 0px)scale(1) rotate(180deg);
+    transition: 0.5s ease;
+
+}
+
+.prev_button:hover .vrhPrev {
+    transform: translate3d(389.586px, 2341.385px, 0px) scale(1) rotate(180deg);
+}
