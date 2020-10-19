@@ -61,7 +61,7 @@
 
         </div>
         <div class="scrollDiv mobile">
-          <a href="#about" class="mouse smoothscroll mobileSmooth">
+          <a href="#2" class="mouse smoothscroll mobileSmooth">
               <span class="mouse-icon">
                   <span class="mouse-wheel"></span>
               </span>
@@ -70,7 +70,7 @@
       </div>
     </section>
 
-    <section class="row  red2 hero-image section" id="about">
+    <section class="row m-0  red2 hero-image section" id="2">
     {{--
         <div class="w-100 absolute">
             <img src="/images/all/4s.png" alt="">
@@ -85,7 +85,7 @@
             <div class="row w-50 float-left intro start">
                 <div class="introt">
                     <h1>INTRO</h1>
-                    <h5>About/ The Trainer/ The Coach</h5>
+                    <h5>About / The Trainer / The Coach</h5>
 
                 </div>
             </div>
@@ -163,7 +163,7 @@
 
         </div>
     </section>
-    <section class="row red3 justify-content-center section" id="personal-trainer">
+    <section class="row m-0 red3 justify-content-center section" id="personal-trainer">
         <div class="red3-overlay"></div>
         <div class="content">
 
@@ -211,7 +211,7 @@
                     <p>With your power of will and heart everything is possible. My name is Dušan Radulović.
                         Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
                     </p><br><br>
-                    <p > Let's get started with your training ! </p>
+                    <p > Let's get started with your training! </p>
                 </div>
                     <h6 class="readMore mobile">
                         <button type="button" class="btn " data-toggle="modal" data-target="#modal_training">
@@ -262,14 +262,14 @@
 
         </div>
     </section>
-    <section class="row  red4 hero-image section" id="nutritio-dr">
+    <section class="row m-0  red4 hero-image section" id="nutritio-dr">
         <div class="red4-overlay"></div>
         <div class="content">
 
 
 
             <div class="row justify-content-center logo desktopf"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
-            <div class="row w-50 float-left intro mt start">
+            <div class="row w-50 float-left intro mt other start">
                 <div class="introt4">
                     <h1>NUTR</h1>
                     <h1 class="h14"> ITION</h1>
@@ -336,11 +336,11 @@
 
 
     </section>
-    <section class="row  red5 hero-image section" id="recovery-dr">
+    <section class="row m-0  red5 hero-image section" id="recovery-dr">
         <div class="red5-overlay"></div>
         <div class="content">
             <div class="row justify-content-center logo desktopf"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
-            <div class="row w-50 float-left intro mt start">
+            <div class="row w-50 float-left intro mt other start">
                 <div class="introt4">
                     <h1>RECO</h1>
                     <h1 class="h14"> VERY</h1>
@@ -402,7 +402,7 @@
         </div>
         </div>
     </section>
-    <section class="row  red6 hero-image section" id="connect">
+    <section class="row m-0  red6 hero-image section" id="connect">
         <div class="red6-overlay"></div>
         <div class="content">
             <div class="row justify-content-center logo "><img class="kraj" src="/images/logos/Logo-DR.svg" alt="" /></div>

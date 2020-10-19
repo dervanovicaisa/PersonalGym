@@ -473,10 +473,10 @@ section {
 }
 
 .slide3 {
-    position: relative;
-    width: 100%;
-    height: 80%;
-}
+/*     position: relative;
+ */    width: 100%;
+/*     height: 80%;
+ */}
 
 .leftText {
     opacity: 1;
