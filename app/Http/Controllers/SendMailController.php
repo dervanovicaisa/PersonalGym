@@ -40,7 +40,19 @@ class SendMailController extends Controller
         $data["txt_yes_no7"] = $request->input("txt_yes_no7");
         $data["txt_yes_no8"] = $request->input("txt_yes_no8");
         /*   forma2 */
-
+        $data["pitanje1"] = $request->input("pitanje1");
+        $data["pitanje2"] = $request->input("pitanje2");
+        $data["pitanje3"] = $request->input("pitanje3");
+        $data["pitanje4"] = $request->input("pitanje4");  
+        $data["pitanje5"] = $request->input("pitanje5");
+        $data["pitanje6"] = $request->input("pitanje6");
+        $data["pitanje7"] = $request->input("pitanje7");
+        $data["pitanje8"] = $request->input("pitanje8");
+        $data["pitanje9"] = $request->input("pitanje9");  
+        $data["pitanje10"] = $request->input("pitanje10");
+        $data["pitanje11"] = $request->input("pitanje11");
+        $data["pitanje12"] = $request->input("pitanje12");  
+        $data["pitanje13"] = $request->input("pitanje13");
         /*  forma 3 */
         $data["yes_no9"] = $request->input("yes_no9");
         $data["txt_yes_no9"] = $request->input("txt_yes_no9");
@@ -50,7 +62,6 @@ class SendMailController extends Controller
         $data["personal_goals"] = $request->input("personal_goals");
         $data["miscellaneus"] = $request->input("miscellaneus");
         $data["date"] = $request->input("date");
-
 
         $pdf = PDF::loadView('components.pdfMail', $data);
 

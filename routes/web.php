@@ -20,15 +20,13 @@ Route::get('/', function () {
 Route::get('/deu', function () {
     return view('site.welcome_deu');
 });
-Route::get('/form1', function () {
+Route::get('/inquiry', function () {
     return view('site.form1');
 });
 Route::get('/form1/deu', function () {
     return view('site.form1Deu');
 });
-Route::get('/test', function () {
-    return view('site.test');
-});
+
 Route::post('application', [
     'uses' => 'SendMailController@sendmail',
     'as' => 'contact.store'

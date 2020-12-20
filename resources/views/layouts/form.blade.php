@@ -1,7 +1,6 @@
-<form action="{{route('contact.store')}}" method="post" class="needs-validation" id="application_form" novalidate>
-    {{ csrf_field() }}
-   <div id="section_form" class=""  >
-    <h1 class="blue m-3 yourdata">Your Data</h1>
+
+   <div id="section_form" class="">
+     <h4 class="blue m-3 yourdata">Your Data</h4>
 
     <div class="form-row">
       <div class="col-md-5 mt-5 m-3">
@@ -84,12 +83,12 @@
         </div>
    
       </div>
-    <div class="text-center m-5">
-            <h1 class="blue starter mt-5 mb-5">  Starter - Your health, fitness
-            </h1>
+    <div class=" my-5 ml-0">
+            <h4 class="blue starter mt-5 mb-5 ml-3">  Starter - Your health, fitness
+            </h4>
      </div>
-    <div class="col-md-8 mx-auto mt-5">
-            <div class="col-md-9 m-4">
+    <div class="mx-auto mt-5">
+            <div class="col-9 my-4 ml-0">
                 <input type="text" class="form-control" id="validationCustom09" placeholder="How are you?*" name = "howareyou" required>
                 <div class="valid-feedback">
                 Looks good!
@@ -98,7 +97,7 @@
                 Please provide a valid answer.
                 </div>
             </div>
-            <div class="col-md-11 m-4 radio">
+            <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Are you currently under medical treatment?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no" id="yes" value="yes" />
@@ -111,7 +110,7 @@
                 <input type="text" class="form-control radioText"name="txt_yes_no"  id="validationCustom10" placeholder="If yes, what is the reason for your medical treatment?*" >
             </div>
 
-            <div class="col-md-11 m-4 radio">
+            <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Do you smoke or have asthma/bronchitis?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no1" id="yes1" value="yes"  />
@@ -124,7 +123,7 @@
                 <input type="text" class="form-control radioText" name="txt_yes_no1" id="validationCustom11" placeholder="If yes, what is the cause?*" >
             
             </div>
-            <div class="col-md-12 m-4 radio">
+            <div class="col-md-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Your blood pressure?*</label>
               
                 <input type="radio" name="high" id="high" value="high" checked/>              
@@ -138,7 +137,7 @@
                   </div>
                
             </div>
-            <div class="col-md-11 m-4 radio">
+            <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Do you have diabetes?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no2" id="yes2" value="yes"  />
@@ -150,7 +149,7 @@
                   </div>
                 <input type="text" class="form-control radioText" name="txt_yes_no2" id="validationCustom12" placeholder="If yes, which type?*" >
             </div>
-                <div class="col-md-11 m-4 radio">
+                <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Heart disease?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no3" id="yes3" value="yes"  />
@@ -162,7 +161,7 @@
                   </div>
                 <input type="text" class="form-control radioText" name="txt_yes_no3" id="validationCustom13" placeholder="If yes, which?*" >
             </div>
-            <div class="col-md-11 m-4 radio">
+            <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Do you take medicine?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no4" id="yes4" value="yes"  />
@@ -174,7 +173,7 @@
                   </div>
                 <input type="text" class="form-control radioText" name="txt_yes_no4" id="validationCustom14" placeholder="If yes, which?*" >
             </div>
-            <div class="col-md-11 m-4 radio">
+            <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Are you taking any kind of supplements?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no5" id="yes5" value="yes"  />
@@ -186,7 +185,7 @@
                   </div>
                 <input type="text" class="form-control radioText"  name="txt_yes_no5" id="validationCustom15" placeholder="If yes, which?*" >
             </div>                  
-            <div class="col-md-11 m-4 radio">
+            <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Did you have any kind of surgeries?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no6" id="yes6" value="yes"  />
@@ -198,7 +197,7 @@
                   </div>
                 <input type="text" class="form-control radioText" name="txt_yes_no6" id="validationCustom16" placeholder="If yes, which?*" >
             </div>
-            <div class="col-md-11 m-4 radio">
+            <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Do you have back problems?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no7" id="yes7" value="yes"  />
@@ -210,7 +209,7 @@
                   </div>
                 <input type="text" class="form-control radioText" name="txt_yes_no7" id="validationCustom17"  placeholder="If yes, which?*" >
             </div>
-            <div class="col-md-11 m-4 radio">
+            <div class="col-12 my-4 ml-0 radio">
                 <label for="yes_no_radio">Joint problems?*</label>
                 <div class="buttRadio">
                     <input type="radio" name="yes_no8" id="yes8" value="yes"  />
@@ -222,38 +221,9 @@
                   </div>
                 <input type="text" class="form-control radioText" name="txt_yes_no8" id="validationCustom18" placeholder="If yes, which?*" >
         </div>
-
     </div>
 
-    <div class=" next_button">
-      <svg id="next" xmlns="http://www.w3.org/2000/svg" width="122" height="38.918" viewBox="0 0 122 38.918"><defs>
-        <style>
-        .a{
-          fill:none;
-          stroke:#fff;
-          stroke-linecap:round;
-          stroke-width:2px;
-        }
-        .b{
-          fill:#fff;
-          font-size:16px;
-          font-family:Raleway-Medium, Raleway;
-          font-weight:500;
-          letter-spacing:0.15em;}</style>
-        </defs>
-        <g transform="translate(1 1.318)">
-          <line class="a pravaNext" y2="28.786" transform="translate(45.107 4.493) rotate(-90)"/>
-          <g transform="translate(-259 -2332.4)" class="vrhNext">
-            <line class="a" x1="4.493" y1="10.199" transform="translate(322.694 2341.385) rotate(-90)"/>
-            <line class="a" y1="10.199" x2="4.493" transform="translate(322.694 2336.893) rotate(-90)"/>
-          </g>
-        <text class="b" transform="translate(60 33.6)"><tspan x="-60.08" y="0">Next section</tspan>
-        </text>
-      </g>
-    </svg>
-  </div>
-</div>
-  
+    </div>
   <script>
   // Example starter JavaScript for disabling form submissions if there are invalid fields
   (function() {

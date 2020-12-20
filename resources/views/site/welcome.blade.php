@@ -11,6 +11,7 @@
 @endif
 <div class="main" id="fullpage">
     <section class="hero-image section" id="section-1">
+      
         <div class="hero-overlay"></div>
         <div class="playSong1 red">
             <div class="swap">
@@ -38,12 +39,13 @@
             </div>
         </div>
         <div class="txtInitials1 red">
+        <img class="runningLogo desktop" src="/images/logos/Logo-DR.svg" />
+          <img class="runningLogo mobile" src="/images/logos/logodrDark.svg" />
 
-            <img class="runningLogo" src="/images/logos/Logo-DR.svg" />
-            <div class="text">
-                <h3>Dušan Radulović</h3>
-                <h6>PERSONAL TRAINER</h6>
-            </div>
+          <div class="text">
+                    <h3>Dušan </h3><h3>Radulović</h3>
+                    <h6 class="mobile">PERSONAL TRAINER</h6>
+                </div>
         </div>
         <div class="scrollDiv desktop">
             <ul class="onepage-pagination buttonUl">
@@ -61,7 +63,7 @@
 
         </div>
         <div class="scrollDiv mobile">
-          <a href="#2" class="mouse smoothscroll mobileSmooth">
+          <a href="#intro" class="mouse smoothscroll mobileSmooth">
               <span class="mouse-icon">
                   <span class="mouse-wheel"></span>
               </span>
@@ -70,28 +72,30 @@
       </div>
     </section>
 
-    <section class="row m-0  red2 hero-image section" id="2">
-    {{--
-        <div class="w-100 absolute">
-            <img src="/images/all/4s.png" alt="">
-            <img src="/images/all/sablon.png" alt="">
+    <section class="row m-0  red2  section" id="intro">
+    <div id="cf">
+            <img class="bottom" src="/images/all/slika3.png" />
+            <img class="top" src="/images/all/slika32.png" />
         </div>
-         --}}
-        <div class="red2-overlay"></div>
-
+        <div class="red2-overlay desktop" ></div>
         <div class="content">
-
-            <div class="row justify-content-center logo "><img class="imgL"src="/images/logos/Logo-DR.svg" alt="" /></div>
-            <div class="row w-50 float-left intro start">
-                <div class="introt">
-                    <h1>INTRO</h1>
-                    <h5>About / The Trainer / The Coach</h5>
-
+            <div class="row justify-content-center logo ">
+                <img class="imgL mobile"src="/images/logos/logodrDark.svg" alt="" />
+                <div class="txtInitials1 not  red">
+                    <img class="runningLogo desktop" src="/images/logos/Logo-DR.svg" />
+                        <div class="text">
+                            <h4>Dušan </h4><h4>Radulović</h4>
+                        </div>
                 </div>
             </div>
-            <div class="row slide2">
-
-            <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 textAbout">
+            <div class="row intro start">
+                    <div class="col-xl-4 col-sm-12   col-12 pL0">
+                        <div class="introt">
+                            <h1>INTRO</h1>
+                            <h5>About / The Trainer / The Coach</h5>
+                        </div>
+                    </div>
+            <div class="col-xl-8 col-sm-12  col-12 my-2 textAbout">
                 <p class="mobile">  
                     My love towards sports began at a very early age, in a form of the most popular
                     one- football. As time went by, my ambition was rising. I strived to get stronger,
@@ -142,7 +146,7 @@
              
                 </h6>
             </div>
-          </div>
+
             <div class="scrollDiv2 desktop">
                 <ul class="onepage-pagination buttonUl">
                     <li>
@@ -160,88 +164,100 @@
                       </a>
           
           </div>
+            </div>
 
         </div>
     </section>
     <section class="row m-0 red3 justify-content-center section" id="personal-trainer">
         <div class="red3-overlay"></div>
         <div class="content">
-
-            <div class="row justify-content-center logo desktopf"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
-            <div class="toggleText">
-                <div>
-                    <div class="training">
-                        <h1 id="train"> TRAINING</h1>
-                    </div>
-
-                    <h1 id="reha" class="rehab"> REHAB</h1>
+        <div class="row justify-content-center logo ">
+        <img class="imgL mobile" src="/images/logos/Logo-DR.svg" alt="" />    
+                    <div class="txtInitials1 not  red">
+                    <img class="runningLogo desktop" src="/images/logos/Logo-DR.svg" />
+                        <div class="text">
+                            <h4>Dušan </h4><h4>Radulović</h4>
+                        </div>
                 </div>
-                <h5> Closer to the edge</h5>
             </div>
-            <div class="row slide3">
-                <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 leftText">
-                
-                    <p class="mobile"> As a personal trainer (Athletic, Strength & Conditioning Coach) I'm giving your body,
-                        mind and soul a unique individual experience that will help you find your purpose,
-                        set your goals and achieve them. </p>
-                        <div class="desktop">
-                            <p >
-                        As a personal trainer (Athletic, Strength & Conditioning Coach) I'm giving your body,
-                        mind and soul a unique individual experience that will help you find your purpose,
-                        set your goals and achieve them.  What doesn't kill you makes you Stronger. I will
-                        push you to the limits and beyond and challenge you to give your very best in everything
-                        you do, every day. Pain is weakness leaving your body. Weakness leaving your body makes
-                        you a healthier and stronger individual. Putting your health in the first place in everything
-                        we do is going to allow you to build a strong foundation.
-                    </p><br>
-                 <p><b>Remember - nothing beats a strong body </b>,
-                        mind and soul. We all seek to be happy and satisfied with ourselves. Your guarantee will be your
-                        commitment, your biggest motivation will be the results you see in the mirror. You will fail,
-                        but
-                        you will learn from your mistakes. Not you, not me or anybody is gonna hit as hard as life. But
-                        it
-                        ain't about how hard you can hit, it's about how hard you can get hit and keep moving forward,
-                        how
-                        much you can take and keep moving forward. That's how winning is done. You and me are gonna get
-                        you
-                        those extra few reps, that extra mile, that extra pound/kg to get You <b>CLOSER TO THE EDGE</b>
-                        and achieve
-                        everything you want.
-                    </p>
-                    <p>With your power of will and heart everything is possible. My name is Dušan Radulović.
-                        Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
-                    </p><br><br>
-                    <p > Let's get started with your training! </p>
-                </div>
-                    <h6 class="readMore mobile">
-                        <button type="button" class="btn " data-toggle="modal" data-target="#modal_training">
-                            READ MORE
-                          </button>                      </h6>
-                </div>
-                <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 rightText">
+            <div class="row ">
+            <div class="col-xl-5 col-sm-12    col-12">
+                    <div class="toggleText">
+                        <div>
+                            <div class="training">
+                                <h1 id="train"> TRAINING</h1>
+                            </div>
 
-                    <p class="mobile">   No matter what kind of injury you are suffering from, with the right balance of physical
-                        therapy, nutrition and recovery you are going to
-                        overcome it - even gonna be stronger than ever!  </p>
-                        <div class="desktop">
-                    <p>
-                        No matter what kind of injury you are suffering from, with the right balance of physical
-                        therapy, nutrition and recovery you are going to
-                        overcome it - even gonna be stronger than ever! Injury Rehabilitation is very important to me.
-                        An injury changed my life. From my own experience,
-                        I know what you are going through.
-                    </p><br><br>
-                    <p> I realised I want to help others in their difficult times, guide and support them to come out
-                        as WINNER.
-                        I find great joy in helping you overcome an injury and achieve your goals, coming out
-                        indestructible!</p><br><br>
-                    <p>This is Victory – This is Sparta!</p>
-                    </p> 
-                </div>
-                    <h6 class="readMore mobile">
-                        <button type="button" class="btn " data-toggle="modal" data-target="#modal_rehab">
-                            READ MORE
-                          </button>                    </h6>
+                            <h1 id="reha" class="rehab"> REHAB</h1>
+                        </div>
+                        <h5> Closer to the edge</h5>
+                    </div>
+              </div>
+              <div class="col-xl-7 col-sm-12  col-12 my-2 parent">
+                    <div class=" leftText">
+                    
+                        <p class="mobile"> As a personal trainer (Athletic, Strength & Conditioning Coach) I'm giving your body,
+                            mind and soul a unique individual experience that will help you find your purpose,
+                            set your goals and achieve them. </p>
+                            <div class="desktop">
+                                <p >
+                            As a personal trainer (Athletic, Strength & Conditioning Coach) I'm giving your body,
+                            mind and soul a unique individual experience that will help you find your purpose,
+                            set your goals and achieve them.  What doesn't kill you makes you Stronger. I will
+                            push you to the limits and beyond and challenge you to give your very best in everything
+                            you do, every day. Pain is weakness leaving your body. Weakness leaving your body makes
+                            you a healthier and stronger individual. Putting your health in the first place in everything
+                            we do is going to allow you to build a strong foundation.
+                        </p><br>
+                    <p><b>Remember - nothing beats a strong body </b>,
+                            mind and soul. We all seek to be happy and satisfied with ourselves. Your guarantee will be your
+                            commitment, your biggest motivation will be the results you see in the mirror. You will fail,
+                            but
+                            you will learn from your mistakes. Not you, not me or anybody is gonna hit as hard as life. But
+                            it
+                            ain't about how hard you can hit, it's about how hard you can get hit and keep moving forward,
+                            how
+                            much you can take and keep moving forward. That's how winning is done. You and me are gonna get
+                            you
+                            those extra few reps, that extra mile, that extra pound/kg to get You <b>CLOSER TO THE EDGE</b>
+                            and achieve
+                            everything you want.
+                        </p>
+                        <p>With your power of will and heart everything is possible. My name is Dušan Radulović.
+                            Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
+                        </p><br><br>
+                        <p > Let's get started with your training! </p>
+                    </div>
+                        <h6 class="readMore mobile">
+                            <button type="button" class="btn white" data-toggle="modal" data-target="#modal_training">
+                                READ MORE
+                            </button>                      </h6>
+                    </div>
+                    <div class=" rightText">
+
+                        <p class="mobile">   No matter what kind of injury you are suffering from, with the right balance of physical
+                            therapy, nutrition and recovery you are going to
+                            overcome it - even gonna be stronger than ever!  </p>
+                            <div class="desktop">
+                        <p>
+                            No matter what kind of injury you are suffering from, with the right balance of physical
+                            therapy, nutrition and recovery you are going to
+                            overcome it - even gonna be stronger than ever! Injury Rehabilitation is very important to me.
+                            An injury changed my life. From my own experience,
+                            I know what you are going through.
+                        </p><br><br>
+                        <p> I realised I want to help others in their difficult times, guide and support them to come out
+                            as WINNER.
+                            I find great joy in helping you overcome an injury and achieve your goals, coming out
+                            indestructible!</p><br><br>
+                        <p>This is Victory – This is Sparta!</p>
+                        </p> 
+                    </div>
+                        <h6 class="readMore mobile">
+                            <button type="button" class="btn white" data-toggle="modal" data-target="#modal_rehab">
+                                READ MORE
+                            </button>                    </h6>
+                    </div>
                 </div>
             </div>
             <div class="scrollDiv2 desktop">
@@ -265,20 +281,27 @@
     <section class="row m-0  red4 hero-image section" id="nutritio-dr">
         <div class="red4-overlay"></div>
         <div class="content">
-
-
-
-            <div class="row justify-content-center logo desktopf"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
-            <div class="row w-50 float-left intro mt other start">
-                <div class="introt4">
-                    <h1>NUTR</h1>
-                    <h1 class="h14"> ITION</h1>
-                    <h5>YOU ARE WHAT YOU EAT.</h5>
-
+            <div class="row justify-content-center logo ">
+                   <img class="imgL mobile" src="/images/logos/Logo-DR.svg" alt="" />          
+                         <div class="txtInitials1 not  red">
+                    <img class="runningLogo desktop" src="/images/logos/Logo-DR.svg" />
+                        <div class="text">
+                            <h4>Dušan </h4><h4>Radulović</h4>
+                        </div>
                 </div>
-            </div>
-            <div class="row slide4">
-            <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 textAbout">
+
+             </div>
+             <div class="row">
+             <div class="col-xl-5 col-sm-12  pL0  col-12">
+                <div class="  float-left  mt other start">
+                    <div class="introt4">
+                        <h1>NUTRITION</h1>
+                        <h5>YOU ARE WHAT YOU EAT.</h5>
+
+                    </div>
+                </div>
+             </div>
+            <div class="col-xl-7 col-sm-12  col-12 my-2 textAbout">
                 <p class="mobile">  Your nutrition is the most important aspect of your health. Remember, you are what you eat. Your
                     results are going to depend on your nutrition.
                     You want to lose weight? You want to burn that extra body fat and get lean? You want to gain lean
@@ -308,7 +331,7 @@
                 </p> 
             </div>
                 <h6 class="readMore mobile">
-                    <button type="button" class="btn " data-toggle="modal" data-target="#modal_nutrition">
+                    <button type="button" class="btn white" data-toggle="modal" data-target="#modal_nutrition">
                         READ MORE
                       </button>                </h6>
             </div>
@@ -339,17 +362,27 @@
     <section class="row m-0  red5 hero-image section" id="recovery-dr">
         <div class="red5-overlay"></div>
         <div class="content">
-            <div class="row justify-content-center logo desktopf"><img src="/images/logos/Logo-DR.svg" alt="" /></div>
-            <div class="row w-50 float-left intro mt other start">
-                <div class="introt4">
-                    <h1>RECO</h1>
-                    <h1 class="h14"> VERY</h1>
-                    <h5>RECOVERY IS GOOD INVESTMENT.</h5>
-
+            <div class="row justify-content-center logo ">
+                <img class="imgL mobile"src="/images/logos/Logo-DR.svg" alt="" />
+                <div class="txtInitials1 not  red">
+                    <img class="runningLogo desktop" src="/images/logos/Logo-DR.svg" />
+                        <div class="text">
+                            <h4>Dušan </h4><h4>Radulović</h4>
+                        </div>
                 </div>
             </div>
-            <div class="row slide4">
-            <div class="col-xl-7 col-xl-7 col-sm-12 col-xs-12 textAbout">
+            <div class="row">
+            <div class="col-xl-5 col-sm-12  pL0 col-12">
+                <div class=" float-left  mt other pL0 start">
+                    <div class="introt4">
+                        <h1>RECOVERY</h1>
+                        <h5>RECOVERY IS GOOD INVESTMENT.</h5>
+
+                    </div>
+                </div>
+               </div>
+
+            <div class="col-xl-7 col-sm-12  col-12 my-2 textAbout">
                 <p class="mobile">   You will learn to take and invest time in recovery, since it is a very important aspect of your
                     lifestyle.
                     Acknowledging the importance of the stress resistance, we put special effort into practicing it.</p>
@@ -379,7 +412,7 @@
                 </p>
             </div>
                 <h6 class="readMore mobile">
-                    <button  type="button" class="btn " data-toggle="modal" data-target="#modal_recovery">
+                    <button  type="button" class="btn white" data-toggle="modal" data-target="#modal_recovery">
                         READ MORE
                       </button>                </h6>
             </div>
@@ -403,10 +436,19 @@
         </div>
     </section>
     <section class="row m-0  red6 hero-image section" id="connect">
-        <div class="red6-overlay"></div>
+        <div class="red6-overlay desktop"></div>
         <div class="content">
-            <div class="row justify-content-center logo "><img class="kraj" src="/images/logos/Logo-DR.svg" alt="" /></div>
-            <div class="row float-left intro end mt  ">
+            <div class="row justify-content-center logo ">
+                <img class="imgL mobile"src="/images/logos/logodrDark.svg" alt="" />
+                <div class="txtInitials1 not  red">
+                    <img class="runningLogo desktop" src="/images/logos/Logo-DR.svg" />
+                        <div class="text">
+                            <h4>Dušan </h4><h4>Radulović</h4>
+                        </div>
+                </div>
+            </div>
+            <div class="row">
+            <div class=" col-xl-6 col-sm-12  col-12 intro masd ">
                 <div class="introt6">
                     <h1>Let's</h1>
                     <h1>Connect!</h1>
@@ -415,13 +457,15 @@
                         training, hit me up.</p>
 
                 </div>
+
                 <div class="intro_button">
-                    <form action="/form1">
-                        <button type="submit" type="submit">Fill out questionnaire </button>
+                    <form action="/inquiry">
+                        <button class=" noBorder" type="submit">Fill out questionnaire </button>
                     </form>
 
 
                 </div>
+            </div>
             </div>
         </div>
     </section>
