@@ -17,6 +17,9 @@
     .noBorder{
         border: none !important;
     }
+    .intro_button {
+      text-align: center; 
+    }
     #cf 
     {  
      display: none;

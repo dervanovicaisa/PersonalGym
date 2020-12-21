@@ -54,7 +54,7 @@
                         <span class="mouse-icon">
                             <span class="mouse-wheel"></span>
                         </span>
-                        <h5>Scroll down</h5>
+                        <h6>Scroll down</h6>
 
                     </a>
                 </li>
@@ -170,6 +170,13 @@
     </section>
     <section class="row m-0 red3 justify-content-center section" id="personal-trainer">
         <div class="red3-overlay"></div>
+        <div id="cf">
+            <img class="bottom" src="/images/all/slika4.png" />
+            <img class="top" src="/images/all/slika42.png" />
+            <img class="bottom" src="/images/all/slika43.png" />
+            <img class="top" src="/images/all/slika42.png" />
+
+        </div>
         <div class="content">
         <div class="row justify-content-center logo ">
         <img class="imgL mobile" src="/images/logos/Logo-DR.svg" alt="" />    
@@ -181,7 +188,7 @@
                 </div>
             </div>
             <div class="row ">
-            <div class="col-xl-5 col-sm-12    col-12">
+            <div class="col-xl-4 col-sm-12    col-12">
                     <div class="toggleText">
                         <div>
                             <div class="training">
@@ -193,7 +200,7 @@
                         <h5> Closer to the edge</h5>
                     </div>
               </div>
-              <div class="col-xl-7 col-sm-12  col-12 my-2 parent">
+              <div class="col-xl-8 col-sm-12  col-12 my-2 parent">
                     <div class=" leftText">
                     
                         <p class="mobile"> As a personal trainer (Athletic, Strength & Conditioning Coach) I'm giving your body,
@@ -292,16 +299,16 @@
 
              </div>
              <div class="row">
-             <div class="col-xl-5 col-sm-12  pL0  col-12">
+             <div class="col-xl-4 col-sm-12  pL0  col-12">
                 <div class="  float-left  mt other start">
                     <div class="introt4">
                         <h1>NUTRITION</h1>
-                        <h5>YOU ARE WHAT YOU EAT.</h5>
+                        <h5>You are what you eat!</h5>
 
                     </div>
                 </div>
              </div>
-            <div class="col-xl-7 col-sm-12  col-12 my-2 textAbout">
+            <div class="col-xl-8 col-sm-12  col-12 my-2 textAbout">
                 <p class="mobile">  Your nutrition is the most important aspect of your health. Remember, you are what you eat. Your
                     results are going to depend on your nutrition.
                     You want to lose weight? You want to burn that extra body fat and get lean? You want to gain lean
@@ -361,6 +368,10 @@
     </section>
     <section class="row m-0  red5 hero-image section" id="recovery-dr">
         <div class="red5-overlay"></div>
+        <div id="cf">
+            <img class="bottom" src="/images/all/slika6.png" />
+            <img class="top" src="/images/all/slika62.png" />
+        </div>
         <div class="content">
             <div class="row justify-content-center logo ">
                 <img class="imgL mobile"src="/images/logos/Logo-DR.svg" alt="" />
@@ -372,17 +383,17 @@
                 </div>
             </div>
             <div class="row">
-            <div class="col-xl-5 col-sm-12  pL0 col-12">
+            <div class="col-xl-4 col-sm-12  pL0 col-12">
                 <div class=" float-left  mt other pL0 start">
                     <div class="introt4">
                         <h1>RECOVERY</h1>
-                        <h5>RECOVERY IS GOOD INVESTMENT.</h5>
+                        <h5>Fill up your batteries.</h5>
 
                     </div>
                 </div>
                </div>
 
-            <div class="col-xl-7 col-sm-12  col-12 my-2 textAbout">
+            <div class="col-xl-8 col-sm-12  col-12 my-2 textAbout">
                 <p class="mobile">   You will learn to take and invest time in recovery, since it is a very important aspect of your
                     lifestyle.
                     Acknowledging the importance of the stress resistance, we put special effort into practicing it.</p>

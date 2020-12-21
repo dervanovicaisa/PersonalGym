@@ -1,10 +1,14 @@
 body,
 html {
-    font-family: Raleway, sans-serif;
+    font-family: 'Lato', sans-serif ;
+
     margin: 0;
     scroll-behavior: smooth
 }
+p{
+    font-family: 'Lato', sans-serif !important;
 
+}
 a {
     color: #7EC1F3
 }
@@ -30,7 +34,7 @@ svg {
  height:100%;  
  width:100%;  
  margin:0 auto;
- }
+ } 
  #cf img 
  {  
  position:absolute;  
@@ -40,28 +44,63 @@ svg {
  -o-transition: opacity 1.2s ease-in-out;  
  transition: opacity 1.2s ease-in-out;
  }
+ /*
  @keyframes lfb3FadeInOut 
  {  
  0% {  opacity:1;}
  45% {opacity:1;}
  55% {opacity:0;}
  100% {opacity:0;}}
- 
- #cf img.top 
+ */
+ #cf img
  {
- animation-name:lfb3FadeInOut;
- animation-timing-function: ease-in-out;
- animation-iteration-count: infinite;
- animation-duration: 8s;
- animation-direction: alternate;
- }
+    position: absolute;
+    animation-name: cf4FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+ } 
+ @keyframes cf4FadeInOut {
+    0% {
+      opacity:1;
+    }
+    17% {
+      opacity:1;
+    }
+    25% {
+      opacity:0;
+    }
+    92% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  #cf img:nth-of-type(1) {
+    animation-delay: 6s;
+  }
+  #cf img:nth-of-type(2) {
+    animation-delay: 4s;
+  }
+  #cf img:nth-of-type(3) {
+    animation-delay: 2s;
+  }
+  #cf img:nth-of-type(4) {
+    animation-delay: 0;
+  }
+/* //////////////////////////////////////////////////
+ */
+
 /* //////////////////////////////////////////////////////
  */.hero-overlay {
     z-index: 2;
     cursor: pointer;
-    background: transparent linear-gradient(270deg, #162B57D9 0%, #25335500 100%) 0% 0% no-repeat padding-box;    height: 100%;
+    background: #253355;
+    height: 100%;
     position: relative;
-    opacity: .5
+    opacity: .8;
 }
 
 .txtInitials {
@@ -225,7 +264,9 @@ h6 {
     display: block;
     text-align: -webkit-center
 }
-
+.mouse h6{
+    color: #B2B2B2;
+}
 .mouse .mouse-icon {
     display: block;
     width: 25px;
@@ -346,53 +387,53 @@ h6 {
 }
  */
 .red2-overlay {
-    background: transparent linear-gradient(180deg, #ffffff00 0, #1c80c58c 100%) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(270deg, #ffffff00 0, #1c80c58c 100%) 0 0 no-repeat padding-box;
     height: 100%;
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 100vw;
-    opacity: .5;
-    background-color: #000
+    opacity: 0.4;
+    background-color: #000;
 }
 
 .red3-overlay {
-    background: transparent linear-gradient(180deg, #40bad500 0, #40bad540 100%) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(270deg, #40bad500 0, #6161616b  70%) 0 0 no-repeat padding-box;
     height: 100%;
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 100vw;
-    opacity: .2;
-    background-color: #000
+    opacity: 0.6;
+    background-color: #000000;
 }
 
 .red4-overlay {
-    background: transparent linear-gradient(180deg, #ffffff00 0, #a0ce5a38 100%) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(270deg, #ffffff00 0, #6161616b  70%) 0 0 no-repeat padding-box;
     height: 100%;
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 100vw;
-    opacity: .2;
-    background-color: #000
+    opacity: 0.6;
+    background-color: #000000;
 }
 
 .red5-overlay {
-    background: transparent linear-gradient(180deg, #ffffff00 0, #7EC1F345 100%) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(270deg, #ffffff00 0, #6161616b  70%) 0 0 no-repeat padding-box;
     height: 100%;
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 100vw;
-    opacity: .4;
-    background-color: #000
+    opacity: 0.6;
+    background-color: #000000;
 }
 
 .red6-overlay {
-    background: transparent linear-gradient(180deg, #ffffff00 0, #7EC1F345 100%) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(270deg, #ffffff00 0, #6161616b  70%) 0 0 no-repeat padding-box;
     height: 100%;
-    position: relative;
+    position: absolute;
     z-index: 2;
     width: 100vw;
-    opacity: .4;
-    background-color: #000
+    opacity: 0.6;
+    background-color: #000000;
 }
 
 .intro {
@@ -459,11 +500,11 @@ section {
     display: none !important;
 }
 .red3 {
-    background-image: url(../images/all/slika4.png);
+/*     background-image: url(../images/all/slika4.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative
+    position: relative */
 }
 
 .questi {
@@ -497,7 +538,9 @@ section {
     letter-spacing: .72px;
     transition: .3s ease
 }
-
+#pause {
+    transform: scale(0.75);
+}
 .toggleText {
     display: flex;
   
@@ -648,7 +691,7 @@ section {
     background-color: transparent;
     color: #fff;
     display: inline;
-    padding: 3% 14%;
+    padding: 2% 9%;
     border: 2px solid #fff;
     font-size: 21px;
     letter-spacing: 2.7px;
@@ -951,9 +994,7 @@ label[for=no] {
 label {
     font-size: 14px;
 }
-.intro_button{
-    text-align: center;
-}
+
 .sendInq {
     padding: 2% 8% !important;
 }
