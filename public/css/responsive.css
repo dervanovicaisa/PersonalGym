@@ -237,7 +237,8 @@
     }
 
     .introt h1 {
-color: #253355;    }
+    color: #253355;  
+    }
 
     .introt h5 {
         font-weight: 500 !important;
@@ -378,9 +379,9 @@ color: #253355;    }
     .hero-image {
         background-image: url("../images/all/1s.jpg") !important;
     }
-wave,wave canvas{
-    height: 90px !important;
-}
+    wave,wave canvas{
+        height: 90px !important;
+    }
     .red2 {
         background-image: url("../images/all/2s.jpg") !important;
         color: #253355;
