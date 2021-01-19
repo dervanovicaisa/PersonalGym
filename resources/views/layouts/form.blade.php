@@ -53,7 +53,7 @@
            </div>
        </div>
        <div class="col-md-5  ml-auto m-3">
-         <input type="number" class="form-control" id="validationCustom06" placeholder="Height" name = "height" >
+         <input type="number" class="form-control" id="validationCustom06" placeholder="Height in cm" name = "height" >
          <div class="valid-feedback">
            Looks good!
          </div>
@@ -73,7 +73,7 @@
          </div>
        </div>
        <div class="col-md-5 ml-auto m-3">
-         <input type="number" class="form-control" id="validationCustom08" placeholder="Weight" name = "weight" >
+         <input type="number" class="form-control" id="validationCustom08" placeholder="Weight in kg" name = "weight" >
          <div class="valid-feedback">
            Looks good!
          </div>
@@ -111,7 +111,7 @@
            </div>
 
            <div class="col-12 my-4 ml-0 radio">
-               <label for="yes_no_radio">Do you smoke or have asthma/bronchitis?*</label>
+               <label for="yes_no_radio">Do you smoke ?*</label>
                <div class="buttRadio">
                    <input type="radio" name="yes_no1" id="yes1" value="yes"  />
                    <input type="radio" name="yes_no1" id="no1" value="no" checked/>
@@ -123,19 +123,33 @@
                <input type="text" class="form-control radioText" name="txt_yes_no1" id="validationCustom11" placeholder="If yes, what is the cause?*" >
            
            </div>
+           <div class="col-12 my-4 ml-0 radio">
+            <label for="yes_no_radio">Do you have asthma/bronchitis ?*</label>
+            <div class="buttRadio">
+                <input type="radio" name="yes_no91" id="yes91" value="yes"  />
+                <input type="radio" name="yes_no91" id="no91" value="no" checked/>
+                <div class="switch">
+                    <label for="yes91">YES</label>
+                    <label for="no91">NO</label>
+                  </div>
+              </div>
+            <input type="text" class="form-control radioText" name="txt_yes_no1" id="validationCustom91" placeholder="If yes, what is the cause?*" >
+        
+        </div>
            <div class="col-md-12 my-4 ml-0 radio">
                <label for="yes_no_radio">Your blood pressure?*</label>
-             
+               <div class="buttRadio">
                <input type="radio" name="high" id="high" value="high" checked/>              
                <input type="radio" name="high" id="normal" value="normal"/>
                <input type="radio" name="high" id="low" value="no"/>
-               <div class="switch highw">
+               <div class=" highw">
                    <label for="high">HIGH</label>
                    <label for="normal">NORMAL</label>
                    <label for="low">LOW</label>
 
                  </div>
-              
+                </div>
+
            </div>
            <div class="col-12 my-4 ml-0 radio">
                <label for="yes_no_radio">Do you have diabetes?*</label>

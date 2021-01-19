@@ -61,7 +61,7 @@
     </td>
   </tr>
   <tr>
-    <td>Do you feel rested, relaxed and frash when you wake up in the morning?</td>
+    <td>Do you feel rested and relaxed when you wake up in the morning?</td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje3" id="pitanje3never" value="never"  />
          <label  class="radio-custom-label" for="pitanje3never">never</label>
@@ -145,7 +145,7 @@
     </td>
   </tr>
   <tr>
-    <td>How often do you feel pressure, loss of control, negative feelings, hopelessness, anger, affraid of the future?</td>
+    <td>How often do you feel stress or pressure?</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje6" id="pitanje6daily" value="daily"  />
          <label class="radio-custom-label"  for="pitanje6daily">daily</label>
@@ -173,7 +173,7 @@
     </td>
   </tr>
   <tr>
-    <td>How many hours do you move per week? (Only at least 30 minutes counts)</td>
+    <td>How many hours do you move per week? (Only at least 30 minutes of non stop moving counts)</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje7" id="-2" value="-2"  />
          <label  class="radio-custom-label" for="-2">-2</label>
@@ -338,7 +338,7 @@
     </td>
   </tr>
   <tr>
-    <td>Abdominal circumference: Stand upright in a relaxed  <br>manner, place the measuring tape horizontally around the <br> belly near the belly button, exhale and relax.</td>
+{{--     <td>Abdominal circumference: Stand upright in a relaxed  <br>manner, place the measuring tape horizontally around the <br> belly near the belly button, exhale and relax.</td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje13" id="M:120W:108" value="M: 120 W: 108"  />
          <label class="radio-custom-label" for="M:120W:108">M: 120 W: 108</label>
@@ -365,6 +365,7 @@
 
     </td>
   </tr>
+ --}}
 </tbody>
 </table>
 </div>

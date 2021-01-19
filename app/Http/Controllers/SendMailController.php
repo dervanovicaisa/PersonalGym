@@ -42,6 +42,8 @@ class SendMailController extends Controller
         $data["howareyou"] = $request->input("howareyou");
         $data["yes_no"] = $request->input("yes_no");
         $data["yes_no1"] = $request->input("yes_no1");
+        $data["yes_no91"] = $request->input("yes_no91");
+
         $data["high"] = $request->input("high");
         $data["yes_no2"] = $request->input("yes_no2");
         $data["yes_no3"] = $request->input("yes_no3");
@@ -52,6 +54,8 @@ class SendMailController extends Controller
         $data["yes_no8"] = $request->input("yes_no8");
         $data["txt_yes_no"] = $request->input("txt_yes_no");
         $data["txt_yes_no1"] = $request->input("txt_yes_no1");
+        $data["txt_yes_no9"] = $request->input("txt_yes_no9");
+
         $data["txt_yes_no2"] = $request->input("txt_yes_no2");
         $data["txt_yes_no3"] = $request->input("txt_yes_no3");
         $data["txt_yes_no4"] = $request->input("txt_yes_no4");

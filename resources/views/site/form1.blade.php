@@ -69,8 +69,9 @@
                             </div>
                               <div class="introt6 col-lg-9 col-md-9 col-sm-12 col-12  m-auto"> 
                                   <h2 class="naslov ">OUR FIRST DATE</h2>
-                                  <p class="opis">Dear friends! As you have came to this point, I suppose that we have a problem we need to solve. As we have a together's goal that needs to be achieved,
-                                  I have prepared important questions so we could be able to get started as soon as possible. Earlier we start, sooner we past the goal.</p>
+                                  <p class="opis">Dear friends! As you have came to this point, I suppose that we have a problem we need to solve. 
+                                    It seems like we have a goal that needs to be achieved,
+                                     I have prepared important questions so we could be able to get started as soon as possible. Earlier we start, sooner we past the goal. </p>
                               </div>
                             </div>
                               <div class="row m-3 mt-5">     </div>

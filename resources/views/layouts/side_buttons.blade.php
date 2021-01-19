@@ -1,4 +1,4 @@
-<nav>
+<nav class="desktop">
 
 
     <ul class="onepage-pagination">

@@ -73,7 +73,7 @@
     </section>
 
     <section class="row m-0  red2  section" id="intro">
-    <div id="cf">
+    <div id="cf1" class="desktop">
             <img class="bottom" src="/images/all/slika3.jpg" />
             <img class="top" src="/images/all/slika32.jpg" />
         </div>
@@ -138,7 +138,7 @@
                     felt, while simultaneously improving the most important thing in life- your
                     health.
                 </p> 
-                <p>   Let's start with your training  </p> 
+                <p>   Let's start with your training.  </p> 
             </div>
                 <h6 class="readMore mobile">
                     <button type="button" class="btn " data-toggle="modal" data-target="#modal_intro">
@@ -171,11 +171,11 @@
     </section>
     <section class="row m-0 red3 justify-content-center section" id="personal-trainer">
         <div class="red3-overlay"></div>
-        <div id="cf">
-            <img class="bottom" src="/images/all/slika4.jpg" />
-            <img class="top" src="/images/all/slika42.jpg" />
-            <img class="bottom" src="/images/all/slika43.jpg" />
-            <img class="top" src="/images/all/slika42.jpg" />
+        <div id="cf" class="desktop">
+            <img class="bottom" src="/images/all/t1.jpg" />
+            <img class="top" src="/images/all/r1.jpg" />
+            <img class="bottom" src="/images/all/t2.jpg" />
+            <img class="top" src="/images/all/r2.jpg" />
 
         </div>
         <div class="content">
@@ -217,8 +217,8 @@
                             you a healthier and stronger individual. Putting your health in the first place in everything
                             we do is going to allow you to build a strong foundation.
                         </p><br>
-                    <p><b>Remember - nothing beats a strong body </b>,
-                            mind and soul. We all seek to be happy and satisfied with ourselves. Your guarantee will be your
+                    <p><b>Remember - nothing beats a strong body ,
+                            mind and soul.</b> We all seek to be happy and satisfied with ourselves. Your guarantee will be your
                             commitment, your biggest motivation will be the results you see in the mirror. You will fail,
                             but
                             you will learn from your mistakes. Not you, not me or anybody is gonna hit as hard as life. But
@@ -369,7 +369,7 @@
     </section>
     <section class="row m-0  red5 hero-image section" id="recovery-dr">
         <div class="red5-overlay"></div>
-        <div id="cf">
+        <div id="cf" class="desktop">
             <img class="bottom" src="/images/all/slika6.jpg" />
             <img class="top" src="/images/all/slika62.jpg" />
         </div>

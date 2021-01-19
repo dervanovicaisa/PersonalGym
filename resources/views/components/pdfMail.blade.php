@@ -86,6 +86,9 @@
  <div ><h4>Do you smoke or have asthma/bronchitis?*</h4>
 <p>If yes, what is the cause?*</p>
   <h4> {{$yes_no1 }} : {{$txt_yes_no1 }}  </h4></div>
+  <div ><h4>Do you have asthma/bronchitis?*</h4>
+    <p>If yes, what is the cause?*</p>
+      <h4> {{$yes_no91 }} : {{$txt_yes_no91 }}  </h4></div>
   <div ><h4>Your blood pressure?*</h4>
   <h4> {{$high }}</h4></div>
   <div ><h4>Do you have diabetes?*</h4>
@@ -134,7 +137,7 @@
     <h4>  {{$pitanje5 }}</h4>
 </div>
 <div>
-    <h4>How often do you feel pressure, loss of control, negative feelings, hopelessness, anger, affraid of the future?</h4>
+    <h4>How often do you feel stress or pressure</h4>
     <h4>  {{$pitanje6 }}</h4>
 </div>
 <div>
@@ -162,8 +165,8 @@
     <h4>  {{$pitanje12 }}</h4>
 </div>
 <div>
-    <h4>Abdominal circumference: Stand upright in a relaxed  <br>manner, place the measuring tape horizontally around the <br> belly near the belly button, exhale and relax.</h4>
-    <h4>  {{$pitanje13 }}</h4>
+  {{--   <h4>Abdominal circumference: Stand upright in a relaxed  <br>manner, place the measuring tape horizontally around the <br> belly near the belly button, exhale and relax.</h4>
+    <h4>  {{$pitanje13 }}</h4> --}}
 </div>
   <div class="page-break"></div>
 

@@ -426,10 +426,24 @@
     }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+ 
 }
+@media only screen and (min-width: 1024px) {
+ 
+#intro{
+    background-image: url("../images/all/2s.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.red3{
+    background-image: url("../images/all/5s.jpg");
 
+}
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500px) {
     h6,

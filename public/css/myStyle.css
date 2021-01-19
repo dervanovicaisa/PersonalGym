@@ -1,9 +1,9 @@
 body,
 html {
     font-family: 'Lato', sans-serif ;
-
+    overflow-x: hidden;
     margin: 0;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 p{
     font-family: 'Lato', sans-serif !important;
@@ -37,6 +37,48 @@ svg {
 } 
 /* /////////////////////////////change image/////////////
  */
+ 
+ #cf1
+ {  
+ position:relative;  
+ height:100%;  
+ width:100%;  
+ margin:0 auto;
+ } 
+ 
+ @keyframes cf3FadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+  #cf1 img {
+    position:absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  #cf1 img.top {
+  animation-name: cf3FadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  }
+
  #cf 
  {  
  position:relative;  
@@ -44,25 +86,13 @@ svg {
  width:100%;  
  margin:0 auto;
  } 
- #cf img 
- {  
- position:absolute;  
- left:0;  
- -webkit-transition: opacity 1.2s ease-in-out;  
- -moz-transition: opacity 1.2s ease-in-out;  
- -o-transition: opacity 1.2s ease-in-out;  
- transition: opacity 1.2s ease-in-out;
- }
- /*
- @keyframes lfb3FadeInOut 
- {  
- 0% {  opacity:1;}
- 45% {opacity:1;}
- 55% {opacity:0;}
- 100% {opacity:0;}}
- */
+ /*  */
+
  #cf img
  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     animation-name: cf4FadeInOut;
     animation-timing-function: ease-in-out;
@@ -162,7 +192,7 @@ svg {
 .txtInitials1 {
     position: absolute;
     top: 4%;
-    right: 2%;
+    right: 4%;
     display: flex
 }
 
@@ -239,9 +269,6 @@ svg {
     height: 16%
 }
 
-.logo img {
-    width: 16%
-}
 
 .textAbout {
     margin-left: auto;
@@ -856,6 +883,7 @@ input[type=radio] {
 }
 
 label[for=yes1],
+label[for=yes91],
 label[for=yes2],
 label[for=yes3],
 label[for=yes4],
@@ -871,6 +899,7 @@ label[for=yes] {
 }
 
 label[for=no1],
+label[for=no91],
 label[for=no2],
 label[for=no3],
 label[for=no4],
@@ -903,7 +932,13 @@ label[for=no] {
 #no1:checked~.switch label[for=no1] {
     color: #fff
 }
+#yes91:checked~.switch label[for=yes91] {
+    color: #fff
+}
 
+#no91:checked~.switch label[for=no91] {
+    color: #fff
+}
 #yes2:checked~.switch label[for=yes2] {
     color: #fff
 }
@@ -998,7 +1033,7 @@ label[for=no] {
 
 .form-control:disabled,
 .form-control[readonly] {
-    background-color: #253355
+    background-color: transparent;
 }
 label {
     font-size: 14px;
@@ -1025,7 +1060,7 @@ label {
     color: white;
   }
   .radio-custom-label {
-    color: #6e6d76;
+    color: #9f9ac7;
   }
 .noselect {
     -webkit-touch-callout: none;

@@ -417,7 +417,13 @@
     .mobile {
         display: block !important;
     }
-
+    .readMore button {
+        border: none;
+        border-bottom: 4px solid white;
+        background: transparent;
+        color: white;
+        font-size: 14px !important;
+    }
     .desktop {
         display: none !important;
     }
@@ -478,7 +484,19 @@
 
   
 }
-
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .logo img {
+        width: 10%;
+    }
+    .readMore button {
+        border: none;
+        border-bottom: 4px solid white;
+        background: transparent;
+        color: white;
+        font-size: 14px !important;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1200px) {
@@ -522,8 +540,10 @@
         padding-right: 10%;
     }
 
-    .slide2 {
     
+    .tablet{
+        display: block !important;
+
     }
     .textAbout {
         margin-right: auto !important;
@@ -540,18 +560,42 @@
         border-radius: 2px !important;
     }
 }
+@media only screen and (max-width: 1200px) {
+ 
+    #intro{
+        background-image: url("../images/all/2s.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .red3{
+        background-image: url("../images/all/5s.jpg");
+    
+    }
+    #nutritio-dr{
+        background-image: url("../images/all/4s.jpg") !important;
+
+    }
+    }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1200px) {
     .mobile {
         display: none !important;
     }
+    .tablet{
+        display: none !important;
 
+    }
     .desktopf {
         display: flex !important;
     }
 
     .desktop {
         display: block !important;
+    }
+    .logo img {
+        width: 16%;
     }
 }
 

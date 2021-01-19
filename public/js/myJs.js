@@ -1,7 +1,7 @@
 $(document).ready(function () {
     setTimeout(function () {
         $("body").addClass("loaded")
-    }, 200);
+    }, 400);
     $(".navA").hasClass("active") ? $(".active .navb path").attr("d", "M11.5,0,23,19H0Z") : $(".navA .navb path").attr("d", "  M 4.5, 4.5 m -8, 0 a 4.5,4.5 0 1,0 9,0 a 4.5,4.5 0 1,0 -9,0"), $("#train").click(function () {
         $(".leftText").css({
             opacity: "1"
@@ -68,6 +68,12 @@ $(document).ready(function () {
         }), "yes" == $("input[name='yes_no6']:checked").val() && $("#validationCustom16").css({
             "pointer-events": "visible"
         })
+    }), $("input[type=radio][name=yes_no91]").change(function () {
+        $("#validationCustom91").css({
+            "pointer-events": "none"
+        }), "yes" == $("input[name='yes_no91']:checked").val() && $("#validationCustom91").css({
+            "pointer-events": "visible"
+        })
     }), $("input[type=radio][name=yes_no7]").change(function () {
         $("#validationCustom17").css({
             "pointer-events": "none"
@@ -110,37 +116,11 @@ $(document).ready(function () {
         }
     })
 });
-/* (function() {
-    $('.form-control').keyup(function() {
-        var empty = false;
-        $('.form-control').each(function() {
-            if ($(this).val() == '') {
-                empty = true;
-            }
-        });
-  
-        if (empty) {
-            $('.sendInq').attr('disabled', 'disabled');
-        } else {
-            $('.sendInq').removeAttr('disabled');
-        }
-    });
-  }); */
 
-/* const hero1 = [
-    "/images/all/slika6.png",
-    "/images/all/slika7.png"
-  ]
-  const node = document.getElementById("section-1");
-
-
-  const cycleImages = (images, container, step) => {
-      images.forEach((image, index) => (
-        setTimeout(() => {
-          container.style.backgroundImage = `url(${image})`  
-      }, step * (index + 1))
-    ))
-    setTimeout(() => cycleImages(images, container, step), step * images.length)
-  }
-  
-  cycleImages(hero1, node, 6000) */
+$(window).resize(function() {
+    if ($(window).width() < 1024) {
+        $('body').addClass('disabled-onepage-scroll');
+    } else {
+        $('body').removeClass('disabled-onepage-scroll');
+    }
+}).resize();

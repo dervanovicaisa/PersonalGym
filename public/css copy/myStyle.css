@@ -4,11 +4,15 @@ html {
     margin: 0;
     scroll-behavior: smooth;
 }
+/* Zbog ovoga horizontalno mozda nece radit
+ */
 
 a {
     color: #7ee0ff;
 }
-
+b, strong {
+    font-weight: 900;
+}
 svg {
     margin: 0px auto;
     display: block;
