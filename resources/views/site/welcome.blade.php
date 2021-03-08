@@ -138,8 +138,10 @@
                     felt, while simultaneously improving the most important thing in life- your
                     health.
                 </p> 
-                <p>   Let's start with your training.  </p> 
-            </div>
+                <p>With your power of will and heart everything is possible. My name is Dušan Radulović.
+                            Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
+                        </p><br><br>
+                        <p > Now that we have your training, let's talk about training. </p>            </div>
                 <h6 class="readMore mobile">
                     <button type="button" class="btn " data-toggle="modal" data-target="#modal_intro">
                         READ MORE
@@ -231,10 +233,7 @@
                             and achieve
                             everything you want.
                         </p>
-                        <p>With your power of will and heart everything is possible. My name is Dušan Radulović.
-                            Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
-                        </p><br><br>
-                        <p > Now that we have your training, let's talk about nutrition. </p>
+                      
                     </div>
                         <h6 class="readMore mobile">
                             <button type="button" class="btn white" data-toggle="modal" data-target="#modal_training">

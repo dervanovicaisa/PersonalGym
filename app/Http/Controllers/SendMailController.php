@@ -43,6 +43,7 @@ class SendMailController extends Controller
         $data["yes_no"] = $request->input("yes_no");
         $data["yes_no1"] = $request->input("yes_no1");
         $data["yes_no91"] = $request->input("yes_no91");
+        $data["txt_yes_no91"] = $request->input("txt_yes_no91") ?$request->input("txt_yes_no91") :"";
 
         $data["high"] = $request->input("high");
         $data["yes_no2"] = $request->input("yes_no2");
@@ -52,17 +53,18 @@ class SendMailController extends Controller
         $data["yes_no6"] = $request->input("yes_no6");
         $data["yes_no7"] = $request->input("yes_no7");
         $data["yes_no8"] = $request->input("yes_no8");
-        $data["txt_yes_no"] = $request->input("txt_yes_no");
-        $data["txt_yes_no1"] = $request->input("txt_yes_no1");
-        $data["txt_yes_no9"] = $request->input("txt_yes_no9");
+        $data["txt_yes_no"] = $request->input("txt_yes_no") ?$request->input("txt_yes_no") :"";
+        $data["txt_yes_no1"] = $request->input("txt_yes_no1")? $request->input("txt_yes_no1"):"";
+        $data["txt_yes_no9"] = $request->input("txt_yes_no9")? $request->input("txt_yes_no9"):"";
 
-        $data["txt_yes_no2"] = $request->input("txt_yes_no2");
-        $data["txt_yes_no3"] = $request->input("txt_yes_no3");
-        $data["txt_yes_no4"] = $request->input("txt_yes_no4");
-        $data["txt_yes_no5"] = $request->input("txt_yes_no5");
-        $data["txt_yes_no6"] = $request->input("txt_yes_no6");
-        $data["txt_yes_no7"] = $request->input("txt_yes_no7");
-        $data["txt_yes_no8"] = $request->input("txt_yes_no8");
+
+        $data["txt_yes_no2"] = $request->input("txt_yes_no2")?$request->input("txt_yes_no2") :"";
+        $data["txt_yes_no3"] = $request->input("txt_yes_no3")? $request->input("txt_yes_no3"):"";
+        $data["txt_yes_no4"] = $request->input("txt_yes_no4")? $request->input("txt_yes_no4"):"";
+        $data["txt_yes_no5"] = $request->input("txt_yes_no5")? $request->input("txt_yes_no5"):"";
+        $data["txt_yes_no6"] = $request->input("txt_yes_no6")?$request->input("txt_yes_no6") :"";
+        $data["txt_yes_no7"] = $request->input("txt_yes_no7")?$request->input("txt_yes_no7") :"";
+        $data["txt_yes_no8"] = $request->input("txt_yes_no8")?$request->input("txt_yes_no8") :"";
         /*   forma2 */
         $data["pitanje1"] = $request->input("pitanje1");
         $data["pitanje2"] = $request->input("pitanje2");
@@ -80,6 +82,7 @@ class SendMailController extends Controller
         /*  forma 3 */
         $data["yes_no9"] = $request->input("yes_no9");
         $data["txt_yes_no9"] = $request->input("txt_yes_no9");
+        $data["txt_yes_no9"] = $request->input("txt_yes_no9")?$request->input("txt_yes_no9") :"";
         $data["last_time"] = $request->input("last_time");
         $data["often"] = $request->input("often");
         $data["time_invest"] = $request->input("time_invest");

@@ -2,6 +2,15 @@ $(document).ready(function () {
     setTimeout(function () {
         $("body").addClass("loaded")
     }, 400);
+
+    window.onorientationchange = function() { 
+        var orientation = window.orientation; 
+            switch(orientation) { 
+                case 0:
+                case 90:
+                case -90: window.location.reload(); 
+                break; } 
+    };
     $(".navA").hasClass("active") ? $(".active .navb path").attr("d", "M11.5,0,23,19H0Z") : $(".navA .navb path").attr("d", "  M 4.5, 4.5 m -8, 0 a 4.5,4.5 0 1,0 9,0 a 4.5,4.5 0 1,0 -9,0"), $("#train").click(function () {
         $(".leftText").css({
             opacity: "1"
