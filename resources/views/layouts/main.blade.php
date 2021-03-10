@@ -57,8 +57,13 @@
     @include('components.modal4') 
 
   <div id="loader-wrapper">
-    <img id="loader" src="/images/logos/Logo-DR.svg " /> 
-  </div>
+<!--     <img id="loader" src="/images/logos/Logo-DR.svg " /> 
+ 
+	  
+ <video id="loader" src="/images/video/animacija1.mp4 " autoplay muted></video> --> 
+ <img id="loader" src="/videos/animacija-3.gif" /> 
+
+ </div>
     @yield('content')
 </body>
 

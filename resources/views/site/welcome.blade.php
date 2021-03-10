@@ -139,7 +139,7 @@
                     health.
                 </p> 
                 <p>With your power of will and heart everything is possible. My name is Dušan Radulović.
-                            Let's get started with your training. heart everything is possible. My name is Dušan Radulović.
+                       Let's get started with your training.
                         </p><br><br>
                         <p > Now that we have your training, let's talk about training. </p>            </div>
                 <h6 class="readMore mobile">
@@ -233,10 +233,12 @@
                             and achieve
                             everything you want.
                         </p>
-                      
+                        <p > It is crucial to fuel your body with the right food, so let's talk about your nutririon first.
+ </p>            
+
                     </div>
                         <h6 class="readMore mobile">
-                            <button type="button" class="btn white" data-toggle="modal" data-target="#modal_training">
+                            <button type="button" class="btn white" data-toggle="modal" data-target="#modal_rehab">
                                 READ MORE
                             </button>                      </h6>
                     </div>
@@ -261,7 +263,7 @@
                         </p> 
                     </div>
                         <h6 class="readMore mobile">
-                            <button type="button" class="btn white" data-toggle="modal" data-target="#modal_rehab">
+                            <button type="button" class="btn white" data-toggle="modal" data-target="#modal_training">
                                 READ MORE
                             </button>                    </h6>
                     </div>
@@ -466,9 +468,7 @@
                     <p>Let me know what you'd like to say. Let's start conversation and find the best solution for you.
                         Even if you just want to talk with somebody and share your feelings about sports, fitness or
                         training, hit me up.</p>
-
                 </div>
-
                 <div class="intro_button">
                     <form action="/inquiry">
                         <button class=" noBorder" type="submit">Fill out questionnaire </button>

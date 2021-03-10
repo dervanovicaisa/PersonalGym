@@ -91,28 +91,28 @@
   <tr>
     <td>How many hours do you work per week?</td>
     <td class="questionsTable" > 
-         <input class="radio-custom"  type="radio" name="pitanje4" id="90" value="90"  />
-         <label class="radio-custom-label"  for="90">90</label>
+         <input class="radio-custom"  type="radio" name="pitanje4" id="90" value="80-90"  />
+         <label class="radio-custom-label"  for="90">80-90</label>
     </td>
     <td class="questionsTable" > 
-         <input class="radio-custom"  type="radio" name="pitanje4" id="80" value="80"  />
-         <label  class="radio-custom-label" for="80">80</label>
+         <input class="radio-custom"  type="radio" name="pitanje4" id="80" value="70-80"  />
+         <label  class="radio-custom-label" for="80">70-80</label>
     </td>
     <td class="questionsTable" > 
-         <input class="radio-custom"  type="radio" name="pitanje4" id="70" value="70"  />
-         <label  class="radio-custom-label" for="70">70</label>
+         <input class="radio-custom"  type="radio" name="pitanje4" id="70" value="60-70"  />
+         <label  class="radio-custom-label" for="70">60-70</label>
     </td>
     <td class="questionsTable" > 
-         <input  class="radio-custom" type="radio" name="pitanje4" id="65" value="65"  />
-         <label class="radio-custom-label"  for="65">65</label>
+         <input  class="radio-custom" type="radio" name="pitanje4" id="65" value="50-60"  />
+         <label class="radio-custom-label"  for="65">50-60</label>
     </td>
     <td class="questionsTable" > 
-          <input  class="radio-custom" type="radio" name="pitanje4" id="55" value="55"  />
-          <label  class="radio-custom-label" for="55">55</label>
+          <input  class="radio-custom" type="radio" name="pitanje4" id="55" value="40-50"  />
+          <label  class="radio-custom-label" for="55">40-50</label>
     </td>
     <td class="questionsTable" > 
-      <input class="radio-custom"  type="radio" name="pitanje4" id="45" value="45"  />
-          <label  class="radio-custom-label" for="45">45</label>
+      <input class="radio-custom"  type="radio" name="pitanje4" id="45" value="Less than 40"  />
+          <label  class="radio-custom-label" for="45">Less than 40</label>
 
     </td>
   </tr>
@@ -175,56 +175,56 @@
   <tr>
     <td>How many hours do you move per week? (Only at least 30 minutes of non stop moving counts)</td>
     <td class="questionsTable" > 
-         <input class="radio-custom"  type="radio" name="pitanje7" id="-2" value="-2"  />
-         <label  class="radio-custom-label" for="-2">-2</label>
+         <input class="radio-custom"  type="radio" name="pitanje7" id="-2" value="1-2"  />
+         <label  class="radio-custom-label" for="-2">1-2</label>
     </td>
     <td class="questionsTable" > 
-         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje73" value="3"  />
-         <label class="radio-custom-label"  for="pitanje73">3</label>
+         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje73" value="2-3"  />
+         <label class="radio-custom-label"  for="pitanje73">2-3</label>
     </td>
     <td class="questionsTable" > 
-         <input  class="radio-custom" type="radio" name="pitanje7" id="pitanje74" value="4"  />
-         <label  class="radio-custom-label" for="pitanje74">4</label>
+         <input  class="radio-custom" type="radio" name="pitanje7" id="pitanje74" value="3-4"  />
+         <label  class="radio-custom-label" for="pitanje74">3-4</label>
     </td>
     <td class="questionsTable" > 
-         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje75" value="5"  />
-         <label class="radio-custom-label"  for="pitanje75">5</label>
+         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje75" value="4-5"  />
+         <label class="radio-custom-label"  for="pitanje75">4-5</label>
     </td>
     <td class="questionsTable" > 
-         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje76" value="6"  />
-         <label class="radio-custom-label"  for="pitanje76">6</label>
+         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje76" value="5+"  />
+         <label class="radio-custom-label"  for="pitanje76">5+</label>
     </td>
     <td class="questionsTable" > 
-          <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje77+" value="7+"  />
-          <label  class="radio-custom-label" for="pitanje77+">7+</label>
+       <!--    <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje77+" value="7+"  />
+          <label  class="radio-custom-label" for="pitanje77+">7+</label> -->
     </td>
   </tr>
   <tr>
     <td>How is the intensity mostly when doing sports or other physical activities?</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8extremelystrict" value="extremely strict"  />
-         <label class="radio-custom-label"  for="pitanje8extremelystrict">extremely strict</label>
+         <label class="radio-custom-label"  for="pitanje8extremelystrict">extremely intensive</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8verystrict" value="very strict"  />
-         <label  class="radio-custom-label" for="pitanje8verystrict">very strict</label>
+         <label  class="radio-custom-label" for="pitanje8verystrict">very intensive</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8strict" value="strict"  />
-         <label class="radio-custom-label"  for="pitanje8strict">strict</label>
+         <label class="radio-custom-label"  for="pitanje8strict">intensive</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8intensive" value="intensive"  />
-         <label  class="radio-custom-label" for="pitanje8intensive">intensive</label>
+         <label  class="radio-custom-label" for="pitanje8intensive">moderate</label>
     </td>
     <td class="questionsTable" > 
           <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8moderate" value="moderate"  />
-          <label  class="radio-custom-label" for="pitanje8moderate">moderate</label>
+          <label  class="radio-custom-label" for="pitanje8moderate">easy</label>
     </td>
     <td class="questionsTable" > 
-        <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8easy" value="easy"  />
+       <!--  <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8easy" value="easy"  />
           <label class="radio-custom-label"  for="pitanje8easy">easy</label>
-
+ -->
     </td>
   </tr>
   <tr>
@@ -234,25 +234,29 @@
          <label class="radio-custom-label"  for="0">0</label>
     </td>
     <td class="questionsTable" > 
-         <input  class="radio-custom" type="radio" name="pitanje9" id="1 x per month" value="1 x per month"  />
-         <label  class="radio-custom-label" for="1 x per month">1 x per month</label>
+         <input  class="radio-custom" type="radio" name="pitanje9" id="1 - 2 per week" value="1 - 2 per week"  />
+         <label  class="radio-custom-label" for="1 - 2 per week">1 - 2 per week</label>
     </td>
     <td class="questionsTable" > 
-         <input  class="radio-custom" type="radio" name="pitanje9" id="2 x per month" value="2 x per month"  />
-         <label  class="radio-custom-label" for="2 x per month">2 x per month</label>
+         <input  class="radio-custom" type="radio" name="pitanje9" id="2 - 5 per week" value="2 - 5 per week"  />
+         <label  class="radio-custom-label" for="2 - 5 per week">2 - 5 per week</label>
     </td>
     <td class="questionsTable" > 
-         <input  class="radio-custom" type="radio" name="pitanje9" id="3 x per month" value="3 x per month"  />
-         <label  class="radio-custom-label" for="3 x per month">3 x per month</label>
+         <input  class="radio-custom" type="radio" name="pitanje9" id="5 x per week" value="5 x per week"  />
+         <label  class="radio-custom-label" for="5 x per week">5 x per week</label>
     </td>
     <td class="questionsTable" > 
+    </td>
+    <td class="questionsTable" > 
+    </td>
+   <!--  <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje9" id="4 x per month" value="4 x per month"  />
          <label  class="radio-custom-label" for="4 x per month">4 x per month</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje9" id="8 x per month" value="8 x per month"  />
          <label class="radio-custom-label"  for="8 x per month">8 x per month</label>
-    </td>
+    </td> -->
   </tr>
   <tr>
     <td>How many servings of fresh fruit, lettuce, vegetables, sprouts and seeds do you eat every day?</td>

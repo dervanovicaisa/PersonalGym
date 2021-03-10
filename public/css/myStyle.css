@@ -542,7 +542,8 @@ section {
 }
 
 .questi {
-    width: 75%
+    width: 75%;
+    overflow-x: scroll;
 }
 
 .questi .row {
