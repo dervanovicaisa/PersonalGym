@@ -50,7 +50,7 @@
         <div class="scrollDiv desktop">
             <ul class="onepage-pagination buttonUl">
                 <li>
-                    <a data-index="2" href="#2" class="mouse smoothscroll">
+                    <a data-index="2" href="{{app()->getLocale()}}/#2" class="mouse smoothscroll">
                         <span class="mouse-icon">
                             <span class="mouse-wheel"></span>
                         </span>
@@ -154,7 +154,7 @@
             <div class="scrollDiv2 desktop">
                 <ul class="onepage-pagination buttonUl">
                     <li>
-                        <a data-index="3" href="#3" class="">
+                        <a data-index="3" href="{{app()->getLocale()}}/#3" class="">
                             @include('layouts.see_next')
 
 
@@ -273,7 +273,7 @@
             <div class="scrollDiv2 desktop">
                 <ul class="onepage-pagination buttonUl">
                     <li>
-                        <a data-index="4" href="#4" class="">
+                        <a data-index="4" href="{{app()->getLocale()}}/#4" class="">
                             @include('layouts.see_next')
                         </a>
                     </li>
@@ -349,7 +349,7 @@
             <div class="scrollDiv2 desktop">
                 <ul class="onepage-pagination buttonUl">
                     <li>
-                        <a data-index="5" href="#5" class="">
+                        <a data-index="5" href="{{app()->getLocale()}}/#5" class="">
 
                             @include('layouts.see_next')
 
@@ -434,7 +434,7 @@
             <div class="scrollDiv2 desktop">
                 <ul class="onepage-pagination buttonUl">
                     <li>
-                        <a data-index="6" href="#6" class="">
+                        <a data-index="6" href="{{app()->getLocale()}}/#6" class="">
 
                             @include('layouts.see_next')
 
@@ -473,7 +473,7 @@
                 </div>
 
                 <div class="intro_button">
-                    <form action="/inquiry">
+                    <form action="{{app()->getLocale()}}/inquiry">
                         <button class=" noBorder" type="submit">Fill out questionnaire </button>
                     </form>
 

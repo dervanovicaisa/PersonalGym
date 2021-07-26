@@ -53,7 +53,7 @@
                             <div class="progress-message" id="progress-message">Please fill out everything !</div>
                         </div> -->
                           <!-- multistep form -->
-                     <form action="{{route('contact.store')}}" method="post" class="needs-validation " id="msform" >
+                     <form action="{{route('contact.store', app()->getLocale())}}" method="post" class="needs-validation " id="msform" >
                           {{ csrf_field() }}
                         <ul id="progressbar">
                             <li class="active">Starter</li>
