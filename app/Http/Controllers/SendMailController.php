@@ -5,23 +5,46 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use PDF;
 use Mail;
+use Validator;
 
 class SendMailController extends Controller
 {
     public function sendmail(Request $request)
     {
+	$validator = Validator::make($request->all(), [
+            'last_name' => 'required',
+            'email' => 'required',
+            'first_name' => 'required',
+            'year' => 'required',
+            'telephone' => 'required',
+            'height' => 'required',
+            'weight' => 'required',
+		   	'last_time' => 'required',
+            'time_invest' => 'required',
+            'personal_goals' => 'required',
+            'miscellaneus' => 'required',
+		
+        ]);
+        if ($validator->fails()) {
+			 return redirect()->back()
+								->withErrors($validator)
+								->withInput();       
+		}
         /* forma1 */
         $data["last_name"] = $request->input("last_name");
         $data["email"] = $request->input("email");
         $data["first_name"] = $request->input("first_name");
-        $data["dob"] = $request->input("dob");
-        $data["tel"] = $request->input("tel");
+        $data["dob"] = $request->input("year");
+        $data["tel"] = $request->input("telephone");
         $data["height"] = $request->input("height");
         $data["adress"] = $request->input("adress");
         $data["weight"] = $request->input("weight");
         $data["howareyou"] = $request->input("howareyou");
         $data["yes_no"] = $request->input("yes_no");
         $data["yes_no1"] = $request->input("yes_no1");
+        $data["yes_no91"] = $request->input("yes_no91");
+        $data["txt_yes_no91"] = $request->input("txt_yes_no91") ?$request->input("txt_yes_no91") :"";
+
         $data["high"] = $request->input("high");
         $data["yes_no2"] = $request->input("yes_no2");
         $data["yes_no3"] = $request->input("yes_no3");
@@ -30,27 +53,42 @@ class SendMailController extends Controller
         $data["yes_no6"] = $request->input("yes_no6");
         $data["yes_no7"] = $request->input("yes_no7");
         $data["yes_no8"] = $request->input("yes_no8");
-        $data["txt_yes_no"] = $request->input("txt_yes_no");
-        $data["txt_yes_no1"] = $request->input("txt_yes_no1");
-        $data["txt_yes_no2"] = $request->input("txt_yes_no2");
-        $data["txt_yes_no3"] = $request->input("txt_yes_no3");
-        $data["txt_yes_no4"] = $request->input("txt_yes_no4");
-        $data["txt_yes_no5"] = $request->input("txt_yes_no5");
-        $data["txt_yes_no6"] = $request->input("txt_yes_no6");
-        $data["txt_yes_no7"] = $request->input("txt_yes_no7");
-        $data["txt_yes_no8"] = $request->input("txt_yes_no8");
-        /*   forma2 */
+        $data["txt_yes_no"] = $request->input("txt_yes_no") ?$request->input("txt_yes_no") :"";
+        $data["txt_yes_no1"] = $request->input("txt_yes_no1")? $request->input("txt_yes_no1"):"";
+        $data["txt_yes_no9"] = $request->input("txt_yes_no9")? $request->input("txt_yes_no9"):"";
 
+
+        $data["txt_yes_no2"] = $request->input("txt_yes_no2")?$request->input("txt_yes_no2") :"";
+        $data["txt_yes_no3"] = $request->input("txt_yes_no3")? $request->input("txt_yes_no3"):"";
+        $data["txt_yes_no4"] = $request->input("txt_yes_no4")? $request->input("txt_yes_no4"):"";
+        $data["txt_yes_no5"] = $request->input("txt_yes_no5")? $request->input("txt_yes_no5"):"";
+        $data["txt_yes_no6"] = $request->input("txt_yes_no6")?$request->input("txt_yes_no6") :"";
+        $data["txt_yes_no7"] = $request->input("txt_yes_no7")?$request->input("txt_yes_no7") :"";
+        $data["txt_yes_no8"] = $request->input("txt_yes_no8")?$request->input("txt_yes_no8") :"";
+        /*   forma2 */
+        $data["pitanje1"] = $request->input("pitanje1");
+        $data["pitanje2"] = $request->input("pitanje2");
+        $data["pitanje3"] = $request->input("pitanje3");
+        $data["pitanje4"] = $request->input("pitanje4");  
+        $data["pitanje5"] = $request->input("pitanje5");
+        $data["pitanje6"] = $request->input("pitanje6");
+        $data["pitanje7"] = $request->input("pitanje7");
+        $data["pitanje8"] = $request->input("pitanje8");
+        $data["pitanje9"] = $request->input("pitanje9");  
+        $data["pitanje10"] = $request->input("pitanje10");
+        $data["pitanje11"] = $request->input("pitanje11");
+        $data["pitanje12"] = $request->input("pitanje12");  
+        $data["pitanje13"] = $request->input("pitanje13");
         /*  forma 3 */
         $data["yes_no9"] = $request->input("yes_no9");
         $data["txt_yes_no9"] = $request->input("txt_yes_no9");
+        $data["txt_yes_no9"] = $request->input("txt_yes_no9")?$request->input("txt_yes_no9") :"";
         $data["last_time"] = $request->input("last_time");
         $data["often"] = $request->input("often");
         $data["time_invest"] = $request->input("time_invest");
         $data["personal_goals"] = $request->input("personal_goals");
         $data["miscellaneus"] = $request->input("miscellaneus");
         $data["date"] = $request->input("date");
-
 
         $pdf = PDF::loadView('components.pdfMail', $data);
 

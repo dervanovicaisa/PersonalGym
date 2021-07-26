@@ -86,6 +86,9 @@
  <div ><h4>Do you smoke or have asthma/bronchitis?*</h4>
 <p>If yes, what is the cause?*</p>
   <h4> {{$yes_no1 }} : {{$txt_yes_no1 }}  </h4></div>
+  <div ><h4>Do you have asthma/bronchitis?*</h4>
+    <p>If yes, what is the cause?*</p>
+      <h4> {{$yes_no91 }} : {{$txt_yes_no91 }}  </h4></div>
   <div ><h4>Your blood pressure?*</h4>
   <h4> {{$high }}</h4></div>
   <div ><h4>Do you have diabetes?*</h4>
@@ -109,8 +112,62 @@
   <div ><h4>Joint problems?*</h4>
 <p>If yes, which?*</p>
   <h4> {{$yes_no8 }} : {{$txt_yes_no8 }} </h4></div>
+  <div class="page-break"></div>
+  <h2 class="naslov" >MAIN</h2>
 
 
+<div>
+    <h4>How many hours do you sleep deep and good?</h4>
+    <h4>  {{$pitanje1 }}</h4>
+</div>
+<div>
+    <h4>Sleep regularly and before midnight?</h4>
+    <h4>  {{$pitanje2 }}</h4>
+</div>
+<div>
+    <h4>Do you feel rested, relaxed and frash when you wake up in the morning?</h4>
+    <h4>  {{$pitanje3 }}</h4>
+</div>
+<div>
+    <h4>How many hours do you work per week?</h4>
+    <h4>  {{$pitanje4 }}</h4>
+</div>
+<div>
+    <h4>Do you feel relaxed, strong, full of energy, in control, creative, thirst for action?</h4>
+    <h4>  {{$pitanje5 }}</h4>
+</div>
+<div>
+    <h4>How often do you feel stress or pressure</h4>
+    <h4>  {{$pitanje6 }}</h4>
+</div>
+<div>
+    <h4>How many hours do you move per week? (Only at least 30 minutes counts)</h4>
+    <h4>  {{$pitanje7 }}</h4>
+</div>
+<div>
+    <h4>How is the intensity mostly when doing sports or other physical activities?</h4>
+    <h4>  {{$pitanje8 }}</h4>
+</div>
+<div>
+    <h4>Do you regularly do health-promoting strength training under competent guidance?</h4>
+    <h4>  {{$pitanje9 }}</h4>
+</div>
+<div>
+    <h4>How many servings of fresh fruit, lettuce, vegetables, sprouts and seeds do you eat every day?</h4>
+    <h4>  {{$pitanje10 }}</h4>
+</div>
+<div>
+    <h4>Do you drink 2-3 litres of still water a day?</h4>
+    <h4>  {{$pitanje11 }}</h4>
+</div>
+<div>
+    <h4>Do you have high blood pressure, high colesterol, high <br> triglycerides, and/or high blood sugar?</h4>
+    <h4>  {{$pitanje12 }}</h4>
+</div>
+<div>
+  {{--   <h4>Abdominal circumference: Stand upright in a relaxed  <br>manner, place the measuring tape horizontally around the <br> belly near the belly button, exhale and relax.</h4>
+    <h4>  {{$pitanje13 }}</h4> --}}
+</div>
   <div class="page-break"></div>
 
     <h2 class="naslov" >Dessert</h2>

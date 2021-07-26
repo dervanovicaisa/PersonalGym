@@ -4,6 +4,50 @@
         font-size: 14px !important;
     }
 
+    .content {
+      
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .intro_button button {
+        background-color: #253355CF  !important;
+        color: #fff;
+    
+    }
+    .noBorder{
+        border: none !important;
+    }
+    .intro_button {
+      text-align: center; 
+    }
+    #cf 
+    {  
+     display: none;
+    }
+    .training {
+        text-align: left !important; 
+        padding-left: 20px;
+    }
+    #msform fieldset {
+ 
+        padding: 15px 0px !important;
+    }
+    .inquiryTable td {
+     
+        padding: 10px !important;
+     
+    }
+    .masd{
+        margin-left: 0em !important;
+    
+    }
+    .white{
+        color: white !important;
+        border-bottom: 4px solid #fff !important;
+    }
+    .introt6 {
+        margin-left: 0rem;
+    }
     .modal-title {
         font-weight: 600 !important;
     }
@@ -11,18 +55,32 @@
     .modal-body p {
         font-weight: 400 !important;
     }
+    .not  {
+        display: none !important;
+    }
 
+    #line1 {
+        stroke: #253355;
+    }
+
+    #line2 {
+        stroke: #253355;
+        fill: #253355;
+
+    }
     .readMore {
         font-weight: 600 !important;
         z-index: 100;
     }
-
+    .start {
+        margin-top: 5%;
+    }
     .readMore button {
         border: none;
-        border-bottom: 4px solid #7ee0ff;
+        border-bottom: 4px solid #253355;
         background: transparent;
-        color: white;
-        font-size: 14px !important;
+        color: #253355;
+        font-size: 12px !important;
     }
 
     .txtInitials1 {
@@ -48,15 +106,20 @@
     .text {
         width: 100%;
     }
-
+    h1, .h1{
+        font-size: 50px !important;
+    }
     .text h3 {
         font-size: 20px !important;
+        color: #253355;
         margin-bottom: 10px !important;
     }
-
     .text h6 {
-        letter-spacing: 1.8px !important;
+        color: #253355 !important;
+        font-size:12px !important;
     }
+
+
 
     .buttonUl {
         display: block !important;
@@ -112,33 +175,32 @@
     }
 
     #pause {
-        transform: scale(0.65);
+        transform: scale(0.45);
     }
 
     .imgL {
-        width: 10% !important;
+        width: 13% !important;
     }
 
     .logo img {
         margin-right: auto !important;
-        margin-left: 10% !important;
     }
 
     .logo {
         height: 12% !important;
+        padding-left: 6% !important;
+
     }
 
     .intro {
-        margin-left: 10% !important;
-        width: 90% !important;
+        width: 100% !important;
         margin-bottom: 5% !important;
-        padding-right: 10%;
+        color: #253355;
     }
 
     .textAbout {
         margin-right: auto !important;
         width: 100% !important;
-        padding: 0 !important;
     }
 
     .leftText {
@@ -175,18 +237,16 @@
     }
 
     .introt h1 {
-        font-size: 60px !important;
+    color: #253355;  
     }
 
     .introt h5 {
-        font-weight: lighter !important;
+        font-weight: 500 !important;
     }
 
     .toggleText {
-        width: 60% !important;
         position: initial !important;
-        margin-left: 10% !important;
-        margin-top: 20% !important;
+        margin-top: 2% !important;
         margin-bottom: 9% !important;
     }
 
@@ -245,16 +305,7 @@
         width: auto !important;
     }
 
-    .next_button {
-        position: absolute !important;
-        bottom: 0% !important;
-    }
-
-    .prev_button {
-        position: absolute !important;
-        bottom: 0% !important;
-    }
-
+  
     .m-4 {
         margin: 4px !important;
     }
@@ -274,7 +325,7 @@
 
     .slide2 {
         padding-left: 10% !important;
-        padding-right: 10% !important;
+
     }
 
     .leftText {
@@ -286,11 +337,6 @@
         line-height: 1.4 !important;
     }
 
-    .end {
-        bottom: 10% !important;
-        left: 0% !important;
-        top: 30% !important;
-    }
 
     .start {
         position: initial !important;
@@ -302,6 +348,7 @@
 
     .intro_button {
         width: 100%;
+        text-align: center;
     }
 
     .introt6 h1 {
@@ -330,31 +377,35 @@
     }
 
     .hero-image {
-        background-image: url("../images/all/1s.png") !important;
+        background-image: url("../images/all/1s.jpg") !important;
     }
-
+    wave,wave canvas{
+        height: 90px !important;
+    }
     .red2 {
-        background-image: url("../images/all/2s.png") !important;
+        background-image: url("../images/all/2s.jpg") !important;
+        color: #253355;
     }
 
     .red3 {
-        background-image: url("../images/all/3s.png") !important;
+        background-image: url("../images/all/3s.jpg") !important;
     }
 
     .red4 {
-        background-image: url("../images/all/4s.png") !important;
+        background-image: url("../images/all/4s.jpg") !important;
     }
 
     .red5 {
-        background-image: url("../images/all/5s.png") !important;
+        background-image: url("../images/all/5s.jpg") !important;
     }
 
     .red6 {
-        background-image: url("../images/all/6s.png") !important;
+        background-image: url("../images/all/6s.jpg") !important;
     }
 
     .intro_button button {
         width: 100%;
+		text-align:center;
     }
 }
 
@@ -366,7 +417,13 @@
     .mobile {
         display: block !important;
     }
-
+    .readMore button {
+        border: none;
+        border-bottom: 4px solid white;
+        background: transparent;
+        color: white;
+        font-size: 14px !important;
+    }
     .desktop {
         display: none !important;
     }
@@ -390,7 +447,7 @@
     .introt4 h1 {
         font-size: 60px;
     }
-
+  
     h5,
     .h5 {
         font-size: 1rem;
@@ -402,7 +459,12 @@
 
     .intro_button {
         width: 100%;
+			
+
     }
+	.formDivButton{
+			text-align:center;
+}
 
     #waveform {
         left: 45%;
@@ -420,11 +482,21 @@
         right: 2%;
     }
 
-    .textAbout {
-        margin-right: 5%;
+  
+}
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (min-width: 1024px) {
+    .logo img {
+        width: 10%;
+    }
+    .readMore button {
+        border: none;
+        border-bottom: 4px solid white;
+        background: transparent;
+        color: white;
+        font-size: 14px !important;
     }
 }
-
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 1200px) {
@@ -435,21 +507,15 @@
         position: initial !important;
 
     }
-    .modal-dialog {
-        max-width: 90%;
-        
-    }
+  
     .toggleText {
-        width: 60% !important;
         position: initial !important;
-        margin-left: 20% ;
         margin-top: 8% ;
-        margin-bottom: 9% !important;
+        margin-bottom: 20% !important;
     }
     .leftText {
         margin-right: auto !important;
         width: 100% !important;
-        position: initial !important;
         padding: 0 !important;
     }
     .slide3 {
@@ -469,20 +535,19 @@
         padding-right: 18% ;
     }
     .intro {
-        margin-left: 20% ;
         width: 80% ;
         margin-bottom: 5% !important;
         padding-right: 10%;
     }
 
-    .slide2 {
-        padding-left: 20% !important;
-        padding-right: 10% !important;
+    
+    .tablet{
+        display: block !important;
+
     }
     .textAbout {
         margin-right: auto !important;
         width: 100% !important;
-        padding: 0 !important;
     }
     .start {
         position: initial !important;
@@ -490,29 +555,47 @@
     .other{
         margin-top: 14%;
     }
-    .end {
-        width: 65%;
-    }
-    .intro {
-        top: 25% !important;
-        left: 0% !important;
-    }
+
     .intro_button button{
         border-radius: 2px !important;
     }
 }
+@media only screen and (max-width: 1200px) {
+ 
+    #intro{
+        background-image: url("../images/all/2s.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .red3{
+        background-image: url("../images/all/5s.jpg");
+    
+    }
+    #nutritio-dr{
+        background-image: url("../images/all/4s.jpg") !important;
+
+    }
+    }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1200px) {
     .mobile {
         display: none !important;
     }
+    .tablet{
+        display: none !important;
 
+    }
     .desktopf {
         display: flex !important;
     }
 
     .desktop {
         display: block !important;
+    }
+    .logo img {
+        width: 16%;
     }
 }
 
@@ -544,9 +627,7 @@
         font-size: 75px;
     }
 
-    .intro_button {
-        width: 70%;
-    }
+  
 
     #waveform {
         left: 25%;
@@ -564,7 +645,5 @@
         right: 8%;
     }
 
-    .textAbout {
-        margin-right: 10%;
-    }
+  
 }

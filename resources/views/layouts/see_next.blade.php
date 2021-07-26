@@ -1,4 +1,4 @@
-<svg class="seeNext" xmlns="http://www.w3.org/2000/svg" width="82" height="59.5" viewBox="0 0 82 59.5">
+<svg class="seeNext " xmlns="http://www.w3.org/2000/svg" width="82" height="59.5" viewBox="0 0 82 59.5">
 
 <g transform="translate(0 1)">
   <line class="a prava" y2="28.786" transform="translate(40.5)" />

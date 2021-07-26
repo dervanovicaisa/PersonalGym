@@ -1,306 +1,399 @@
-<div id="section_2_form" class=""  >
-    <h1 class="blue m-3 yourdata">MAIN COURSE </h1>
+<div id="section_2_form" class="" >
+  <h4 class="blue m-3 yourdata">MAIN COURSE </h4>
+  <div class="table-responsive-sm">
 
-    <div class="form-row">
-      <div class="col-md-5 mt-5 m-3">
-        <input type="text" class="form-control" id="validationCustom19" placeholder="Last name" name = " 1last_name"  >
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-        <div class="invalid-feedback">
-            Please provide a valid name.
-          </div>
-      </div>
-      <div class="col-md-5 ml-auto m-3">
-        <input type="text" class="form-control" id="validationCustom20" placeholder="E-Mail" name = " 1email"  >
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-        <div class="invalid-feedback">
-            Please provide a valid E-Mail.
-          </div>
-      </div>
-    </div>
-    <div class="form-row">
-      <div class="col-md-5 m-3">
-        <input type="text" class="form-control" placeholder="First name" id="validationCustom21" name = " 1first_name"  >
-        <div class="valid-feedback">
-            Looks good!
-          </div>
-        <div class="invalid-feedback">
-          Please provide a valid First name.
-        </div>
-      </div>
-      <div class="col-md-5 ml-auto m-3">
-        <input type="text" class="form-control" id="validationCustom22" placeholder="Date of birth" name = " 1dob"  >
-        <div class="valid-feedback">
-          Looks good!
-        </div>
-        <div class="invalid-feedback">
-            Please provide a valid Date of birth.
-          </div>
-      </div>
-    </div>
-    <div class="form-row">
-        <div class="col-md-5 m-3">
-          <input type="text" class="form-control" id="validationCustom23" placeholder="Telephone"  name = " 1tel"  >
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-              Please provide a valid Telephone.
-            </div>
-        </div>
-        <div class="col-md-5  ml-auto m-3">
-          <input type="text" class="form-control" id="validationCustom24" placeholder="Height" name = " 1height"  >
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-              Please provide a valid Height.
-            </div>
-        </div>
-      </div>
-    <div class="form-row">
-        <div class="col-md-5 m-3">
-          <input type="text" class="form-control" placeholder="Adress" id="validationCustom25"  name = " 1adress"  >
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-            Please provide a valid Adress.
-          </div>
-        </div>
-        <div class="col-md-5 ml-auto m-3">
-          <input type="text" class="form-control" id="validationCustom26" placeholder="Weight" name = " 1weight"  >
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-            Please provide a valid Weight.
-          </div>
-        </div>
-   
-      </div>
-    <div class="text-center m-5">
-            <h1 class="blue starter mt-5 mb-5">  Starter - Your health, fitness
-            </h1>
-     </div>
-    <div class="col-md-8 mx-auto mt-5">
-            <div class="col-md-9 m-4">
-                <input type="text" class="form-control" id="validationCustom27" placeholder="How are you?*" name = " 1howareyou"  >
-                <div class="valid-feedback">
-                Looks good!
-                </div>
-                <div class="invalid-feedback">
-                Please provide a valid answer.
-                </div>
-            </div>
-            <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Are you currently under medical treatment?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$" id="yes" value="yes" />
-                    <input type="radio" name="yes_no$" id="no" value="no" checked/>
-                    <div class="switch">
-                        <label for="yes">YES</label>
-                        <label for="no">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText"name="txt_yes_no$"  id="validationCustom28" placeholder="If yes, what is the reason for your medical treatment?*" >
-            </div>
+  <table class="table table-hover inquiryTable">
+<tbody>
+  <tr>
+    <td>How many hours do you sleep deep and good?</td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje1" id="pitanje1.3" value="3"  />
+         <label  class="radio-custom-label" for="pitanje1.3">3</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje1" id="pitanje1.4" value="4"  />
+         <label class="radio-custom-label"  for="pitanje1.4">4</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje1" id="pitanje1.5" value="5"  />
+         <label class="radio-custom-label"  for="pitanje1.5">5</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje1" id="pitanje1.6" value="6"  />
+         <label  class="radio-custom-label" for="pitanje1.6">6</label>
+    </td>
+    <td class="questionsTable" > 
+          <input  class="radio-custom" type="radio" name="pitanje1" id="pitanje1.7" value="7"  />
+          <label  class="radio-custom-label" for="pitanje1.7">7</label>
+    </td>
+    <td class="questionsTable" > 
+      <input  class="radio-custom" type="radio" name="pitanje1" id="pitanje1.8" value="8"  />
+          <label class="radio-custom-label"  for="pitanje1.8">8</label>
 
-            <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Do you smoke or have asthma/bronchitis?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$1" id="yes1" value="yes"  />
-                    <input type="radio" name="yes_no$1" id="no1" value="no" checked/>
-                    <div class="switch">
-                        <label for="yes1">YES</label>
-                        <label for="no1">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText" name="txt_yes_no$1" id="validationCustom29" placeholder="If yes, what is the cause?*" >
-            
-            </div>
-            <div class="col-md-12 m-4 radio">
-                <label for="yes_no$_radio">Your blood pressure?*</label>
-              
-                <input type="radio" name="high" id="high" value="high" checked/>              
-                <input type="radio" name="high" id="normal" value="normal"/>
-                <input type="radio" name="high" id="low" value="no"/>
-                <div class="switch highw">
-                    <label for="high">HIGH</label>
-                    <label for="normal">NORMAL</label>
-                    <label for="low">LOW</label>
+    </td>
+  </tr>
+  <tr>
+    <td>Sleep regularly and before midnight?</td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.never" value="never"  />
+         <label class="radio-custom-label"  for="pitanje2.never">never</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.rare" value="rare"  />
+         <label  class="radio-custom-label" for="pitanje2.rare">rare</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.notoften" value="not often"  />
+         <label class="radio-custom-label"  for="pitanje2.notoften">not often</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.often" value="often"  />
+         <label  class="radio-custom-label" for="pitanje2.often">often</label>
+    </td>
+    <td class="questionsTable" > 
+          <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.almostalways" value="almost always"  />
+          <label  class="radio-custom-label" for="pitanje2.almostalways">almost always</label>
+    </td>
+    <td class="questionsTable" > 
+        <input class="radio-custom"  type="radio" name="pitanje2" id="always" value="always"  />
+          <label class="radio-custom-label"  for="always">always</label>
 
-                  </div>
-               
-            </div>
-            <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Do you have diabetes?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$2" id="yes2" value="yes"  />
-                    <input type="radio" name="yes_no$2" id="no2" value="no" checked/>
-                    <div class="switch">
-                        <label for="yes2">YES</label>
-                        <label for="no2">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText" name="txt_yes_no$2" id="validationCustom30" placeholder="If yes, which type?*" >
-            </div>
-                <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Heart disease?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$3" id="yes3" value="yes"  />
-                    <input type="radio" name="yes_no$3" id="no3" value="no" checked/>
-                    <div class="switch">
-                        <label for="yes3">YES</label>
-                        <label for="no3">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText" name="txt_yes_no$3" id="validationCustom31" placeholder="If yes, which?*" >
-            </div>
-            <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Do you take medicine?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$4" id="yes4" value="yes"  />
-                    <input type="radio" name="yes_no$4" id="no4" value="no" checked/>
-                    <div class="switch">
-                        <label for="yes4">YES</label>
-                        <label for="no4">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText" name="txt_yes_no$4" id="validationCustom32" placeholder="If yes, which?*" >
-            </div>
-            <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Are you taking any kind of supplements?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$5" id="yes5" value="yes"  />
-                    <input type="radio" name="yes_no$5" id="no5" value="no" checked/>
-                    <div class="switch">
-                        <label for="yes5">YES</label>
-                        <label for="no5">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText"  name="txt_yes_no$5" id="validationCustom33" placeholder="If yes, which?*" >
-            </div>                  
-            <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Did you have any kind of surgeries?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$6" id="yes6" value="yes"  />
-                    <input type="radio" name="yes_no$6" id="no6" value="no" checked/>
-                    <div class="switch">
-                        <label for="yes6">YES</label>
-                        <label for="no6">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText" name="txt_yes_no$6" id="validationCustom34" placeholder="If yes, which?*" >
-            </div>
-            <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Do you have back problems?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$7" id="yes7" value="yes"  />
-                    <input type="radio" name="yes_no$7" id="no7" value="no" checked/>
-                    <div class="switch">
-                        <label for="yes7">YES</label>
-                        <label for="no7">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText" name="txt_yes_no$7" id="validationCustom35"  placeholder="If yes, which?*" >
-            </div>
-            <div class="col-md-11 m-4 radio">
-                <label for="yes_no$_radio">Joint problems?*</label>
-                <div class="buttRadio">
-                    <input type="radio" name="yes_no$8" id="yes8" value="yes"  />
-                    <input type="radio" name="yes_no$8" id="no8" value="no" checked />
-                    <div class="switch">
-                        <label for="yes8">YES</label>
-                        <label for="no8">NO</label>
-                      </div>
-                  </div>
-                <input type="text" class="form-control radioText" name="txt_yes_no$8" id="validationCustom36" placeholder="If yes, which?*" >
-         </div>
-        </div>
-          <div class="prev_button prev">
-            <svg id = "prev" xmlns="http://www.w3.org/2000/svg" width="160" height="38.918" viewBox="0 0 160 38.918">
-              <defs>
-                <style>
-                  .a{
-                    fill:none;
-                    stroke:#fff;
-                    stroke-linecap:round
-                    ;stroke-width:2px;
-                  }
-                  .b{
-                    fill:#fff;
-                    font-size:16px;
-                    font-family:Raleway-Medium, Raleway;
-                    font-weight:500;letter-spacing:0.15em;
-                  }</style>
-                </defs>
-                <g transform="translate(1 1.318)">
-                  <line class="a pravaPrev" y2="28.786" transform="translate(64.107 4.492) rotate(-90)"/>
-                  <g transform="translate(393.586 2341.385) rotate(180)" class="vrhPrev">
-                    <line class="a" x1="4.493" y1="10.199" transform="translate(322.694 2341.385) rotate(-90)"/>
-                    <line class="a" y1="10.199" x2="4.493" transform="translate(322.694 2336.893) rotate(-90)"/>
-                  </g>
-              <text class="b" transform="translate(79 33.599)">
-                <tspan x="-79.408" y="0">Previous section</tspan>
-              </text>
-            </g>
-          </svg>
+    </td>
+  </tr>
+  <tr>
+    <td>Do you feel rested and relaxed when you wake up in the morning?</td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje3" id="pitanje3never" value="never"  />
+         <label  class="radio-custom-label" for="pitanje3never">never</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje3" id="pitanje3rare" value="rare"  />
+         <label class="radio-custom-label"  for="pitanje3rare">rare</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje3" id="pitanje3notoften" value="not often"  />
+         <label class="radio-custom-label"  for="pitanje3notoften">not often</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje3" id="pitanje3often" value="often"  />
+         <label  class="radio-custom-label" for="pitanje3often">often</label>
+    </td>
+    <td class="questionsTable" > 
+          <input class="radio-custom"  type="radio" name="pitanje3" id="pitanje3almostalways" value="almost always"  />
+          <label  class="radio-custom-label" for="pitanje3almostalways">almost always</label>
+    </td>
+    <td class="questionsTable" > 
+        <input class="radio-custom"  type="radio" name="pitanje3" id="pitanje3always" value="always"  />
+          <label class="radio-custom-label"  for="pitanje3always">always</label>
 
-          </div>
-          <div class="next_button">
-            <svg id="next1" xmlns="http://www.w3.org/2000/svg" width="122" height="38.918" viewBox="0 0 122 38.918"><defs>
-              <style>
-              .a{
-                fill:none;
-                stroke:#fff;
-                stroke-linecap:round;
-                stroke-width:2px;
-              }
-              .b{
-                fill:#fff;
-                font-size:16px;
-                font-family:Raleway-Medium, Raleway;
-                font-weight:500;
-                letter-spacing:0.15em;}</style>
-              </defs>
-              <g transform="translate(1 1.318)">
-                <line class="a pravaNext" y2="28.786" transform="translate(45.107 4.493) rotate(-90)"/>
-                <g transform="translate(-259 -2332.4)" class="vrhNext">
-                  <line class="a" x1="4.493" y1="10.199" transform="translate(322.694 2341.385) rotate(-90)"/>
-                  <line class="a" y1="10.199" x2="4.493" transform="translate(322.694 2336.893) rotate(-90)"/>
-                </g>
-              <text class="b" transform="translate(60 33.6)"><tspan x="-60.08" y="0">Next section</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        
-   
-  </div>
+    </td>
+  </tr>
+  <tr>
+    <td>How many hours do you work per week?</td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje4" id="90" value="80-90"  />
+         <label class="radio-custom-label"  for="90">80-90</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje4" id="80" value="70-80"  />
+         <label  class="radio-custom-label" for="80">70-80</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje4" id="70" value="60-70"  />
+         <label  class="radio-custom-label" for="70">60-70</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje4" id="65" value="50-60"  />
+         <label class="radio-custom-label"  for="65">50-60</label>
+    </td>
+    <td class="questionsTable" > 
+          <input  class="radio-custom" type="radio" name="pitanje4" id="55" value="40-50"  />
+          <label  class="radio-custom-label" for="55">40-50</label>
+    </td>
+    <td class="questionsTable" > 
+      <input class="radio-custom"  type="radio" name="pitanje4" id="45" value="Less than 40"  />
+          <label  class="radio-custom-label" for="45">Less than 40</label>
 
-  
-  <script>
-  // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function() {
-    'use strict';
-    window.addEventListener('load', function() {
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.getElementsByClassName('needs-validation');
-      // Loop over them and prevent submission
-      var validation = Array.prototype.filter.call(forms, function(form) {
-        form.addEventListener('submit', function(event) {
-          if (form.checkValidity() === false) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          form.classList.add('was-validated');
-        }, false);
-      });
-    }, false);
-  })();
-  </script>
+    </td>
+  </tr>
+  <tr>
+    <td>Do you feel relaxed, strong, full of energy, in control, creative, thirst for action?</td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5never" value="never"  />
+         <label class="radio-custom-label"  for="pitanje5never">never</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5rare" value="rare"  />
+         <label class="radio-custom-label"  for="pitanje5rare">rare</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5notoften" value="not often"  />
+         <label  class="radio-custom-label" for="pitanje5notoften">not often</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5often" value="often"  />
+         <label class="radio-custom-label"  for="pitanje5often">often</label>
+    </td>
+    <td class="questionsTable" > 
+          <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5almostalways" value="almost always"  />
+          <label  class="radio-custom-label" for="pitanje5almostalways">almost always</label>
+    </td>
+    <td class="questionsTable" > 
+          <input class="radio-custom"  type="radio" name="pitanje5" id="pitanje5always" value="always"  />
+          <label  class="radio-custom-label" for="pitanje5always">always</label>
+
+    </td>
+  </tr>
+  <tr>
+    <td>How often do you feel stress or pressure?</td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje6" id="pitanje6daily" value="daily"  />
+         <label class="radio-custom-label"  for="pitanje6daily">daily</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje6" id="pitanje6almostdaily" value="almost daily"  />
+         <label  class="radio-custom-label" for="pitanje6almostdaily">almost daily</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje6" id="pitanje6often" value="often"  />
+         <label  class="radio-custom-label" for="pitanje6often">often</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje6" id="pitanje6sometimes" value="sometimes"  />
+         <label  class="radio-custom-label" for="pitanje6sometimes">sometimes</label>
+    </td>
+    <td class="questionsTable" > 
+          <input  class="radio-custom" type="radio" name="pitanje6" id="pitanje6rarely" value="rarely"  />
+          <label  class="radio-custom-label" for="pitanje6rarely">rarely</label>
+    </td>
+    <td class="questionsTable" > 
+       <input  class="radio-custom" type="radio" name="pitanje6" id="pitanje6never" value="never"  />
+          <label  class="radio-custom-label" for="pitanje6never">never</label>
+
+    </td>
+  </tr>
+  <tr>
+    <td>How many hours do you move per week? (Only at least 30 minutes of non stop moving counts)</td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje7" id="-2" value="1-2"  />
+         <label  class="radio-custom-label" for="-2">1-2</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje73" value="2-3"  />
+         <label class="radio-custom-label"  for="pitanje73">2-3</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje7" id="pitanje74" value="3-4"  />
+         <label  class="radio-custom-label" for="pitanje74">3-4</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje75" value="4-5"  />
+         <label class="radio-custom-label"  for="pitanje75">4-5</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje76" value="5+"  />
+         <label class="radio-custom-label"  for="pitanje76">5+</label>
+    </td>
+    <td class="questionsTable" > 
+       <!--    <input class="radio-custom"  type="radio" name="pitanje7" id="pitanje77+" value="7+"  />
+          <label  class="radio-custom-label" for="pitanje77+">7+</label> -->
+    </td>
+  </tr>
+  <tr>
+    <td>How is the intensity mostly when doing sports or other physical activities?</td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8extremelystrict" value="extremely strict"  />
+         <label class="radio-custom-label"  for="pitanje8extremelystrict">extremely intensive</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8verystrict" value="very strict"  />
+         <label  class="radio-custom-label" for="pitanje8verystrict">very intensive</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8strict" value="strict"  />
+         <label class="radio-custom-label"  for="pitanje8strict">intensive</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8intensive" value="intensive"  />
+         <label  class="radio-custom-label" for="pitanje8intensive">moderate</label>
+    </td>
+    <td class="questionsTable" > 
+          <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8moderate" value="moderate"  />
+          <label  class="radio-custom-label" for="pitanje8moderate">easy</label>
+    </td>
+    <td class="questionsTable" > 
+       <!--  <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8easy" value="easy"  />
+          <label class="radio-custom-label"  for="pitanje8easy">easy</label>
+ -->
+    </td>
+  </tr>
+  <tr>
+    <td>Do you regularly do health-promoting strength training under competent guidance?</td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje9" id="0" value="0"  />
+         <label class="radio-custom-label"  for="0">0</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje9" id="1 - 2 per week" value="1 - 2 per week"  />
+         <label  class="radio-custom-label" for="1 - 2 per week">1 - 2 per week</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje9" id="2 - 5 per week" value="2 - 5 per week"  />
+         <label  class="radio-custom-label" for="2 - 5 per week">2 - 5 per week</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje9" id="5 x per week" value="5 x per week"  />
+         <label  class="radio-custom-label" for="5 x per week">5 x per week</label>
+    </td>
+    <td class="questionsTable" > 
+    </td>
+    <td class="questionsTable" > 
+    </td>
+   <!--  <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje9" id="4 x per month" value="4 x per month"  />
+         <label  class="radio-custom-label" for="4 x per month">4 x per month</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje9" id="8 x per month" value="8 x per month"  />
+         <label class="radio-custom-label"  for="8 x per month">8 x per month</label>
+    </td> -->
+  </tr>
+  <tr>
+    <td>How many servings of fresh fruit, lettuce, vegetables, sprouts and seeds do you eat every day?</td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje10" id="pitanje101/less" value="1 / less"  />
+         <label class="radio-custom-label"  for="pitanje101/less">1 / less</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje10" id="pitanje102" value="2"  />
+         <label  class="radio-custom-label" for="pitanje102">2</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje10" id="pitanje103" value="3"  />
+         <label  class="radio-custom-label" for="pitanje103">3</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje10" id="pitanje104" value="4"  />
+         <label class="radio-custom-label"  for="pitanje104">4</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje10" id="pitanje105" value="5"  />
+         <label  class="radio-custom-label" for="pitanje105">5</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje10" id="pitanje106 / more" value="6 / more"  />
+         <label class="radio-custom-label"  for="pitanje106 / more">6 / more</label>
+    </td>
+  </tr>
+  <tr>
+    <td>Do you drink 2-3 litres of still water a day?</td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje11" id="pitanje11never" value="never"  />
+         <label class="radio-custom-label"  for="pitanje11never">never</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11rare" value="rare"  />
+         <label class="radio-custom-label"  for="pitanje11rare">rare</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11notoften" value="not often"  />
+         <label  class="radio-custom-label" for="pitanje11notoften">not often</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11often" value="often"  />
+         <label  class="radio-custom-label" for="pitanje11often">often</label>
+    </td>
+    <td class="questionsTable" > 
+          <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11almostalways" value="almost always"  />
+          <label  class="radio-custom-label" for="pitanje11almostalways">almost always</label>
+    </td>
+    <td class="questionsTable" > 
+       <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11always" value="always"  />
+          <label  class="radio-custom-label" for="pitanje11always">always</label>
+
+    </td>
+  </tr>
+  <tr>
+    <td>Do you have high blood pressure, high colesterol, high <br> triglycerides, and/or high blood sugar?</td>
+    <td class="questionsTable" > 
+         <input class="radio-custom"  type="radio" name="pitanje12" id="pitanje12extremelyhigh" value="extremelyhigh"  />
+         <label class="radio-custom-label" for="pitanje12extremelyhigh">extremely high</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12veryhigh" value="veryhigh"  />
+         <label class="radio-custom-label" for="pitanje12veryhigh">very high</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12high" value="high"  />
+         <label class="radio-custom-label" for="pitanje12high">high</label>
+    </td>
+    <td class="questionsTable" > 
+         <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12slightlyincreased" value="slightly increased"  />
+         <label class="radio-custom-label" for="pitanje12slightlyincreased">slightly increased</label>
+    </td>
+    <td class="questionsTable" > 
+          <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12normal" value="normal"  />
+          <label class="radio-custom-label" for="pitanje12normal">normal</label>
+    </td>
+    <td class="questionsTable" > 
+       <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12low" value="low"  />
+          <label class="radio-custom-label" for="pitanje12low">low</label>
+
+    </td>
+  </tr>
+  <tr>
+{{--     <td>Abdominal circumference: Stand upright in a relaxed  <br>manner, place the measuring tape horizontally around the <br> belly near the belly button, exhale and relax.</td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje13" id="M:120W:108" value="M: 120 W: 108"  />
+         <label class="radio-custom-label" for="M:120W:108">M: 120 W: 108</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje13" id="M:114W:102" value="M: 114 W: 102"  />
+         <label class="radio-custom-label" for="M:114W:102">M: 114 W: 102</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje13" id="M:108W:96" value="M: 108 W: 96"  />
+         <label class="radio-custom-label" for="M:108W:96">M: 108 W: 96</label>
+    </td>
+    <td class="questionsTable" > 
+         <input  class="radio-custom" type="radio" name="pitanje13" id="M:102W:88" value="M: 102 W: 88"  />
+         <label class="radio-custom-label" for="M:102W:88">M: 102 W: 88</label>
+    </td>
+    <td class="questionsTable" > 
+          <input  class="radio-custom" type="radio" name="pitanje13" id="M:94W:80" value="M: 94 W: 80"  />
+          <label class="radio-custom-label" for="M:94W:80">M: 94 W: 80</label>
+    </td>
+    <td class="questionsTable" > 
+        <input  class="radio-custom" type="radio" name="pitanje13" id="M:88W:76" value="M: 88 W: 76"  />
+          <label class="radio-custom-label" for="M:88W:76">M: 88 W: 76</label>
+
+    </td>
+  </tr>
+ --}}
+</tbody>
+</table>
+</div>
+</div>
+
+
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 

