@@ -56,9 +56,9 @@
                      <form action="{{route('contact.store', app()->getLocale())}}" method="post" class="needs-validation " id="msform" >
                           {{ csrf_field() }}
                         <ul id="progressbar">
-                            <li class="active">Starter</li>
-                            <li>Main Course</li>
-                            <li>Desert</li>
+                            <li class="active">{{ __('text.starter') }}</li>
+                            <li>{{ __('text.mainCourse') }}</li>
+                            <li>{{ __('text.desert1') }}</li>
                         </ul>
                         <!-- fieldsets -->
                         <fieldset>
@@ -68,15 +68,13 @@
                               </a>
                             </div>
                               <div class="introt6 col-lg-9 col-md-9 col-sm-12 col-12  m-auto"> 
-                                  <h2 class="naslov ">OUR FIRST DATE</h2>
-                                  <p class="opis">Dear friends! As you have came to this point, I suppose that we have a problem we need to solve. 
-                                    It seems like we have a goal that needs to be achieved,
-                                     I have prepared important questions so we could be able to get started as soon as possible. Earlier we start, sooner we past the goal. </p>
+                                  <h2 class="naslov ">{{ __('text.ourFirstDate') }}</h2>
+                                  <p class="opis"> {{ __('text.ourFirstDate') }} </p>
                               </div>
                             </div>
                               <div class="row m-3 mt-5">     </div>
                               <div class="row mb-3 mx-3">
-                                <p>So please, let me know...</p>
+                                <p>{{ __('text.letMeKnow') }}</p>
                             </div>
                             @include('layouts.form')
                             <div class="next mb-5">
@@ -101,7 +99,7 @@
                                       <line class="a" x1="4.493" y1="10.199" transform="translate(322.694 2341.385) rotate(-90)"/>
                                       <line class="a" y1="10.199" x2="4.493" transform="translate(322.694 2336.893) rotate(-90)"/>
                                     </g>
-                                  <text class="b" transform="translate(60 33.6)"><tspan x="-60.08" y="0">Next section</tspan>
+                                  <text class="b" transform="translate(60 33.6)"><tspan x="-60.08" y="0">{{ __('text.next') }}</tspan>
                                   </text>
                                 </g>
                               </svg>
@@ -134,7 +132,7 @@
                                           <line class="a" y1="10.199" x2="4.493" transform="translate(322.694 2336.893) rotate(-90)"/>
                                         </g>
                                     <text class="b" transform="translate(79 33.599)">
-                                      <tspan x="-79.408" y="0">Previous section</tspan>
+                                      <tspan x="-79.408" y="0">{{ __('text.prev') }}</tspan>
                                     </text>
                                   </g>
                                 </svg>
@@ -162,7 +160,7 @@
                                         <line class="a" x1="4.493" y1="10.199" transform="translate(322.694 2341.385) rotate(-90)"/>
                                         <line class="a" y1="10.199" x2="4.493" transform="translate(322.694 2336.893) rotate(-90)"/>
                                       </g>
-                                    <text class="b" transform="translate(60 33.6)"><tspan x="-60.08" y="0">Next section</tspan>
+                                    <text class="b" transform="translate(60 33.6)"><tspan x="-60.08" y="0">{{ __('text.next') }}</tspan>
                                     </text>
                                   </g>
                                 </svg>
@@ -195,7 +193,7 @@
                                           <line class="a" y1="10.199" x2="4.493" transform="translate(322.694 2336.893) rotate(-90)"/>
                                         </g>
                                     <text class="b" transform="translate(79 33.599)">
-                                      <tspan x="-79.408" y="0">Previous section</tspan>
+                                      <tspan x="-79.408" y="0">{{ __('text.prev') }}</tspan>
                                     </text>
                                   </g>
                                 </svg>
@@ -204,7 +202,7 @@
 
             
                                 <div class="intro_button  formDivButton mx-auto my-5">
-                                    <button class=" sendInq " type="submit" >Send My Answers</button>
+                                    <button class=" sendInq " type="submit" >{{ __('text.sendMyAnswerBtn') }}</button>
                                 </div>
                         </fieldset>
                         </form>
