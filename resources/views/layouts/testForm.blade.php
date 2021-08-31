@@ -6,7 +6,8 @@
 
     <div class="form-row">
       <div class="col-md-5 m-3">
-        <input type="text" class="form-control" " placeholder="Last name" name = "last_name" required>
+		  <!--Makao sam navodnike poslije form control-->
+        <input type="text" class="form-control"  placeholder="Last name" name = "last_name" required>
         <div class="valid-feedback">
           Looks good!
         </div>

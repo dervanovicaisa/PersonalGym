@@ -542,8 +542,7 @@ section {
 }
 
 .questi {
-    width: 75%;
-    overflow-x: scroll;
+    width: 75%
 }
 
 .questi .row {
@@ -1008,22 +1007,28 @@ label[for=no] {
     width: 340px !important;
     right: -50%;
     font-size: 21px
-}
 
+}
+.highw label{
+	cursor: pointer;
+    color: #6e6d76;
+    transition: all .2s ease;
+    padding: 0;
+}
 .highw label[for=normal] {
     margin-left: 3px;
     width: 35%
 }
 
-#low:checked~.switch label[for=low] {
+#low:checked~.highw label[for=low] {
     color: #fff
 }
 
-#high:checked~.switch label[for=high] {
+#high:checked~.highw label[for=high] {
     color: #fff
 }
 
-#normal:checked~.switch label[for=normal] {
+#normal:checked~.highw label[for=normal] {
     color: #fff
 }
 
@@ -1157,6 +1162,8 @@ label {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 100%;
+    z-index: 9999999;
     transform: translate(-50%, -50%)
 }
 

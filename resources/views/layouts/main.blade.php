@@ -61,7 +61,7 @@
  
 	  
  <video id="loader" src="/images/video/animacija1.mp4 " autoplay muted></video> --> 
- <img id="loader" src="/videos/animacija-3.gif" /> 
+	  <img id="loader" src="/videos/animacija-3.gif" /> 
 
  </div>
     @yield('content')

@@ -1,4 +1,12 @@
+$(document).ready(function () {
+    $.fn.fullpage({
+        navigation: true,
+        navigationPosition: 'right'
+    });
+})
+
 !(function(e) {
+	
     var a = {
             sectionContainer: "section",
             easing: "ease",
@@ -9,7 +17,7 @@
             beforeMove: null,
             afterMove: null,
             loop: !0,
-            responsiveFallback: !1,
+		    responsiveFallback: !1,
             direction: "vertical"
         },
         n = "M11.5,0,23,19H0Z",
@@ -508,3 +516,4 @@
             );
         });
 })(window.jQuery);
+    

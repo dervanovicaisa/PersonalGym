@@ -1,11 +1,11 @@
 <div id="section_2_form" class="" >
-  <h4 class="blue m-3 yourdata">MAIN COURSE </h4>
+  <h4 class="blue m-3 yourdata">{{ __('text.mainCourse') }} </h4>
   <div class="table-responsive-sm">
 
   <table class="table table-hover inquiryTable">
 <tbody>
   <tr>
-    <td>How many hours do you sleep deep and good?</td>
+    <td>{{ __('text.q13') }}</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje1" id="pitanje1.3" value="3"  />
          <label  class="radio-custom-label" for="pitanje1.3">3</label>
@@ -33,63 +33,63 @@
     </td>
   </tr>
   <tr>
-    <td>Sleep regularly and before midnight?</td>
+    <td>{{ __('text.q14') }}</td>
     <td class="questionsTable" > 
-         <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.never" value="never"  />
-         <label class="radio-custom-label"  for="pitanje2.never">never</label>
+         <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.never" value=""  />
+         <label class="radio-custom-label"  for="pitanje2.never">{{ __('text.never') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.rare" value="rare"  />
-         <label  class="radio-custom-label" for="pitanje2.rare">rare</label>
+         <label  class="radio-custom-label" for="pitanje2.rare">{{ __('text.rare') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.notoften" value="not often"  />
-         <label class="radio-custom-label"  for="pitanje2.notoften">not often</label>
+         <label class="radio-custom-label"  for="pitanje2.notoften">{{ __('text.notOften') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.often" value="often"  />
-         <label  class="radio-custom-label" for="pitanje2.often">often</label>
+         <label  class="radio-custom-label" for="pitanje2.often">{{ __('text.often') }}</label>
     </td>
     <td class="questionsTable" > 
           <input  class="radio-custom" type="radio" name="pitanje2" id="pitanje2.almostalways" value="almost always"  />
-          <label  class="radio-custom-label" for="pitanje2.almostalways">almost always</label>
+          <label  class="radio-custom-label" for="pitanje2.almostalways">{{ __('text.almostAlways') }}</label>
     </td>
     <td class="questionsTable" > 
         <input class="radio-custom"  type="radio" name="pitanje2" id="always" value="always"  />
-          <label class="radio-custom-label"  for="always">always</label>
+          <label class="radio-custom-label"  for="always">{{ __('text.always') }}</label>
 
     </td>
   </tr>
   <tr>
-    <td>Do you feel rested and relaxed when you wake up in the morning?</td>
+    <td>{{ __('text.q15') }}</td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje3" id="pitanje3never" value="never"  />
-         <label  class="radio-custom-label" for="pitanje3never">never</label>
+         <label  class="radio-custom-label" for="pitanje3never">{{ __('text.never') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje3" id="pitanje3rare" value="rare"  />
-         <label class="radio-custom-label"  for="pitanje3rare">rare</label>
+         <label class="radio-custom-label"  for="pitanje3rare">{{ __('text.rare') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje3" id="pitanje3notoften" value="not often"  />
-         <label class="radio-custom-label"  for="pitanje3notoften">not often</label>
+         <label class="radio-custom-label"  for="pitanje3notoften">{{ __('text.notOften') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje3" id="pitanje3often" value="often"  />
-         <label  class="radio-custom-label" for="pitanje3often">often</label>
+         <label  class="radio-custom-label" for="pitanje3often">{{ __('text.often') }}</label>
     </td>
     <td class="questionsTable" > 
           <input class="radio-custom"  type="radio" name="pitanje3" id="pitanje3almostalways" value="almost always"  />
-          <label  class="radio-custom-label" for="pitanje3almostalways">almost always</label>
+          <label  class="radio-custom-label" for="pitanje3almostalways">{{ __('text.almostAlways') }}</label>
     </td>
     <td class="questionsTable" > 
         <input class="radio-custom"  type="radio" name="pitanje3" id="pitanje3always" value="always"  />
-          <label class="radio-custom-label"  for="pitanje3always">always</label>
+          <label class="radio-custom-label"  for="pitanje3always">{{ __('text.always') }}</label>
 
     </td>
   </tr>
   <tr>
-    <td>How many hours do you work per week?</td>
+    <td>{{ __('text.q16') }}</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje4" id="90" value="80-90"  />
          <label class="radio-custom-label"  for="90">80-90</label>
@@ -112,68 +112,68 @@
     </td>
     <td class="questionsTable" > 
       <input class="radio-custom"  type="radio" name="pitanje4" id="45" value="Less than 40"  />
-          <label  class="radio-custom-label" for="45">Less than 40</label>
+          <label  class="radio-custom-label" for="45">{{ __('text.lessThan') }} 40</label>
 
     </td>
   </tr>
   <tr>
-    <td>Do you feel relaxed, strong, full of energy, in control, creative, thirst for action?</td>
+    <td>{{ __('text.q17') }}</td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5never" value="never"  />
-         <label class="radio-custom-label"  for="pitanje5never">never</label>
+         <label class="radio-custom-label"  for="pitanje5never">{{ __('text.never') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5rare" value="rare"  />
-         <label class="radio-custom-label"  for="pitanje5rare">rare</label>
+         <label class="radio-custom-label"  for="pitanje5rare">{{ __('text.rare') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5notoften" value="not often"  />
-         <label  class="radio-custom-label" for="pitanje5notoften">not often</label>
+         <label  class="radio-custom-label" for="pitanje5notoften">{{ __('text.notOften') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5often" value="often"  />
-         <label class="radio-custom-label"  for="pitanje5often">often</label>
+         <label class="radio-custom-label"  for="pitanje5often">{{ __('text.often') }}</label>
     </td>
     <td class="questionsTable" > 
           <input  class="radio-custom" type="radio" name="pitanje5" id="pitanje5almostalways" value="almost always"  />
-          <label  class="radio-custom-label" for="pitanje5almostalways">almost always</label>
+          <label  class="radio-custom-label" for="pitanje5almostalways">{{ __('text.almostAlways') }}</label>
     </td>
     <td class="questionsTable" > 
           <input class="radio-custom"  type="radio" name="pitanje5" id="pitanje5always" value="always"  />
-          <label  class="radio-custom-label" for="pitanje5always">always</label>
+          <label  class="radio-custom-label" for="pitanje5always">{{ __('text.always') }}</label>
 
     </td>
   </tr>
   <tr>
-    <td>How often do you feel stress or pressure?</td>
+    <td>{{ __('text.q18') }}</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje6" id="pitanje6daily" value="daily"  />
-         <label class="radio-custom-label"  for="pitanje6daily">daily</label>
+         <label class="radio-custom-label"  for="pitanje6daily">{{ __('text.daily') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje6" id="pitanje6almostdaily" value="almost daily"  />
-         <label  class="radio-custom-label" for="pitanje6almostdaily">almost daily</label>
+         <label  class="radio-custom-label" for="pitanje6almostdaily">{{ __('text.almostDaily') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje6" id="pitanje6often" value="often"  />
-         <label  class="radio-custom-label" for="pitanje6often">often</label>
+         <label  class="radio-custom-label" for="pitanje6often">{{ __('text.often') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje6" id="pitanje6sometimes" value="sometimes"  />
-         <label  class="radio-custom-label" for="pitanje6sometimes">sometimes</label>
+         <label  class="radio-custom-label" for="pitanje6sometimes">{{ __('text.sometimes') }}</label>
     </td>
     <td class="questionsTable" > 
           <input  class="radio-custom" type="radio" name="pitanje6" id="pitanje6rarely" value="rarely"  />
-          <label  class="radio-custom-label" for="pitanje6rarely">rarely</label>
+          <label  class="radio-custom-label" for="pitanje6rarely">{{ __('text.rarely') }}</label>
     </td>
     <td class="questionsTable" > 
        <input  class="radio-custom" type="radio" name="pitanje6" id="pitanje6never" value="never"  />
-          <label  class="radio-custom-label" for="pitanje6never">never</label>
+          <label  class="radio-custom-label" for="pitanje6never">{{ __('text.never') }}</label>
 
     </td>
   </tr>
   <tr>
-    <td>How many hours do you move per week? (Only at least 30 minutes of non stop moving counts)</td>
+    <td>{{ __('text.q19') }}</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje7" id="-2" value="1-2"  />
          <label  class="radio-custom-label" for="-2">1-2</label>
@@ -200,26 +200,26 @@
     </td>
   </tr>
   <tr>
-    <td>How is the intensity mostly when doing sports or other physical activities?</td>
+    <td>{{ __('text.q20') }}</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8extremelystrict" value="extremely strict"  />
-         <label class="radio-custom-label"  for="pitanje8extremelystrict">extremely intensive</label>
+         <label class="radio-custom-label"  for="pitanje8extremelystrict">{{ __('text.extremelyIntensive') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8verystrict" value="very strict"  />
-         <label  class="radio-custom-label" for="pitanje8verystrict">very intensive</label>
+         <label  class="radio-custom-label" for="pitanje8verystrict">{{ __('text.veryIntensive') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje8" id="pitanje8strict" value="strict"  />
-         <label class="radio-custom-label"  for="pitanje8strict">intensive</label>
+         <label class="radio-custom-label"  for="pitanje8strict">{{ __('text.intensive') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8intensive" value="intensive"  />
-         <label  class="radio-custom-label" for="pitanje8intensive">moderate</label>
+         <label  class="radio-custom-label" for="pitanje8intensive">{{ __('text.moderate') }}</label>
     </td>
     <td class="questionsTable" > 
           <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8moderate" value="moderate"  />
-          <label  class="radio-custom-label" for="pitanje8moderate">easy</label>
+          <label  class="radio-custom-label" for="pitanje8moderate">{{ __('text.easy') }}</label>
     </td>
     <td class="questionsTable" > 
        <!--  <input  class="radio-custom" type="radio" name="pitanje8" id="pitanje8easy" value="easy"  />
@@ -228,22 +228,22 @@
     </td>
   </tr>
   <tr>
-    <td>Do you regularly do health-promoting strength training under competent guidance?</td>
+    <td>{{ __('text.q21') }}</td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje9" id="0" value="0"  />
          <label class="radio-custom-label"  for="0">0</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje9" id="1 - 2 per week" value="1 - 2 per week"  />
-         <label  class="radio-custom-label" for="1 - 2 per week">1 - 2 per week</label>
+         <label  class="radio-custom-label" for="1 - 2 per week">1 - 2 {{ __('text.perWeek') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje9" id="2 - 5 per week" value="2 - 5 per week"  />
-         <label  class="radio-custom-label" for="2 - 5 per week">2 - 5 per week</label>
+         <label  class="radio-custom-label" for="2 - 5 per week">2 - 5 {{ __('text.perWeek') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje9" id="5 x per week" value="5 x per week"  />
-         <label  class="radio-custom-label" for="5 x per week">5 x per week</label>
+         <label  class="radio-custom-label" for="5 x per week">5 x {{ __('text.perWeek') }}</label>
     </td>
     <td class="questionsTable" > 
     </td>
@@ -259,10 +259,10 @@
     </td> -->
   </tr>
   <tr>
-    <td>How many servings of fresh fruit, lettuce, vegetables, sprouts and seeds do you eat every day?</td>
+    <td>{{ __('text.q22') }}</td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje10" id="pitanje101/less" value="1 / less"  />
-         <label class="radio-custom-label"  for="pitanje101/less">1 / less</label>
+         <label class="radio-custom-label"  for="pitanje101/less">1 / {{ __('text.less') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje10" id="pitanje102" value="2"  />
@@ -282,62 +282,62 @@
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje10" id="pitanje106 / more" value="6 / more"  />
-         <label class="radio-custom-label"  for="pitanje106 / more">6 / more</label>
+         <label class="radio-custom-label"  for="pitanje106 / more">6 / {{ __('text.more') }}</label>
     </td>
   </tr>
   <tr>
-    <td>Do you drink 2-3 litres of still water a day?</td>
+    <td>{{ __('text.q23') }}</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje11" id="pitanje11never" value="never"  />
-         <label class="radio-custom-label"  for="pitanje11never">never</label>
+         <label class="radio-custom-label"  for="pitanje11never">{{ __('text.never') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11rare" value="rare"  />
-         <label class="radio-custom-label"  for="pitanje11rare">rare</label>
+         <label class="radio-custom-label"  for="pitanje11rare">{{ __('text.rare') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11notoften" value="not often"  />
-         <label  class="radio-custom-label" for="pitanje11notoften">not often</label>
+         <label  class="radio-custom-label" for="pitanje11notoften">{{ __('text.notOften') }}</label>
     </td>
     <td class="questionsTable" > 
          <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11often" value="often"  />
-         <label  class="radio-custom-label" for="pitanje11often">often</label>
+         <label  class="radio-custom-label" for="pitanje11often">{{ __('text.often') }}</label>
     </td>
     <td class="questionsTable" > 
           <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11almostalways" value="almost always"  />
-          <label  class="radio-custom-label" for="pitanje11almostalways">almost always</label>
+          <label  class="radio-custom-label" for="pitanje11almostalways">{{ __('text.almostAlways') }}</label>
     </td>
     <td class="questionsTable" > 
        <input  class="radio-custom" type="radio" name="pitanje11" id="pitanje11always" value="always"  />
-          <label  class="radio-custom-label" for="pitanje11always">always</label>
+          <label  class="radio-custom-label" for="pitanje11always">{{ __('text.always') }}</label>
 
     </td>
   </tr>
   <tr>
-    <td>Do you have high blood pressure, high colesterol, high <br> triglycerides, and/or high blood sugar?</td>
+    <td>{{ __('text.q24') }}</td>
     <td class="questionsTable" > 
          <input class="radio-custom"  type="radio" name="pitanje12" id="pitanje12extremelyhigh" value="extremelyhigh"  />
-         <label class="radio-custom-label" for="pitanje12extremelyhigh">extremely high</label>
+         <label class="radio-custom-label" for="pitanje12extremelyhigh">{{ __('text.extremlyHigh') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12veryhigh" value="veryhigh"  />
-         <label class="radio-custom-label" for="pitanje12veryhigh">very high</label>
+         <label class="radio-custom-label" for="pitanje12veryhigh">{{ __('text.veryhigh') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12high" value="high"  />
-         <label class="radio-custom-label" for="pitanje12high">high</label>
+         <label class="radio-custom-label" for="pitanje12high">{{ __('text.high') }}</label>
     </td>
     <td class="questionsTable" > 
          <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12slightlyincreased" value="slightly increased"  />
-         <label class="radio-custom-label" for="pitanje12slightlyincreased">slightly increased</label>
+         <label class="radio-custom-label" for="pitanje12slightlyincreased">{{ __('text.slightlyincreased') }}</label>
     </td>
     <td class="questionsTable" > 
           <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12normal" value="normal"  />
-          <label class="radio-custom-label" for="pitanje12normal">normal</label>
+          <label class="radio-custom-label" for="pitanje12normal">{{ __('text.normal') }}</label>
     </td>
     <td class="questionsTable" > 
        <input class="radio-custom" type="radio" name="pitanje12" id="pitanje12low" value="low"  />
-          <label class="radio-custom-label" for="pitanje12low">low</label>
+          <label class="radio-custom-label" for="pitanje12low">{{ __('text.low') }}</label>
 
     </td>
   </tr>

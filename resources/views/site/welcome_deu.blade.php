@@ -100,7 +100,7 @@
                     to!
                   </h6>
                   <h6><br>
-                    I graduated at SAFS and fulfilled my ambition at becoming fitness and
+                    I graduated at SAFS and fulfilled my ambition at becoming
                     personal trainer. Every day spent working at the gym is a blessing, because
                     it gives me the ability to vivify in you the same victorious feeling I have
                     felt, while simultaneously improving the most important thing in life- your
@@ -146,8 +146,8 @@
                       you a healthier and stronger individual. Putting your health in the first place in everything
                       we do is going to allow you to build a strong foundation.
                     </h7> </br> </br>
-                    <h7><b>Remember - nothing beats a strong body </b>,
-                      mind and soul. We all seek to be happy and satisfied with ourselves. Your guarantee will be your
+                    <h7><b>Remember - nothing beats a strong body ,
+                      mind and soul</b>. We all seek to be happy and satisfied with ourselves. Your guarantee will be your
                       commitment, your biggest motivation will be the results you see in the mirror. You will fail, but
                       you will learn from your mistakes. Not you, not me or anybody is gonna hit as hard as life. But it
                       ain't about how hard you can hit, it's about how hard you can get hit and keep moving forward, how

@@ -1,9 +1,9 @@
 $(document).ready(function () {
     setTimeout(function () {
         $("body").addClass("loaded")
-    }, 400);
-
-    window.onorientationchange = function() { 
+    }, 1500);
+	
+	   window.onorientationchange = function() { 
         var orientation = window.orientation; 
             switch(orientation) { 
                 case 0:

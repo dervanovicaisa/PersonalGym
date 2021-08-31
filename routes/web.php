@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', function () {
+    return redirect(app()->getLocale());
+});
+
+Route::get('/setLocaleRout/{lang}', function ($lang) {
+    App::setlocale($lang);
+    return redirect(app()->getLocale());
+})->name('setLocaleRout');
+
+Route::group(['prefix' => '{locale}', 'middleware' => 'setlocale'], function () {
 Route::get('/', function () {
     $application_message = '';
     return view('site.welcome', compact('application_message'));
@@ -30,3 +41,4 @@ Route::post('application', [
     'uses' => 'SendMailController@sendmail',
     'as' => 'contact.store'
 ]);
+});
